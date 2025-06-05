@@ -183,51 +183,88 @@ const Files =(props)=> {
 
 
   return (
-    <div>
       <div>
+          <div>
 
-      <a href="/home">
-                <i className='bi bi-house-door'></i>
+              <a href="/home">
+                  <i className='bi bi-house-door'></i>
               </a>
-      <h3 className='bi bi-home'>Files Management</h3>
+              <h3 className='bi bi-home'>Files Management</h3>
 
-      </div>
-      
-      <br />
+          </div>
 
-      <div className='col-auto card_10 col-sm-6'> 
+          <br/>
 
-      <form action="">
-    
-        <label htmlFor="File to Upload"></label>
-        <select type="text"  className='form-select' id="file_type">
-          <option>SELECT FILE </option>
-          <option>Grower Booking</option>
-          <option>StopOrder File</option>
-          <option>Grower Registry</option>
-          <option>TIMB Creditor Schedule</option>
-        </select>
+          <div className='col-auto card_10 col-sm-6'>
 
-        <br />
-        
+              <form action="">
+
+                  <label htmlFor="File to Upload"></label>
+                  <select type="text" className='form-select' id="file_type">
+                      <option>SELECT FILE</option>
+                      <option>Grower Booking</option>
+                      <option>StopOrder File</option>
+                      <option>Grower Registry</option>
+                      <option>TIMB Creditor Schedule</option>
+                  </select>
+
+                  <br/>
 
 
-        <input type="file" className='form-control sm' accept=".csv" onChange={selectFiles}/>
+                  <input type="file" className='form-control sm' accept=".csv" onChange={selectFiles}/>
 
-        <br />
+                  <br/>
 
-        <div class="modal-footer">
-                    <a href="#" download="#">
-                    <button type="button" class="btn btn-secondary" download>Generate Sale File</button>
+                  <div className="modal-footer">
+                      <a href="#" download="#">
+                          <button type="button" className="btn btn-secondary" download>Generate Sale File</button>
                       </a>
-                    <button type="button" class="btn btn-primary" onClick={uploadFiles}>Submit</button>
-                </div>
+                      <button type="button" className="btn btn-primary" onClick={uploadFiles} data-bs-toggle="modal" data-bs-target="#example">Submit</button>
 
-        </form>
-        
+                  </div>
+
+
+              </form>
+
+              <div className="" align="center">
+                  <div className="modal-footer">
+                      {/*    Success Response*/}
+                      <p className="card_2"><b>Successful !!!</b></p>
+                  </div>
+
+                  <div className="modal-footer">
+                      {/*    Success Response*/}
+                      <p className="card_2"><b>Not Successful !!!</b></p>
+                  </div>
+              </div>
+
+          </div>
+
+
+
+          {/*    Response message*/}
+
+          <div className="modal fade" id="example" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div className="modal-dialog">
+                  <div className="modal-content">
+                      <div className="modal-header">
+                          {/*<h5 className="modal-title" id="exampleModalLabel">Add Company</h5>*/}
+                          {/*<button type="button" className="btn-close" data-bs-dismiss="modal"*/}
+                          {/*        aria-label="Close"></button>*/}
+                      </div>
+                      <div className="modal-body">
+                          <p>Your form has been submitted successfully!</p>
+                      </div>
+                      <div className="modal-footer">
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+
       </div>
-     
-    </div>
   )
 }
 

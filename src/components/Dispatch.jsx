@@ -29,24 +29,24 @@ export const Dispatch = (props) => {
         <br />
         <br />
 
-            {/* <div className=''>
-            <Alert severity="success">This is a success Alert.</Alert>
-            </div>
-            <br />
-            <div>
-                <Alert severity="info">This is an info Alert.</Alert>
-            </div>
-            <br />
-            <div>
-            <Alert severity="warning">This is a warning Alert.</Alert>
-            </div>
-            <br />
+            {/* <div className=''>*/}
+            {/*<Alert severity="success">This is a success Alert.</Alert>*/}
+            {/*</div>*/}
+            {/*<br />*/}
+            {/*<div>*/}
+            {/*    <Alert severity="info">This is an info Alert.</Alert>*/}
+            {/*</div>*/}
+            {/*<br />*/}
+            {/*<div>*/}
+            {/*<Alert severity="warning">This is a warning Alert.</Alert>*/}
+            {/*</div>*/}
+            {/*<br />*/}
             
-            <div>
-            <Alert severity="error">This is an error Alert.</Alert>
-            </div>
-            <br />
-             */}
+            {/*<div>*/}
+            {/*<Alert severity="error">This is an error Alert.</Alert>*/}
+            {/*</div>*/}
+            {/*<br />*/}
+
 
             
         
