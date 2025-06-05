@@ -240,7 +240,7 @@ export const Deliverynotes = (props) => {
 {/* Modals */}
 
         <div className="modal fade" id="example" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-xl">
                         <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">Name</h5>
@@ -248,71 +248,166 @@ export const Deliverynotes = (props) => {
                         </div>
                         <div class="modal-body form-group row">
                             <form>
-                                <div className='row'>
-                                    <div class="col">
-                                        <label for="recipient-name" class="col-form-label">Name</label>
-                                        <input type="name" class="form-control" id="name" />
-                                    </div>
-                                    <div class="col">
-                                        <label for="recipient-name" class="col-form-label">ID</label>
-                                        <input type="name" class="form-control" id="driverid" />
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div class="col">
-                                        <label for="recipient-name" class="col-form-label">Vehicle Reg</label>
-                                        <input type="name" class="form-control" id="vehicleid" />
-                                    </div>
-                                    <div class="col">
-                                        <label for="recipient-name" class="col-form-label">Contact</label>
-                                        <input type="phone" class="form-control" id="phone" />
-                                    </div>
-                                </div>
-                                <div className='row'>
-                                    <div class="col">
-                                        <label for="recipient-name" class="col-form-label">Location</label>
-                                        <input type="name" class="form-control" id="location" />
-                                    </div>
-                                    <div class="col">
-                                        <label for="recipient-name" class="col-form-label">Date</label>
-                                        <input type="date" class="form-control" id="sale_date" />
-                                    </div>
-                                </div>
-                                
-                                </form>
+                                <div className="row">
+                                    <div className="col">
+                                        <div className="row">
+                                            <div className="col">
+                                                <label>Name</label>
+                                                <input type="text" id="name" name="name" className="form-control"/>
+                                            </div>
+                                            <div className="col">
+                                                <label>ID Number</label>
+                                                <input type="text" id="driverid" name="driverid" className="form-control"/>
+                                            </div>
+                                        </div>
+                                        <div className="row">
+                                            <div className="col">
+                                                <label>Truck Number</label>
+                                                <input type="text" id="name" name="name" className="form-control"/>
+                                            </div>
+                                            <div className="col">
+                                                <label>Location</label>
+                                                <input type="text" id="location" name="location" className="form-control"/>
+                                            </div>
+                                        </div>
+                                        <div className="row">
+                                            <div className="col">
+                                                <label>Phone</label>
+                                                <input type="phone" id="phone" name="contact" className="form-control"/>
+                                            </div>
+                                            <div className="col">
+                                                <label>Sale Date</label>
+                                                <input type="date" id="sale_date" name="sale_date" className="form-control"/>
+                                            </div>
+                                        </div>
+                                         <br/>
+                                        <div className="">
+                                            <button className="btn btn-primary" type="Submit" onClick={createTransporter}>Submit</button>
+                                        </div>
 
-                            </div>
-                            <br />
+                                        <br/>
 
-                            <button className='btn btn-success' onClick={createTransporter}>Save</button>
+                                        <div className="col-6 col-sm-6 offset-sm-3">
+                                            {/*    Success Response*/}
+                                            <p className="card_2"><b>Successful !!!</b></p>
+                                        </div>
 
-                            <br />
-
-                            <div className='modal-body form group'>
-                            <form action="">
-                            <div className='row'>
-                                    <div class="col">
-                                        <label for="recipient-name" class="col-form-label">Enter  Grower</label>
-                                        <input type="name" class="form-control" id="grower_num" />
                                     </div>
-                                    <div class="col">
-                                        <label for="recipient-name" class="col-form-label">Number Of Bales</label>
-                                        <input type="number" class="form-control" id="bales" />
-                                    </div>
-                                    <div class="col">
-                                        <label for="recipient-name" class="col-form-label">.</label>
-                                        <button type="button" class="btn btn-primary"  onClick={createTransporterGrowers} id="">Submit</button>
+
+                                    <div className="col">
+                                        <div className="row">
+                                            <div className="col-6 col-sm-6 offset-sm-3">
+                                                {/*    Success Response*/}
+                                                <p className="card_2" name="tdnid" id="tdn_id"><b>TDN00001</b></p>
+                                                <p className="card_2" name="name" id="name"><b>Tafadzwa Maduuro</b></p>
+                                                <p className="card_2" name="id_num" id="driverid"><b>66-084355-V-04</b></p>
+                                                <p className="card_2" name="vehicleid" id="vehicleid"><b>AAF-2525</b></p>
+                                            </div>
+
+                                        </div>
+
                                     </div>
                                 </div>
                             </form>
-                            </div>
-                        
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button class="btn btn-primary" type="button">Complete Delivery</button>
-                            </div>
 
-                        </div>
+                          <div className="">
+                              <div className="row">
+                                  <div className="col">
+                                      <label>Enter Grower</label>
+                                      <input className="form-control" type="text" id="" name="grower" />
+                                  </div>
+                                  <div className="col">
+                                      <label>Number of bales</label>
+                                      <input className="form-control" type="number" value="Bales" id="" name="num_of_bales"/>
+                                  </div>
+                                  <div className="col">
+                                      <label>.</label>
+                                      <button className="btn btn-primary" type="submit" value="Submit" onClick={createTransporterGrowers}>Submit</button>
+                                  </div>
+
+                              </div>
+                          </div>
+                           <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+
+                          <div className="card_10">
+                              <div className='table-responsive' data-bs-spy="scroll" style={{ maxHeight: "200px",
+                                  overflowY: "auto" }}>
+                                  <table className='table table-striped table-hover'>
+                                      <thead style={{ position: "sticky",
+                                          top: "0" }} className='card_10'>
+                                      <tr>
+                                          <th>Id</th>
+                                          <th>Grower</th>
+                                          <th>Name</th>
+                                          <th>Bales</th>
+                                      </tr>
+                                      </thead>
+                                      <tbody>
+                                         <tr>
+                                             <td>001</td>
+                                             <td>V123456</td>
+                                             <td>Tinashe Battery</td>
+                                             <td>20</td>
+                                         </tr>
+                                         <tr>
+                                             <td>001</td>
+                                             <td>V123456</td>
+                                             <td>Tinashe Battery</td>
+                                             <td>20</td>
+                                         </tr>
+                                         <tr>
+                                             <td>001</td>
+                                             <td>V123456</td>
+                                             <td>Tinashe Battery</td>
+                                             <td>20</td>
+                                         </tr>
+                                         <tr>
+                                             <td>001</td>
+                                             <td>V123456</td>
+                                             <td>Tinashe Battery</td>
+                                             <td>20</td>
+                                         </tr>
+                                         <tr>
+                                             <td>001</td>
+                                             <td>V123456</td>
+                                             <td>Tinashe Battery</td>
+                                             <td>20</td>
+                                         </tr>
+                                         <tr>
+                                             <td>001</td>
+                                             <td>V123456</td>
+                                             <td>Tinashe Battery</td>
+                                             <td>20</td>
+                                         </tr>
+                                         <tr>
+                                             <td>001</td>
+                                             <td>V123456</td>
+                                             <td>Tinashe Battery</td>
+                                             <td>20</td>
+                                         </tr>
+                                         <tr>
+                                             <td>001</td>
+                                             <td>V123456</td>
+                                             <td>Tinashe Battery</td>
+                                             <td>20</td>
+                                         </tr>
+                                         <tr>
+                                             <td>001</td>
+                                             <td>V123456</td>
+                                             <td>Tinashe Battery</td>
+                                             <td>20</td>
+                                         </tr>
+
+                                      </tbody>
+                                  </table>
+                              </div>
+
+                          </div>
+
+
 
                         
 
@@ -433,6 +528,8 @@ export const Deliverynotes = (props) => {
                     </div>
             </div>
 
+    </div>
+        </div>
     </div>
   )
 }

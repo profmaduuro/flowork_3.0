@@ -223,20 +223,18 @@ const Files =(props)=> {
 
                   </div>
 
-
               </form>
 
-              <div className="" align="center">
-                  <div className="modal-footer">
+              <br/>
+
+              <div className="row">
+                  <div className="col-6 col-sm-6 offset-sm-3">
                       {/*    Success Response*/}
                       <p className="card_2"><b>Successful !!!</b></p>
                   </div>
-
-                  <div className="modal-footer">
-                      {/*    Success Response*/}
-                      <p className="card_2"><b>Not Successful !!!</b></p>
-                  </div>
               </div>
+
+
 
           </div>
 

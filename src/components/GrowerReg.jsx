@@ -247,6 +247,12 @@ const  GrowerReg = (props) => {
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Submit</button>
                 </div>
+                    <div className="row">
+                        <div className="col-6 col-sm-6 offset-sm-3">
+                            {/*    Success Response*/}
+                            <p className="card_2"><b>Successful !!!</b></p>
+                        </div>
+                    </div>
                 </div>
             </div>
       </div>
@@ -279,6 +285,12 @@ const  GrowerReg = (props) => {
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Submit</button>
                 </div>
+                    <div className="row">
+                        <div className="col-6 col-sm-6 offset-sm-3">
+                            {/*    Success Response*/}
+                            <p className="card_2"><b>Successful !!!</b></p>
+                        </div>
+                    </div>
                 </div>
             </div>
       </div>
@@ -363,6 +375,12 @@ const  GrowerReg = (props) => {
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Submit</button>
                 </div>
+                    <div className="row">
+                        <div className="col-6 col-sm-6 offset-sm-3">
+                            {/*    Success Response*/}
+                            <p className="card_2"><b>Successful !!!</b></p>
+                        </div>
+                    </div>
                 </div>
             </div>
       </div>

@@ -120,8 +120,8 @@ export const Scale =   (props) => {
         <div>
             <br/>
 
-            <div class="col-6 center">
-                <div className='card_10'>
+            <div class="card_10 center">
+                <div className=''>
 
                     <button id="massButton" className='btn btn-primary' onClick={getMass} autoFocus>GET BALE MASS
                     </button>
@@ -178,7 +178,25 @@ export const Scale =   (props) => {
                             <span class="screen__background__shape screen__background__shape1"></span>
                         </div>		
                     </div> */}
+                <div className="row">
+                    <div className="col-6 col-sm-6 offset-sm-3">
+                        {/*    Success Response*/}
+                        <p className="card_2"><b>Successful !!!</b></p>
+                    </div>
+
+                    <div className="col-6 col-sm-6 offset-sm-3">
+                        {/*    Success Response*/}
+                        <p className="card_2"><b>Barcode Already used</b></p>
+                    </div>
+
+                    <div className="col-6 col-sm-6 offset-sm-3">
+                        {/*    Success Response*/}
+                        <p className="card_2"><b>Bale mass not captured</b></p>
+                    </div>
+                </div>
             </div>
+
+
 
         </div>
     )
