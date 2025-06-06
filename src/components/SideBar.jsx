@@ -149,11 +149,11 @@ const SideBar=(props)=> {
                 <span>Dispatch</span>
                 </Link>
                 </li>
-                <li>
-                    <a href="#">
+                <li onClick={props.balesclick}>
+                    <Link to="/Bales">
                         <i className='bi bi-circle'></i>
                 <span>Bale Adjustments</span>
-                </a>
+                </Link>
                 </li>
             </ul>
         </li>
