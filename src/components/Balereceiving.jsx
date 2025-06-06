@@ -90,9 +90,9 @@ export const Balereceiving = (props) => {
                     <div className="col">
                         <button className='btn btn-primary'>Complete Grower</button>
                     </div>
-                    <div className="col">
-                        <output className='btn-success'>1/10</output>
-                    </div>
+                    {/*<div className="col">*/}
+                    {/*    <output className='btn-success'>1/10</output>*/}
+                    {/*</div>*/}
 
 
                 </div>
