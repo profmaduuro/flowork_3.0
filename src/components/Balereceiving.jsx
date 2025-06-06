@@ -73,7 +73,7 @@ export const Balereceiving = (props) => {
                 <div>
                     <p id="response">echo #bales received/ echo is balanced</p>
                 </div>
-                <form action="">
+                <div action="">
                     <label htmlFor="">Barcode</label>
                     <input type="text" className='form-control' id="barcode"/>
                     <label htmlFor="">Grower</label>
@@ -84,10 +84,22 @@ export const Balereceiving = (props) => {
                     <input type="text" className='form-control' id="lot"/>
                     <br />
                     <button type='button' className='btn btn-success' onClick={saveBaleData}>Receive <Badge id="junused" bg="secondary"></Badge></button>
-                </form>
+                </div>
                 <br />
-                <div>
-                    <button className='btn btn-primary'>Complete Grower</button>
+                <div className="row">
+                    <div className="col">
+                        <button className='btn btn-primary'>Complete Grower</button>
+                    </div>
+                    <div className="col">
+                        <output className='btn-success'>1/10</output>
+                    </div>
+
+
+                </div>
+                <br/>
+                <div className="col-6 col-sm-6 offset-sm-3">
+                    {/*    Success Response*/}
+                    <p className="card_2"><b>Successful !!!</b></p>
                 </div>
 
             </div>

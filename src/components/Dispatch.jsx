@@ -19,8 +19,8 @@ export const Dispatch = (props) => {
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav">
                         <a href="" class="nav-item nav-link active" data-bs-toggle="modal" data-bs-target="#example3">Create Truck</a>
-                        <a href="" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#success-animation">test</a>
-                        <a href="" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#example2"></a>
+                        {/*<a href="" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#success-animation">test</a>*/}
+                        <a href="" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#example4"></a>
                     </div>
                 </div>
             </div>
@@ -28,27 +28,6 @@ export const Dispatch = (props) => {
 
         <br />
         <br />
-
-            {/* <div className=''>*/}
-            {/*<Alert severity="success">This is a success Alert.</Alert>*/}
-            {/*</div>*/}
-            {/*<br />*/}
-            {/*<div>*/}
-            {/*    <Alert severity="info">This is an info Alert.</Alert>*/}
-            {/*</div>*/}
-            {/*<br />*/}
-            {/*<div>*/}
-            {/*<Alert severity="warning">This is a warning Alert.</Alert>*/}
-            {/*</div>*/}
-            {/*<br />*/}
-            
-            {/*<div>*/}
-            {/*<Alert severity="error">This is an error Alert.</Alert>*/}
-            {/*</div>*/}
-            {/*<br />*/}
-
-
-            
         
 
         <div className='card_10'>
@@ -67,7 +46,7 @@ export const Dispatch = (props) => {
             <div class="tab-content pt-5" id="tab-content">
                 <div class="tab-pane active" id="icon-tabpanel-0" role="tabpanel" aria-labelledby="icon-tab-0">
                     <div className='form'>
-                    <form action="">
+                    <div action="">
                     <div className='row'> 
                         <div className='col-5'>
                             <label htmlFor="">Select Truck</label>
@@ -100,7 +79,7 @@ export const Dispatch = (props) => {
                     </div>
 
                     
-                </form>
+                </div>
             
 
                     </div>
@@ -162,7 +141,7 @@ export const Dispatch = (props) => {
                                     <td>BKAPONDA</td>
                                     <td>Closed</td>
                                 </tr>
-                                <tr> 
+                                <tr>
                                     <td><input type="checkbox" className='form-check-input'/></td>
                                     <td>AED1152-PA2</td>
                                     <td>AED115</td>
@@ -174,7 +153,7 @@ export const Dispatch = (props) => {
                                     <td>BKAPONDA</td>
                                     <td>Closed</td>
                                 </tr>
-                                <tr> 
+                                <tr>
                                     <td><input type="checkbox" className='form-check-input'/></td>
                                     <td>AED1152-PA2</td>
                                     <td>AED115</td>
@@ -186,7 +165,7 @@ export const Dispatch = (props) => {
                                     <td>BKAPONDA</td>
                                     <td>Closed</td>
                                 </tr>
-                                <tr> 
+                                <tr>
                                     <td><input type="checkbox" className='form-check-input'/></td>
                                     <td>AED1152-PA2</td>
                                     <td>AED115</td>
@@ -198,7 +177,7 @@ export const Dispatch = (props) => {
                                     <td>BKAPONDA</td>
                                     <td>Closed</td>
                                 </tr>
-                                <tr> 
+                                <tr>
                                     <td><input type="checkbox" className='form-check-input'/></td>
                                     <td>AED1152-PA2</td>
                                     <td>AED115</td>
@@ -209,122 +188,21 @@ export const Dispatch = (props) => {
                                     <td>2024</td>
                                     <td>BKAPONDA</td>
                                     <td>Closed</td>
-                                </tr>
-                                <tr> 
-                                    <td><input type="checkbox" className='form-check-input'/></td>
-                                    <td>AED1152-PA2</td>
-                                    <td>AED115</td>
-                                    <td>AED116</td>
-                                    <td>15-05-2024</td>
-                                    <td>PA2</td>
-                                    <td>180</td>
-                                    <td>2024</td>
-                                    <td>BKAPONDA</td>
-                                    <td>Closed</td>
-                                </tr>
-                                <tr> 
-                                    <td><input type="checkbox" className='form-check-input'/></td>
-                                    <td>AED1152-PA2</td>
-                                    <td>AED115</td>
-                                    <td>AED116</td>
-                                    <td>15-05-2024</td>
-                                    <td>PA2</td>
-                                    <td>180</td>
-                                    <td>2024</td>
-                                    <td>BKAPONDA</td>
-                                    <td>Closed</td>
-                                </tr>
-                                <tr> 
-                                    <td><input type="checkbox" className='form-check-input'/></td>
-                                    <td>AED1152-PA2</td>
-                                    <td>AED115</td>
-                                    <td>AED116</td>
-                                    <td>15-05-2024</td>
-                                    <td>PA2</td>
-                                    <td>180</td>
-                                    <td>2024</td>
-                                    <td>BKAPONDA</td>
-                                    <td>Closed</td>
-                                </tr>
-                                <tr> 
-                                    <td><input type="checkbox" className='form-check-input'/></td>
-                                    <td>AED1152-PA2</td>
-                                    <td>AED115</td>
-                                    <td>AED116</td>
-                                    <td>15-05-2024</td>
-                                    <td>PA2</td>
-                                    <td>180</td>
-                                    <td>2024</td>
-                                    <td>BKAPONDA</td>
-                                    <td>Closed</td>
-                                </tr>
-                                <tr> 
-                                    <td><input type="checkbox" className='form-check-input'/></td>
-                                    <td>AED1152-PA2</td>
-                                    <td>AED115</td>
-                                    <td>AED116</td>
-                                    <td>15-05-2024</td>
-                                    <td>PA2</td>
-                                    <td>180</td>
-                                    <td>2024</td>
-                                    <td>BKAPONDA</td>
-                                    <td>Closed</td>
-                                </tr>
-                                <tr> 
-                                    <td><input type="checkbox" className='form-check-input'/></td>
-                                    <td>AED1152-PA2</td>
-                                    <td>AED115</td>
-                                    <td>AED116</td>
-                                    <td>15-05-2024</td>
-                                    <td>PA2</td>
-                                    <td>180</td>
-                                    <td>2024</td>
-                                    <td>BKAPONDA</td>
-                                    <td>Closed</td>
-                                </tr>
-                                <tr> 
-                                    <td><input type="checkbox" className='form-check-input'/></td>
-                                    <td>AED1152-PA2</td>
-                                    <td>AED115</td>
-                                    <td>AED116</td>
-                                    <td>15-05-2024</td>
-                                    <td>PA2</td>
-                                    <td>180</td>
-                                    <td>2024</td>
-                                    <td>BKAPONDA</td>
-                                    <td>Closed</td>
-                                </tr>
-                                <tr> 
-                                    <td><input type="checkbox" className='form-check-input'/></td>
-                                    <td>AED1152-PA2</td>
-                                    <td>AED115</td>
-                                    <td>AED116</td>
-                                    <td>15-05-2024</td>
-                                    <td>PA2</td>
-                                    <td>180</td>
-                                    <td>2024</td>
-                                    <td>BKAPONDA</td>
-                                    <td>Closed</td>
-                                </tr>
-                                <tr> 
-                                    <td><input type="checkbox" className='form-check-input'/></td>
-                                    <td>AED1152-PA2</td>
-                                    <td>AED115</td>
-                                    <td>AED116</td>
-                                    <td>15-05-2024</td>
-                                    <td>PA2</td>
-                                    <td>180</td>
-                                    <td>2024</td>
-                                    <td>BKAPONDA</td>
-                                    <td>Closed</td>
+
                                 </tr>
                             </tbody>
                         </table>
 
                     </div>
                 </div>
-                <div>
-                    <button className='btn btn-secondary' > Download Shipment File</button>
+                <div className="row">
+                    <div className="col">
+                        <button className='btn btn-secondary'> Download Shipment File</button>
+                    </div>
+                    <div className="col">
+                        <button className='btn btn-primary' data-bs-toggle="modal" data-bs-target="#example4"> Edit Shipment</button>
+                    </div>
+
                 </div>
                 
                 </div>
@@ -347,7 +225,7 @@ export const Dispatch = (props) => {
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body form-group row">
-                    <form className='col-xs-2'>
+                    <div className='col-xs-2'>
                    
                     <div class="inline">
                         <div className='row'>
@@ -392,12 +270,15 @@ export const Dispatch = (props) => {
                         <input type="text" class="form-control" id="" />
                     </div>
 
-                    </form>
+                    </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Submit</button>
                 </div>
+                    <div className="col-6 col-sm-6 offset-sm-3">
+                        {/*    Success Response*/}
+                        <p className="card_2"><b>Successful !!!</b></p>
+                    </div>
                 </div>
             </div>
        </div>
@@ -405,7 +286,7 @@ export const Dispatch = (props) => {
         <div class="modal-dialog">
           <div class="modal-content">
           <div class="alert alert-success alert-dismissible">
-                <button type="button" class="btn-close" data-dismiss="alert" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                <button type="button" class="btn-close" data-dismiss="alert" data-bs-dismiss="modal" aria-label="Close"></button>
                 <strong>Success!</strong> This alert box could indicate a successful or positive action.
             </div>
             {/* <div class="alert alert-primary alert-dismissible">
@@ -423,7 +304,7 @@ export const Dispatch = (props) => {
             <div class="modal-dialog">
                 <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Create Truck</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Edit Shipment</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body form-group row">
@@ -475,9 +356,12 @@ export const Dispatch = (props) => {
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Submit</button>
                 </div>
+                    <div className="col-6 col-sm-6 offset-sm-3">
+                        {/*    Success Response*/}
+                        <p className="card_2"><b>Successful !!!</b></p>
+                    </div>
                 </div>
             </div>
        </div>

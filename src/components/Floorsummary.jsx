@@ -60,7 +60,7 @@ export const Floorsummary = (props) => {
 
         <div className='card_10 col-md-8'>
             <div>
-                <form action="">
+                <div action="">
                     <div className='row'>
                         <div className='col'>
                             <label htmlFor="">Select Date</label>
@@ -83,7 +83,7 @@ export const Floorsummary = (props) => {
                         </div>
 
                     </div>
-                </form>
+                </div>
             </div>
 
         </div>
@@ -295,7 +295,7 @@ export const Floorsummary = (props) => {
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body form-group row">
-                    <form className='col-xs-2'>
+                    <div className='col-xs-2'>
                    
                     <div class="inline">
                         <label for="recipient-name" class="col-form-label">Selling Point</label>
@@ -312,12 +312,28 @@ export const Floorsummary = (props) => {
 
                     </div>
 
-                    </form>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     {/* <button type="button" class="btn btn-primary"></button> */}
                 </div>
+                   <div className="row">
+                       <div className="col">
+                           {/*    Success Response*/}
+                           <p className="card_2"><b>6500056869D</b></p>
+                       </div>
+                       <div className="col">
+                           {/*    Success Response*/}
+                           <p className="card_2">lot 5</p>
+                       </div>
+                       <div className="col">
+                           {/*    Success Response*/}
+                           <p className="card_2">Group 5</p>
+                       </div>
+
+                   </div>
+
                 </div>
             </div>
       </div>

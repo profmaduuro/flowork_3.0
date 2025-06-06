@@ -247,7 +247,7 @@ export const Deliverynotes = (props) => {
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body form-group row">
-                            <form>
+
                                 <div className="row">
                                     <div className="col">
                                         <div className="row">
@@ -308,7 +308,7 @@ export const Deliverynotes = (props) => {
 
                                     </div>
                                 </div>
-                            </form>
+
 
                           <div className="">
                               <div className="row">
@@ -318,7 +318,7 @@ export const Deliverynotes = (props) => {
                                   </div>
                                   <div className="col">
                                       <label>Number of bales</label>
-                                      <input className="form-control" type="number" value="Bales" id="" name="num_of_bales"/>
+                                      <input className="form-control" type="number" id="" name="num_of_bales"/>
                                   </div>
                                   <div className="col">
                                       <label>.</label>
@@ -440,7 +440,7 @@ export const Deliverynotes = (props) => {
                         </div>
                         
                         <div class="modal-body form-group row">
-                            <form>
+
                             <div className='row'>
                             <div class="col">
                                 <label for="recipient-name" class="col-form-label">Search</label>
@@ -461,8 +461,6 @@ export const Deliverynotes = (props) => {
 
                             {/* <button className='btn btn-success'>Save</button> */}
 
-
-                            </form>
                         </div>
 {/* Echo a table showing the growers that have been place in the tdn */}
                         <div className='card_10 table-responsive'>

@@ -407,7 +407,7 @@ export const Tickets = (props) => {
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body form-group row">
-                    <form>
+
                    
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Sale Date</label>
@@ -418,7 +418,7 @@ export const Tickets = (props) => {
                         <input type="rate" class="form-control" id="exchange_rate" />
                     </div>
 
-                    </form>
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

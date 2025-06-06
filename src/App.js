@@ -532,6 +532,10 @@ class App extends Component {
     console.log("pri")
     this.setState({"route":"Gms"})
   }
+  balesclick=()=>{
+    console.log("pri")
+    this.setState({"route":"Bales"})
+  }
 
 
   render(){
