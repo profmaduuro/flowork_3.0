@@ -11,8 +11,7 @@ export const Files = (props) => {
         let
             valuesArray = [];
         // getBuyer()const
-        const
-            selectFiles = (event) => {
+        const selectFiles = (event) => {
 
                 Papa.parse(event.target.files[0], {
                     header: true,

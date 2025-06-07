@@ -15,6 +15,7 @@ import SideBar from './components/SideBar';
 import Files from './components/Files';
 // import SalesRun from './components/SalesRun';
 // import GrowerReg from './components/GrowerReg';
+
 import Main from './components/Main';
 import PageTitle from './components/PageTitle'
 import {Capture} from "./components/Capture";
