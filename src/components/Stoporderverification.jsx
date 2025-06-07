@@ -190,7 +190,7 @@ export const Stoporderverification = (props) => {
                                 <thead className='card_10' style={{ position: "sticky", 
                                     top: "0" }}>
                                     <tr>
-
+                                     <th></th>
                                     <th>Creditor #</th>
                                     <th>Creditor Name</th>
                                     <th>Season</th>
@@ -200,7 +200,7 @@ export const Stoporderverification = (props) => {
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        
+                                        <td></td>
                                         <td>61512</td>
                                         <td>VLT</td>
                                         <td>2024</td>

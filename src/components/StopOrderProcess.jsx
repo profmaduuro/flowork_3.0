@@ -1,4 +1,5 @@
 import React from 'react'
+import './stoporderprocess.css'
 
 const StopOrderProcess = (props) => {
     const  runStopOrder=()=> {
@@ -207,46 +208,54 @@ const StopOrderProcess = (props) => {
       {/* modals */}
 
       <div className="modal fade" id="example3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Stoporder Processing</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body form-group row">
-                    <form className='col-xs-2'>
-                   
-                    <div class="inline">
-                        <label for="recipient-name" class="col-form-label">Selling Point</label>
-                        <select type="date" class="form-control" id="selling_pointid">
-                            <option value="">Select Company</option>
-                            {
-                                props.sellingPointsData.map((u,i)=>{
-                                    return(
-                                            <option value={props.sellingPointsData[i].id}>{props.sellingPointsData[i].name}</option>
-                                        )
+          <div className="modal-dialog">
+              <div className="modal-content">
+                  <div className="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Stoporder Processing</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div className="modal-body form-group row">
+                      <form className='col-xs-2'>
 
-                                })
-                            }
+                          <div className="inline">
+                              <label for="recipient-name" class="col-form-label">Selling Point</label>
+                              <select type="date" class="form-control" id="selling_pointid">
+                                  <option value="">Select Company</option>
+                                  {
+                                      props.sellingPointsData.map((u, i) => {
+                                          return (
+                                              <option
+                                                  value={props.sellingPointsData[i].id}>{props.sellingPointsData[i].name}</option>
+                                          )
 
-                        </select>
-                        <br />
-                        {/* <label for="recipient-name" class="col-form-label">Upload Contract Registry</label>
+                                      })
+                                  }
+
+                              </select>
+                              <br/>
+                              {/* <label for="recipient-name" class="col-form-label">Upload Contract Registry</label>
                         <input type="file" class="form-control" id="" /> */}
-                    </div>
+                          </div>
 
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" onClick={runStopOrder}>Start Stoporder Processing</button>
-                </div>
-                </div>
-            </div>
+                      </form>
+                  </div>
+                  <div className="modal-footer">
+                      <button type="button" class="btn btn-primary" onClick={runStopOrder}>Start Stoporder Processing
+                      </button>
+                  </div>
+                  <br/>
+                  <div class="align-content-center">
+                      <div class="progress-bar">
+                          <div className="progress-fill"></div>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
       </div>
-     
+
     </div>
-  )
+    )
 }
 
 export default StopOrderProcess;

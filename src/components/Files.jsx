@@ -197,7 +197,7 @@ const Files =(props)=> {
 
           <div className='col-auto card_10 col-sm-6'>
 
-              <form action="">
+              <div action="">
 
                   <label htmlFor="File to Upload"></label>
                   <select type="text" className='form-select' id="file_type">
@@ -207,23 +207,23 @@ const Files =(props)=> {
                       <option>Grower Registry</option>
                       <option>TIMB Creditor Schedule</option>
                   </select>
-
                   <br/>
-
-
+                  <select type="text" className='form-select' id="">
+                      <option>Select Selling Point</option>
+                      <option>Vision Leaf Tobacco</option>
+                      <option>Horizon Leaf Tobacco</option>
+                  </select>
+                  <br/>
                   <input type="file" className='form-control sm' accept=".csv" onChange={selectFiles}/>
-
                   <br/>
-
                   <div className="modal-footer">
                       <a href="#" download="#">
                           <button type="button" className="btn btn-secondary" download>Generate Sale File</button>
                       </a>
                       <button type="button" className="btn btn-primary" onClick={uploadFiles} data-bs-toggle="modal" data-bs-target="#example">Submit</button>
-
                   </div>
 
-              </form>
+              </div>
 
               <br/>
 

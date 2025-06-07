@@ -140,7 +140,7 @@ class App extends Component {
   capturebalepriceclick=()=>{
 
     console.log("pri")
-    this.setState({"route":"CaptureBalePrice"})
+    this.setState({"route":"Capture"})
   }
   bookingclick=()=>{
 
@@ -1001,7 +1001,7 @@ class App extends Component {
          </Main>
         </>
       );
-    }else if(this.state.route==="CaptureBalePrice") {
+    }else if(this.state.route==="Capture") {
       return (
           <>
             <Header />

@@ -47,7 +47,7 @@ export const Bales = (props) => {
                         </button>
                     </div>
                     <div className='col-3'>
-                        <button type="button" className="btn btn-danger" data-mdb-ripple-init>
+                        <button type="button" className="btn btn-danger" data-mdb-ripple-init data-bs-toggle="modal" data-bs-target="#example">
                             Delete
                         </button>
                     </div>
@@ -423,7 +423,7 @@ export const Bales = (props) => {
                                     aria-label="Close"></button>
                         </div>
                         <div className="modal-body form-group row">
-                            <form className='col-xs-2'>
+
 
                                 <div className="inline">
                                     <div className='col'>
@@ -458,7 +458,7 @@ export const Bales = (props) => {
 
                                 </div>
 
-                            </form>
+
                         </div>
                         <div className="row">
                             <div className="col">
@@ -485,7 +485,7 @@ export const Bales = (props) => {
                                     aria-label="Close"></button>
                         </div>
                         <div className="modal-body">
-                            <form action="">
+
                                 <div className='row'>
                                     <div className='col'>
                                         <label htmlFor="">Sale Date</label>
@@ -510,14 +510,48 @@ export const Bales = (props) => {
                                         <option value="">Vision Leaf Tobacco</option>
                                     </select>
                                 </div>
-                                <br/>
 
-                            </form>
+
+
 
                         </div>
                         <div className="modal-footer">
 
                             <a type="button" className="btn btn-primary" href="./FC.csv" download>Generate Report</a>
+                        </div>
+                        <div>
+                            <div className="col-6 col-sm-6 offset-sm-3">
+                                {/*    Success Response*/}
+                                <p className="card_2"><b>Successful !!!</b></p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div className="modal fade" id="example" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1"
+                 aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title" id="staticBackdropLabel">Are you sure ???</h5>
+                            <button type="button" className="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                        </div>
+                        <div className="modal-body">
+                            <div className="row">
+                                <div className="col">
+                                    <button type="submit" className="btn btn-primary">Yes</button>
+                                </div>
+                                <div className="col">
+                                    <button type="submit" className="btn btn-secondary">No</button>
+                                </div>
+
+                            </div>
+
                         </div>
                         <div>
                             <div className="col-6 col-sm-6 offset-sm-3">

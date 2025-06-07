@@ -174,10 +174,10 @@ const SideBar=(props)=> {
             <ul id='sales-nav' className='nav-content collapse'
             data-bs-parent='#sidebar-nav'>
                 <li onClick={props.capturebalepriceclick}>
-                    <a href="#">
+                    <Link to ="/Capture">
                         <i className='bi bi-circle'></i>
                 <span>Capturing</span>
-                </a>
+                </Link>
                 </li>
                 <li onClick={props.balancingclick}>
                     <Link to="/Balancing">

@@ -155,7 +155,7 @@ export const Capture = (props) => {
                     {/* <div>
                         <p id="response">echo #bales received/ echo is balanced</p>
                     </div> */}
-                    <form action="">
+
                         <div>
                             <label htmlFor="" >Scan Barcode</label>
                             <input type="barcode" className='form-control' id="barcode" onInput={getBarcodeData} autoFocus/>
@@ -223,13 +223,20 @@ export const Capture = (props) => {
                             <label id="response"></label>
                         </div>
 
-                        </form>
-                    <br />
                     <div>
                         <button className='btn btn-primary' onClick={saveBaleData}>Submit</button>
                     </div>
 
                 </div>
+                <br/>
+                <div>
+                    <div className="col-6 col-sm-6 offset-sm-3">
+                        {/*    Success Response*/}
+                        <p className="card_2"><b>Successful !!!</b></p>
+                    </div>
+
+                </div>
+
 
             </div>
 

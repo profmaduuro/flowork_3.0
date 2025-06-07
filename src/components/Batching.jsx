@@ -453,8 +453,15 @@ export const Batching = (props) => {
 
                             </div>
                             <div className='col-3'>
-                                <button className='btn btn-secondary'>Submit</button>
+                                <button className='btn btn-primary'>Submit</button>
                             </div>
+                                <div className="col">
+                                    <div className="col-6 col-sm-6 offset-sm-3">
+                                        {/*    Success Response*/}
+                                        <p className="card_2"><b>Successful !!!</b></p>
+                                    </div>
+
+                                </div>
 
                            </div>
 
