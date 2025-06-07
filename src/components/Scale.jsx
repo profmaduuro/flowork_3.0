@@ -125,7 +125,7 @@ export const Scale =   (props) => {
 
                     <button id="massButton" className='btn btn-primary' onClick={getMass} autoFocus>GET BALE MASS
                     </button>
-                    <form action="">
+
                         <br/>
                         <div className='row'>
                             <div className='col'>
@@ -142,7 +142,11 @@ export const Scale =   (props) => {
                             </div>
 
                         </div>
-                    </form>
+                    <div className='col'>
+                         <label>Enter Manually</label>
+                        <input className="form-control"/>
+                    </div>
+
                     <label htmlFor=""></label>
                     <input type="text" id='temp_barcode' className='form-control' placeholder='SCAN BARCODE'
                            onInput={saveScaleData}/>
