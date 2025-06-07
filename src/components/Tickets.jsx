@@ -81,14 +81,14 @@ export const Tickets = (props) => {
                     // doc.setDisplayMode("fullpage")
 
 
-                    doc.text(group,40,22).setFontSize(12).setFont(undefined, 'bold');
-                    doc.text(sale_date,60,22).setFontSize(12).setFont(undefined, 'bold');
-                    doc.text(sequence,80,22).setFontSize(12).setFont(undefined, 'bold');
+                    doc.text(group,40,18).setFontSize(12).setFont(undefined, 'bold');
+                    doc.text(sale_date,55,18).setFontSize(12).setFont(undefined, 'bold');
+                    doc.text(sequence,80,18).setFontSize(12).setFont(undefined, 'bold');
 
-                    doc.text(barcode+" *** "+temp_barcode,15,55).setFontSize(12).setFont(undefined, 'bold');
-                    doc.text(grower_num,15,70).setFontSize(12).setFont(undefined, 'bold');
-                    doc.text(lot,70,70).setFontSize(12).setFont(undefined, 'bold');
-                    doc.text(mass,90,70).setFontSize(12).setFont(undefined, 'bold');
+                    doc.text(barcode+" *** "+temp_barcode,15,44).setFontSize(12).setFont(undefined, 'bold');
+                    doc.text(grower_num,15,59).setFontSize(12).setFont(undefined, 'bold');
+                    doc.text(lot,57,59).setFontSize(12).setFont(undefined, 'bold');
+                    doc.text(mass,86,59).setFontSize(12).setFont(undefined, 'bold');
 
                     doc.addPage("l")
                 })

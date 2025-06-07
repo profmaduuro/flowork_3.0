@@ -179,9 +179,9 @@ export const Stoporderverification = (props) => {
                         <div class="modal-body">
 
                         <div>
-                                <h4>V123456</h4>
-                                <h6>Tafadzwa Maduuro</h6>
-                                <p>66-084355-v-04</p>
+                                <p className="card_10 col-4"><b>V123456</b></p>
+                                <h6 className="card_10 col-4">Tafadzwa Maduuro</h6>
+                                <p className="card_10 col-4">66-084355-v-04</p>
                             </div>
                         <div className='card_10'>
                         <div className='table-responsive' style={{ maxHeight: "250px", 
@@ -200,7 +200,7 @@ export const Stoporderverification = (props) => {
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td></td>
+                                        <td><input type="checkbox" className='form-check-input'/></td>
                                         <td>61512</td>
                                         <td>VLT</td>
                                         <td>2024</td>
@@ -208,7 +208,7 @@ export const Stoporderverification = (props) => {
                                         <td>250</td>
                                     </tr>
                                     <tr>
-                                    
+                                        <td><input type="checkbox" className='form-check-input'/></td>
                                         <td>61512</td>
                                         <td>VLT</td>
                                         <td>2024</td>
@@ -217,7 +217,7 @@ export const Stoporderverification = (props) => {
                                     </tr>
 
                                     <tr>
-                                    
+                                        <td><input type="checkbox" className='form-check-input'/></td>
                                         <td>61512</td>
                                         <td>VLT</td>
                                         <td>2024</td>
@@ -225,7 +225,7 @@ export const Stoporderverification = (props) => {
                                         <td>250</td>
                                     </tr>
                                     <tr>
-                                    
+                                        <td><input type="checkbox" className='form-check-input'/></td>
                                         <td>61512</td>
                                         <td>VLT</td>
                                         <td>2024</td>
@@ -233,7 +233,7 @@ export const Stoporderverification = (props) => {
                                         <td>250</td>
                                     </tr>
                                     <tr>
-                                    
+                                        <td><input type="checkbox" className='form-check-input'/></td>
                                         <td>61512</td>
                                         <td>VLT</td>
                                         <td>2024</td>
@@ -241,7 +241,7 @@ export const Stoporderverification = (props) => {
                                         <td>250</td>
                                     </tr>
                                     <tr>
-                                    
+                                        <td><input type="checkbox" className='form-check-input'/></td>
                                         <td>61512</td>
                                         <td>VLT</td>
                                         <td>2024</td>
@@ -249,7 +249,7 @@ export const Stoporderverification = (props) => {
                                         <td>250</td>
                                     </tr>
                                     <tr>
-                                    
+                                        <td><input type="checkbox" className='form-check-input'/></td>
                                         <td>61512</td>
                                         <td>VLT</td>
                                         <td>2024</td>
@@ -257,7 +257,7 @@ export const Stoporderverification = (props) => {
                                         <td>250</td>
                                     </tr>
                                     <tr>
-                                    
+                                        <td><input type="checkbox" className='form-check-input'/></td>
                                         <td>61512</td>
                                         <td>VLT</td>
                                         <td>2024</td>
@@ -270,16 +270,32 @@ export const Stoporderverification = (props) => {
                             </table>
                             </div>
                             </div>
+
+                            <br/>
+
+                            <div className="row">
+                                <div className="col">
+                                    <button type="button" className="btn btn-danger" data-bs-dismiss="modal">Delete
+                                    </button>
+                                </div>
+                                <div className="col">
+                                    <div className="col-6 col-sm-6 offset-sm-3">
+                                        {/*    Success Response*/}
+                                        <p className="card_2"><b>Successful !!!</b></p>
+                                    </div>
+
+                                </div>
+
+                            </div>
                         
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        </div>
+
+
                         </div>
                     </div>
-            </div>
+                </div>
 
-        </div>
-   
+    </div>
+
   )
 }

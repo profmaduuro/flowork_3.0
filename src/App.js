@@ -18,7 +18,7 @@ import Files from './components/Files';
 import Main from './components/Main';
 import PageTitle from './components/PageTitle'
 import {Capture} from "./components/Capture";
-// import { Route, Routes} from 'react-router-dom';
+import { Route, Routes} from 'react-router-dom';
 import { Component } from 'react';
 import SalesRun from './components/SalesRun';
 import GrowerReg from './components/GrowerReg';
@@ -36,7 +36,7 @@ import { Tickets } from './components/Tickets';
 import { Ticketbatching } from './components/Ticketbatching';
 import { Floorsummary } from './components/Floorsummary';
 import { Dispatch } from './components/Dispatch';
-import { Login } from './components/Login';
+import  Login  from './components/Login';
 import { Scale } from './components/Scale';
 import { Balancing } from './components/Balancing';
 import { Batching } from './components/Batching';

@@ -1,18 +1,21 @@
 import React from 'react';
+import { Component } from 'react';
 import './login.css';
 
-export const Login = (props) => {
 
+class Login extends Component {
+    constructor(props) {
+        super(props);
 
+    }
 
-
-
-  return (
+    render() {
+        return (
             <div>
                 <div class="container">
                     <div class="col-6">
                         <div class="card_10">
-                            
+
                             <form class="">
                                 <div className='row text-center'>
                                     <h2>Sign In</h2>
@@ -31,12 +34,15 @@ export const Login = (props) => {
                                 <button class="btn btn-primary">
                                     <span class="button__text">Log In Now</span>
                                     <i class="button__icon fas fa-chevron-right"></i>
-                                </button>				
+                                </button>
                             </form>
                         </div>
                     </div>
                 </div>
 
            </div>
-  )
+
+        )
+    }
 }
+export default Login;
