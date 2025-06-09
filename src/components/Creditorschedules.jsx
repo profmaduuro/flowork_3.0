@@ -56,7 +56,7 @@ export const Creditorschedules = (props) => {
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="">
+
                             <div className='row' >
                                 <div className='col'>
                                     <label htmlFor="">Start Date</label>
@@ -91,13 +91,19 @@ export const Creditorschedules = (props) => {
                             </div>
                             <br />
 
-                        </form>
+
 
                     </div>
                     <div class="modal-footer">
                         
                         <a type="button" class="btn btn-primary" href="./FC.csv" download>Generate Report</a>
                     </div>
+                        <div>
+                            <div className="col-6 col-sm-6 offset-sm-3">
+                                {/*    Success Response*/}
+                                <p className="card_2"><b>Successful !!!</b></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -110,7 +116,7 @@ export const Creditorschedules = (props) => {
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="">
+
                             <div className='row' >
                                 <div className='col'>
                                     <label htmlFor="">Start Date</label>
@@ -145,13 +151,19 @@ export const Creditorschedules = (props) => {
                             </div>
                             <br />
 
-                        </form>
+
 
                     </div>
                     <div class="modal-footer">
                         
                         <a type="button" class="btn btn-primary" href="./FC.csv" download>Generate Report</a>
                     </div>
+                        <div>
+                            <div className="col-6 col-sm-6 offset-sm-3">
+                                {/*    Success Response*/}
+                                <p className="card_2"><b>Successful !!!</b></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -164,7 +176,7 @@ export const Creditorschedules = (props) => {
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="">
+
                             <div className='row' >
                                 <div className='col'>
                                     <label htmlFor="">Start Date</label>
@@ -199,13 +211,19 @@ export const Creditorschedules = (props) => {
                             </div>
                             <br />
 
-                        </form>
+
 
                     </div>
                     <div class="modal-footer">
                         
                         <a type="button" class="btn btn-primary" href="./FC.csv" download>Generate Report</a>
                     </div>
+                        <div>
+                            <div className="col-6 col-sm-6 offset-sm-3">
+                                {/*    Success Response*/}
+                                <p className="card_2"><b>Successful !!!</b></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -218,7 +236,7 @@ export const Creditorschedules = (props) => {
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="">
+
                             <div className='row' >
                                 <div className='col'>
                                     <label htmlFor="">Start Date</label>
@@ -253,13 +271,19 @@ export const Creditorschedules = (props) => {
                             </div>
                             <br />
 
-                        </form>
+
 
                     </div>
                     <div class="modal-footer">
                         
                         <a type="button" class="btn btn-primary" href="./FC.csv" download>Generate Report</a>
                     </div>
+                        <div>
+                            <div className="col-6 col-sm-6 offset-sm-3">
+                                {/*    Success Response*/}
+                                <p className="card_2"><b>Successful !!!</b></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -272,7 +296,7 @@ export const Creditorschedules = (props) => {
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="">
+
                             <div className='row' >
                                 <div className='col'>
                                     <label htmlFor="">Start Date</label>
@@ -307,13 +331,19 @@ export const Creditorschedules = (props) => {
                             </div>
                             <br />
 
-                        </form>
+
 
                     </div>
                     <div class="modal-footer">
                         
                         <a type="button" class="btn btn-primary" href="./FC.csv" download>Generate Report</a>
                     </div>
+                        <div>
+                            <div className="col-6 col-sm-6 offset-sm-3">
+                                {/*    Success Response*/}
+                                <p className="card_2"><b>Successful !!!</b></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -326,7 +356,7 @@ export const Creditorschedules = (props) => {
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="">
+
                             <div className='row' >
                                 <div className='col'>
                                     <label htmlFor="">Start Date</label>
@@ -361,13 +391,17 @@ export const Creditorschedules = (props) => {
                             </div>
                             <br />
 
-                        </form>
-
                     </div>
                     <div class="modal-footer">
                         
                         <a type="button" class="btn btn-primary" href="./FC.csv" download>Generate Report</a>
                     </div>
+                        <div>
+                            <div className="col-6 col-sm-6 offset-sm-3">
+                                {/*    Success Response*/}
+                                <p className="card_2"><b>Successful !!!</b></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -239,7 +239,7 @@ export const Payments = (props) => {
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="">
+
                             <div className='row' >
                                 <div className='col'>
                                     <label htmlFor="">Date</label>
@@ -292,13 +292,19 @@ export const Payments = (props) => {
                                  *
                             </div> */}
 
-                        </form>
+
 
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         <button type="button" class="btn btn-primary">Submit</button>
                     </div>
+                        <div>
+                            <div className="col-6 col-sm-6 offset-sm-3">
+                                {/*    Success Response*/}
+                                <p className="card_2"><b>Successful !!!</b></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -311,7 +317,7 @@ export const Payments = (props) => {
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="">
+
                             <div className='row' >
                                 <div className='col'>
                                     <label htmlFor="">Date</label>
@@ -337,13 +343,19 @@ export const Payments = (props) => {
                             </div>
                             <br />
 
-                        </form>
+
 
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         <button type="button" class="btn btn-primary">Submit</button>
                     </div>
+                        <div>
+                            <div className="col-6 col-sm-6 offset-sm-3">
+                                {/*    Success Response*/}
+                                <p className="card_2"><b>Successful !!!</b></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -358,7 +370,6 @@ export const Payments = (props) => {
                     <div class="modal-body">
                     <button type="button" id='' className='btn btn-secondary'>Sample File</button>
 
-                        <form action="">
                             <div className='' >
                                 <div className='col'>
                                     <label htmlFor=""></label>
@@ -374,16 +385,19 @@ export const Payments = (props) => {
                                 </div>
                             </div>
                             <br />
-                                
-                            
 
-                        </form>
 
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         <button type="button" class="btn btn-primary">Submit</button>
                     </div>
+                        <div>
+                            <div className="col-6 col-sm-6 offset-sm-3">
+                                {/*    Success Response*/}
+                                <p className="card_2"><b>Successful !!!</b></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
