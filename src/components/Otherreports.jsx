@@ -825,6 +825,15 @@ export const Otherreports = (props) => {
                                         <option value="">PA3</option>
                                     </select>
                                 </div>
+                                <div className='col'>
+                                    <label htmlFor="">Location</label>
+                                    <select type="date" id='' className='form-control'>
+                                        <option value="">Select All</option>
+                                        <option value="">A</option>
+                                        <option value="">B</option>
+                                        <option value="">C</option>
+                                    </select>
+                                </div>
                                     
                             </div>
                             <br />

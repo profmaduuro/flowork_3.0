@@ -158,7 +158,7 @@ export const Capture = (props) => {
 
                         <div>
                             <label htmlFor="" >Scan Barcode</label>
-                            <input type="barcode" className='form-control' id="barcode" onInput={getBarcodeData} autoFocus/>
+                            <input type="barcode" className='form-control' id="barcode" onInput={getBarcodeData} autoFocus placeholder="6500012453"/>
                         </div>
                         <br />
                         <div className='row'>
@@ -200,18 +200,18 @@ export const Capture = (props) => {
                             </div>
                             <div className='col'>
                                 <label htmlFor="">TIMB Grade</label>
-                                <input className='form-control' id='timb_grade'/>
+                                <input className='form-control' id='timb_grade' placeholder="L2O"/>
                             </div>
                         </div>
                         <div className='row'>
                             <div className='col'>
                                 <label htmlFor="">Buyer Grade</label>
-                                <input className='form-control' id='buyer_grade'/>
+                                <input className='form-control' id='buyer_grade' placeholder="LLOB"/>
 
                             </div>
                             <div className='col'>
                                 <label htmlFor="">Price</label>
-                                <input className='form-control' id='price'/>
+                                <input className='form-control' id='price' placeholder="2.00"/>
                             </div>
                         </div>
 

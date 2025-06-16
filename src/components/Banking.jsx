@@ -300,27 +300,34 @@ export const Banking = (props) => {
                           <div className='row'>
                               <div className='col'>
                                   <label htmlFor="">Grower</label>
-                                  <input type="text" className='form-control'/>
+                                  <input type="text" className='form-control' placeholder="V124563"/>
                               </div>
                               <div className='col'>
                                   <label htmlFor="">Name</label>
-                                  <input type="text" className='form-control'/>
+                                  <input type="text" className='form-control' placeholder="Tinashe Bhatiri" />
                               </div>
                           </div>
                           <br/>
-                          <div>
-                              <label htmlFor="">Bank</label>
-                              <input type="text" className='form-control'/>
+                          <div className="row">
+                              <div className='col'>
+                                  <label htmlFor=""></label>
+                                  <input type="text" className='form-control' placeholder="Surname" />
+                              </div>
+                              <div className='col'>
+                                  <label htmlFor="">Bank</label>
+                                  <input type="text" className='form-control' placeholder="FBC"/>
+                              </div>
+
                           </div>
                           <br/>
                           <div className='row'>
                               <div className='col'>
                                   <label htmlFor="">USD Acc</label>
-                                  <input type="text" className='form-control'/>
+                                  <input type="text" className='form-control' placeholder="112548669"/>
                               </div>
                               <div className='col'>
                                   <label htmlFor="">ZWL Account</label>
-                                  <input type="text" className='form-control'/>
+                                  <input type="text" className='form-control' placeholder="115142685"/>
                               </div>
                           </div>
                           <br/>

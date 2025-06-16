@@ -265,7 +265,7 @@ const  GrowerReg = (props) => {
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body form-group row">
-                    <form className='col-xs-2'>
+                    <div className='col-xs-2'>
                    
                     <div class="inline">
                         <label for="recipient-name" class="col-form-label">Company</label>
@@ -279,7 +279,7 @@ const  GrowerReg = (props) => {
                         <input type="file" class="form-control" id="" />
                     </div>
 
-                    </form>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -308,30 +308,30 @@ const  GrowerReg = (props) => {
                     <div class="row">
                         <div className='col'>
                             <label for="recipient-name" class="col-form-label">Name</label>
-                            <input type="name" class="form-control" id="name" />
+                            <input type="name" class="form-control" id="name" placeholder="Name"/>
                         </div>
                         <div className='col'>
                             <label for="recipient-name" class="col-form-label">Surname</label>
-                            <input type="surname" class="form-control" id="surname" />
+                            <input type="surname" class="form-control" id="surname" placeholder="Surname" />
                         </div>
                         <div className='col'>
                             <label for="recipient-name" class="col-form-label">ID-Number</label>
-                            <input type="text" class="form-control" id="id_number" />
+                            <input type="text" class="form-control" id="id_number" placeholder="ID Number" />
                         </div>
                     </div>
 
                     <div class="row">
                         <div className='col'>
                             <label for="recipient-name" class="col-form-label">Address</label>
-                            <input type="address" class="form-control" id="address" />
+                            <input type="address" class="form-control" id="address" placeholder="Address" />
                         </div>
                         <div className='col'>
                             <label for="recipient-name" class="col-form-label">District</label>
-                            <input type="district" class="form-control" id="district" />
+                            <input type="district" class="form-control" id="district" placeholder="District" />
                         </div>
                         <div className='col'>
                             <label for="recipient-name" class="col-form-label">Province</label>
-                            <input type="province" class="form-control" id="province" />
+                            <input type="province" class="form-control" id="province" placeholder="Province" />
                         </div>
                     </div>
 
@@ -346,26 +346,26 @@ const  GrowerReg = (props) => {
                         </div>
                         <div className='col'>
                             <label for="recipient-name" class="col-form-label">Current Registration</label>
-                            <input type="year" class="form-control" id="reg_year" />
+                            <input type="year" class="form-control" id="reg_year" placeholder="Registration" />
                         </div>
                         <div className='col'>
                             <label for="recipient-name" class="col-form-label">Hectares</label>
-                            <input type="text" class="form-control" id="hectares" />
+                            <input type="text" class="form-control" id="hectares" placeholder="Hectares" />
                         </div>
                     </div>
 
                     <div class="row">
                         <div className='col'>
                             <label for="recipient-name" class="col-form-label">Contractor</label>
-                            <input type="text" class="form-control" id="grower" />
+                            <input type="text" class="form-control" id="grower" placeholder="Contractor" />
                         </div>
                         <div className='col'>
                             <label for="recipient-name" class="col-form-label">Selling Point</label>
-                            <input type="text" class="form-control" id="sale_date" />
+                            <input type="text" class="form-control" id="sale_date" placeholder="Selling Point" />
                         </div>
                         <div className='col'>
                             <label for="recipient-name" class="col-form-label">Contact</label>
-                            <input type="phone" class="form-control" id="sale_date" />
+                            <input type="phone" class="form-control" id="" placeholder="07789595655" />
                         </div>
                     </div>
 

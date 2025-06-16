@@ -155,22 +155,22 @@ export const CreateInternals = (props) => {
                             <div className='row' >
                                 <div className='col'>
                                     <label htmlFor="">Name</label>
-                                    <input type="text" id='description' className='form-control' />
+                                    <input type="text" id='description' className='form-control' placeholder="Incentive"/>
                                 </div>
                                 <div className='col'>
                                     <label htmlFor="">Internal Creditor #</label>
-                                    <input type="text" id='creditor_number' className='form-control' />
+                                    <input type="text" id='creditor_number' className='form-control' placeholder="5" />
                                 </div>
                             </div>
                             <br />
                             <div className='row' >
                                 <div className='col'>
                                     <label htmlFor="">Priority</label>
-                                    <input type="number" id='priority' className='form-control' />
+                                    <input type="number" id='priority' className='form-control' placeholder="1" />
                                 </div>
                                 <div className='col'>
                                     <label htmlFor="">Amount</label>
-                                    <input type="decimal" id='amount' className='form-control' />
+                                    <input type="decimal" id='amount' className='form-control' placeholder="1000.00" />
                                 </div>
                             </div><br />
                             <div className='row'>
@@ -255,11 +255,11 @@ export const CreateInternals = (props) => {
                             <div className='row' >
                                 <div className='col'>
                                     <label htmlFor="">Priority</label>
-                                    <input type="number" id='' className='form-control' />
+                                    <input type="number" id='' className='form-control' placeholder="1"/>
                                 </div>
                                 <div className='col'>
                                     <label htmlFor="">Amount</label>
-                                    <input type="decimal" id='' className='form-control' />
+                                    <input type="decimal" id='' className='form-control' placeholder="1000.00"/>
                                 </div>
                             </div>
 

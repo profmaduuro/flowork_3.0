@@ -163,11 +163,11 @@ const Booking = (props) => {
                         </div>
                         <div className='col'>
                           <label for="recipient-name" class="col-form-label">Enter Grower</label>
-                          <input type="text" class="form-control" id="" />
+                          <input type="text" class="form-control" id="" placeholder="V123456" />
                         </div>
                         <div className='col'>
                           <label for="recipient-name" class="col-form-label">Number of Bales</label>
-                          <input type="number" class="form-control" id="" />
+                          <input type="number" class="form-control" id="" placeholder="50" />
                         </div>  
                     </div>
 

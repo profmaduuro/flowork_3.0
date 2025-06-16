@@ -47,9 +47,9 @@ export const Bales = (props) => {
                         </button>
                     </div>
                     <div className='col-3'>
-                        <button type="button" className="btn btn-danger" data-mdb-ripple-init data-bs-toggle="modal" data-bs-target="#example">
-                            Delete
-                        </button>
+                        {/*<button type="button" className="btn btn-danger" data-mdb-ripple-init data-bs-toggle="modal" data-bs-target="#example">*/}
+                        {/*    Delete*/}
+                        {/*</button>*/}
                     </div>
                 </div>
 
@@ -64,7 +64,6 @@ export const Bales = (props) => {
                             position: "sticky",
                             top: "0"
                         }} className='card_10'>
-                        <td><input type="checkbox" className='form-check-input'/></td>
                         <th>Barcode</th>
                         <th>Temp Barcode</th>
                         <th>Grower</th>
@@ -80,260 +79,135 @@ export const Bales = (props) => {
                         <th>Buyer Gr</th>
                         <th>TIMB Gr</th>
                         <th>Created At</th>
+                        <th><i class="bi bi-activity"></i></th>
+                        <th> <i class="bi bi-activity"></i></th>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td><input type="checkbox" className='form-check-input'/></td>
-                            <td data-bs-toggle="modal" data-bs-target="#example4">6500526312s</td>
-                            <td>vl001236</td>
-                            <td>V123456</td>
-                            <td>TDN001</td>
-                            <td>1</td>
-                            <td>1</td>
-                            <td>A</td>
-                            <td>2025</td>
-                            <td>Processed</td>
-                            <td>100</td>
-                            <td>2.20</td>
-                            <td>PA2</td>
-                            <td>LALI</td>
-                            <td>L2O</td>
-                            <td>25-05-2025</td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" className='form-check-input'/></td>
-                            <td data-bs-toggle="modal" data-bs-target="#example4">6500526312s</td>
-                            <td>vl001236</td>
-                            <td>V123456</td>
-                            <td>TDN001</td>
-                            <td>1</td>
-                            <td>1</td>
-                            <td>A</td>
-                            <td>2025</td>
-                            <td>Processed</td>
-                            <td>100</td>
-                            <td>2.20</td>
-                            <td>PA2</td>
-                            <td>LALI</td>
-                            <td>L2O</td>
-                            <td>25-05-2025</td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" className='form-check-input'/></td>
-                            <td data-bs-toggle="modal" data-bs-target="#example4">6500526312s</td>
-                            <td>vl001236</td>
-                            <td>V123456</td>
-                            <td>TDN001</td>
-                            <td>1</td>
-                            <td>1</td>
-                            <td>A</td>
-                            <td>2025</td>
-                            <td>Processed</td>
-                            <td>100</td>
-                            <td>2.20</td>
-                            <td>PA2</td>
-                            <td>LALI</td>
-                            <td>L2O</td>
-                            <td>25-05-2025</td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" className='form-check-input'/></td>
-                            <td data-bs-toggle="modal" data-bs-target="#example4">6500526312s</td>
-                            <td>vl001236</td>
-                            <td>V123456</td>
-                            <td>TDN001</td>
-                            <td>1</td>
-                            <td>1</td>
-                            <td>A</td>
-                            <td>2025</td>
-                            <td>Processed</td>
-                            <td>100</td>
-                            <td>2.20</td>
-                            <td>PA2</td>
-                            <td>LALI</td>
-                            <td>L2O</td>
-                            <td>25-05-2025</td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" className='form-check-input'/></td>
-                            <td data-bs-toggle="modal" data-bs-target="#example4">6500526312s</td>
-                            <td>vl001236</td>
-                            <td>V123456</td>
-                            <td>TDN001</td>
-                            <td>1</td>
-                            <td>1</td>
-                            <td>A</td>
-                            <td>2025</td>
-                            <td>Processed</td>
-                            <td>100</td>
-                            <td>2.20</td>
-                            <td>PA2</td>
-                            <td>LALI</td>
-                            <td>L2O</td>
-                            <td>25-05-2025</td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" className='form-check-input'/></td>
-                            <td data-bs-toggle="modal" data-bs-target="#example4">6500526312s</td>
-                            <td>vl001236</td>
-                            <td>V123456</td>
-                            <td>TDN001</td>
-                            <td>1</td>
-                            <td>1</td>
-                            <td>A</td>
-                            <td>2025</td>
-                            <td>Processed</td>
-                            <td>100</td>
-                            <td>2.20</td>
-                            <td>PA2</td>
-                            <td>LALI</td>
-                            <td>L2O</td>
-                            <td>25-05-2025</td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" className='form-check-input'/></td>
-                            <td data-bs-toggle="modal" data-bs-target="#example4">6500526312s</td>
-                            <td>vl001236</td>
-                            <td>V123456</td>
-                            <td>TDN001</td>
-                            <td>1</td>
-                            <td>1</td>
-                            <td>A</td>
-                            <td>2025</td>
-                            <td>Processed</td>
-                            <td>100</td>
-                            <td>2.20</td>
-                            <td>PA2</td>
-                            <td>LALI</td>
-                            <td>L2O</td>
-                            <td>25-05-2025</td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" className='form-check-input'/></td>
-                            <td data-bs-toggle="modal" data-bs-target="#example4">6500526312s</td>
-                            <td>vl001236</td>
-                            <td>V123456</td>
-                            <td>TDN001</td>
-                            <td>1</td>
-                            <td>1</td>
-                            <td>A</td>
-                            <td>2025</td>
-                            <td>Processed</td>
-                            <td>100</td>
-                            <td>2.20</td>
-                            <td>PA2</td>
-                            <td>LALI</td>
-                            <td>L2O</td>
-                            <td>25-05-2025</td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" className='form-check-input'/></td>
-                            <td data-bs-toggle="modal" data-bs-target="#example4">6500526312s</td>
-                            <td>vl001236</td>
-                            <td>V123456</td>
-                            <td>TDN001</td>
-                            <td>1</td>
-                            <td>1</td>
-                            <td>A</td>
-                            <td>2025</td>
-                            <td>Processed</td>
-                            <td>100</td>
-                            <td>2.20</td>
-                            <td>PA2</td>
-                            <td>LALI</td>
-                            <td>L2O</td>
-                            <td>25-05-2025</td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" className='form-check-input'/></td>
-                            <td data-bs-toggle="modal" data-bs-target="#example4">6500526312s</td>
-                            <td>vl001236</td>
-                            <td>V123456</td>
-                            <td>TDN001</td>
-                            <td>1</td>
-                            <td>1</td>
-                            <td>A</td>
-                            <td>2025</td>
-                            <td>Processed</td>
-                            <td>100</td>
-                            <td>2.20</td>
-                            <td>PA2</td>
-                            <td>LALI</td>
-                            <td>L2O</td>
-                            <td>25-05-2025</td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" className='form-check-input'/></td>
-                            <td data-bs-toggle="modal" data-bs-target="#example4">6500526312s</td>
-                            <td>vl001236</td>
-                            <td>V123456</td>
-                            <td>TDN001</td>
-                            <td>1</td>
-                            <td>1</td>
-                            <td>A</td>
-                            <td>2025</td>
-                            <td>Processed</td>
-                            <td>100</td>
-                            <td>2.20</td>
-                            <td>PA2</td>
-                            <td>LALI</td>
-                            <td>L2O</td>
-                            <td>25-05-2025</td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" className='form-check-input'/></td>
-                            <td data-bs-toggle="modal" data-bs-target="#example4">6500526312s</td>
-                            <td>vl001236</td>
-                            <td>V123456</td>
-                            <td>TDN001</td>
-                            <td>1</td>
-                            <td>1</td>
-                            <td>A</td>
-                            <td>2025</td>
-                            <td>Processed</td>
-                            <td>100</td>
-                            <td>2.20</td>
-                            <td>PA2</td>
-                            <td>LALI</td>
-                            <td>L2O</td>
-                            <td>25-05-2025</td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" className='form-check-input'/></td>
-                            <td data-bs-toggle="modal" data-bs-target="#example4">6500526312s</td>
-                            <td>vl001236</td>
-                            <td>V123456</td>
-                            <td>TDN001</td>
-                            <td>1</td>
-                            <td>1</td>
-                            <td>A</td>
-                            <td>2025</td>
-                            <td>Processed</td>
-                            <td>100</td>
-                            <td>2.20</td>
-                            <td>PA2</td>
-                            <td>LALI</td>
-                            <td>L2O</td>
-                            <td>25-05-2025</td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" className='form-check-input'/></td>
-                            <td data-bs-toggle="modal" data-bs-target="#example4">6500526312s</td>
-                            <td>vl001236</td>
-                            <td>V123456</td>
-                            <td>TDN001</td>
-                            <td>1</td>
-                            <td>1</td>
-                            <td>A</td>
-                            <td>2025</td>
-                            <td>Processed</td>
-                            <td>100</td>
-                            <td>2.20</td>
-                            <td>PA2</td>
-                            <td>LALI</td>
-                            <td>L2O</td>
-                            <td>25-05-2025</td>
-                        </tr>
+                            <tr>
+                                <td>6500526312s</td>
+                                <td>vl001236</td>
+                                <td>V123456</td>
+                                <td>TDN001</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>A</td>
+                                <td>2025</td>
+                                <td>Processed</td>
+                                <td>100</td>
+                                <td>2.20</td>
+                                <td>PA2</td>
+                                <td>LALI</td>
+                                <td>L2O</td>
+                                <td>25-05-2025</td>
+                                <td><a href="#example4" data-bs-toggle="modal" data-bs-target="" className=""><i class="bi bi-pencil-square"></i></a></td>
+                                <td><a href="#example" data-bs-toggle="modal" data-bs-target="" className=""><i class="bi bi-trash"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>6500526312s</td>
+                                <td>vl001236</td>
+                                <td>V123456</td>
+                                <td>TDN001</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>A</td>
+                                <td>2025</td>
+                                <td>Processed</td>
+                                <td>100</td>
+                                <td>2.20</td>
+                                <td>PA2</td>
+                                <td>LALI</td>
+                                <td>L2O</td>
+                                <td>25-05-2025</td>
+                                <td><a href="#example4" data-bs-toggle="modal" data-bs-target="" className=""><i
+                                    className="bi bi-pencil-square"></i></a></td>
+                                <td><a href="#example" data-bs-toggle="modal" data-bs-target="" className=""><i
+                                    className="bi bi-trash"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>6500526312s</td>
+                                <td>vl001236</td>
+                                <td>V123456</td>
+                                <td>TDN001</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>A</td>
+                                <td>2025</td>
+                                <td>Processed</td>
+                                <td>100</td>
+                                <td>2.20</td>
+                                <td>PA2</td>
+                                <td>LALI</td>
+                                <td>L2O</td>
+                                <td>25-05-2025</td>
+                                <td><a href="#example4" data-bs-toggle="modal" data-bs-target="" className=""><i
+                                    className="bi bi-pencil-square"></i></a></td>
+                                <td><a href="#example" data-bs-toggle="modal" data-bs-target="" className=""><i
+                                    className="bi bi-trash"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>6500526312s</td>
+                                <td>vl001236</td>
+                                <td>V123456</td>
+                                <td>TDN001</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>A</td>
+                                <td>2025</td>
+                                <td>Processed</td>
+                                <td>100</td>
+                                <td>2.20</td>
+                                <td>PA2</td>
+                                <td>LALI</td>
+                                <td>L2O</td>
+                                <td>25-05-2025</td>
+                                <td><a href="#example4" data-bs-toggle="modal" data-bs-target="" className=""><i
+                                    className="bi bi-pencil-square"></i></a></td>
+                                <td><a href="#example" data-bs-toggle="modal" data-bs-target="" className=""><i
+                                    className="bi bi-trash"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>6500526312s</td>
+                                <td>vl001236</td>
+                                <td>V123456</td>
+                                <td>TDN001</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>A</td>
+                                <td>2025</td>
+                                <td>Processed</td>
+                                <td>100</td>
+                                <td>2.20</td>
+                                <td>PA2</td>
+                                <td>LALI</td>
+                                <td>L2O</td>
+                                <td>25-05-2025</td>
+                                <td><a href="#example4" data-bs-toggle="modal" data-bs-target="" className=""><i
+                                    className="bi bi-pencil-square"></i></a></td>
+                                <td><a href="#example" data-bs-toggle="modal" data-bs-target="" className=""><i
+                                    className="bi bi-trash"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>6500526312s</td>
+                                <td>vl001236</td>
+                                <td>V123456</td>
+                                <td>TDN001</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>A</td>
+                                <td>2025</td>
+                                <td>Processed</td>
+                                <td>100</td>
+                                <td>2.20</td>
+                                <td>PA2</td>
+                                <td>LALI</td>
+                                <td>L2O</td>
+                                <td>25-05-2025</td>
+                                <td><a href="#example4" data-bs-toggle="modal" data-bs-target="" className=""><i
+                                    className="bi bi-pencil-square"></i></a></td>
+                                <td><a href="#example" data-bs-toggle="modal" data-bs-target="" className=""><i
+                                    className="bi bi-trash"></i></a></td>
+                            </tr>
+
 
                         </tbody>
                     </table>
@@ -428,29 +302,29 @@ export const Bales = (props) => {
                                 <div className="inline">
                                     <div className='col'>
                                         <label htmlFor="recipient-name" className="col-form-label">Delivery Note</label>
-                                        <input className="card_10 form-control" type="text"/>
+                                        <input className="card_10 form-control" type="text" placeholder="TDN001"/>
                                     </div>
                                     <div className='row'>
                                         <div className='col'>
                                             <label htmlFor="recipient-name" className="col-form-label">Barcode</label>
-                                            <input className="form-control card_10" type="text"/>
+                                            <input className="form-control card_10" type="text" placeholder="65000012546"/>
                                         </div>
                                         <div className='col'>
                                             <label htmlFor="recipient-name" className="col-form-label">Mass</label>
-                                            <input className="form-control card_10" type="text"/>
+                                            <input className="form-control card_10" type="text" placeholder="65"/>
                                         </div>
                                     </div>
 
                                     <div className='row'>
                                         <div className="col">
                                             <label htmlFor="recipient-name" className="col-form-label">Group</label>
-                                            <input className="form-control card_10" type="text"/>
+                                            <input className="form-control card_10" type="text" placeholder="10"/>
 
                                         </div>
 
                                         <div className="col">
                                             <label htmlFor="recipient-name" className="col-form-label">Lot</label>
-                                            <input className="form-control card_10" type="text"/>
+                                            <input className="form-control card_10" type="text"  placeholder="10"/>
 
                                         </div>
 

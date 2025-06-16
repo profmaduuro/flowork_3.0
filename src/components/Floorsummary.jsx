@@ -306,9 +306,9 @@ export const Floorsummary = (props) => {
                         </select>
                         
                         <label for="recipient-name" class="col-form-label">Scan Barcode</label>
-                        <input type="barcode" class="form-control" id="barcode" onChange={floorSummary}/>
+                        <input type="barcode" class="form-control" id="barcode" onChange={floorSummary} placeholder="6500123489/"/>
                         <label for="recipient-name" class="col-form-label">Row</label>
-                        <input type="number" class="form-control" id="row" />
+                        <input type="number" class="form-control" id="row" placeholder="1" />
 
                     </div>
 
@@ -316,7 +316,7 @@ export const Floorsummary = (props) => {
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    {/* <button type="button" class="btn btn-primary"></button> */}
+
                 </div>
                    <div className="row">
                        <div className="col">

@@ -289,7 +289,7 @@ export const Ticketbatching = (props) => {
                                 props.ticketsBatchingData.map((u,i)=>{
                                     return(
 
-                                        <tr  data-bs-toggle="modal" data-bs-target="#example"  >
+                                        <tr>
                                             <td>{props.ticketsBatchingData[i].grower_num}</td>
                                             <td>{props.ticketsBatchingData[i].name}</td>
                                             <td>{props.ticketsBatchingData[i].bales}</td>
@@ -311,81 +311,7 @@ export const Ticketbatching = (props) => {
                     </div>
                     
                 </div>
-                {/* <div class="tab-pane" id="icon-tabpanel-1" role="tabpanel" aria-labelledby="icon-tab-1">
-                    <div class="tab-pane active" id="icon-tabpanel-0" role="tabpanel" aria-labelledby="icon-tab-0">
-                        <div className='table table-responsive'>
-                        <table className='table table-striped table-hover'>
-                            <thead>
-                                <th>GDN #</th>
-                                <th>Grower</th>
-                                <th>Name</th>
-                                <th>Sale Date</th>
-                                <th>Selling Point</th>
-                                <th>Floor</th>
-                                <th>Season</th>
-                                <th>Row</th>
-                                <th>Bales Delivered</th>
-                                <th>Bales Received</th>
-                                <th>Date Created</th>
-                                <th>Status</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>GDN0001</td>
-                                    <td>V124536</td>
-                                    <td>Tinashe Kaponda</td>
-                                    <td>15-05-2024</td>
-                                    <td>Vision Leaf Tobacco</td>
-                                    <td>A</td>
-                                    <td>2024</td>
-                                    <td>15</td>
-                                    <td>30</td>
-                                    <td>30</td>
-                                    <td>15-05-2024</td>
-                                    <td>Closed</td>
-                                </tr>
-                                <tr>
-                                    <td>GDN0001</td>
-                                    <td>V124536</td>
-                                    <td>Tinashe Kaponda</td>
-                                    <td>15-05-2024</td>
-                                    <td>Vision Leaf Tobacco</td>
-                                    <td>A</td>
-                                    <td>2024</td>
-                                    <td>15</td>
-                                    <td>30</td>
-                                    <td>30</td>
-                                    <td>15-05-2024</td>
-                                    <td>Closed</td>
-                                </tr>
-                                <tr>
-                                    <td>GDN0001</td>
-                                    <td>V124536</td>
-                                    <td>Tinashe Kaponda</td>
-                                    <td>15-05-2024</td>
-                                    <td>Vision Leaf Tobacco</td>
-                                    <td>A</td>
-                                    <td>2024</td>
-                                    <td>15</td>
-                                    <td>30</td>
-                                    <td>30</td>
-                                    <td>15-05-2024</td>
-                                    <td>Closed</td>
-                                </tr>
-                            </tbody>
-                        </table>
 
-                    </div>
-                </div>
-                
-                </div> */}
-                {/* <div class="tab-pane" id="icon-tabpanel-2" role="tabpanel" aria-labelledby="icon-tab-2">Laying</div>
-                <div class="tab-pane" id="icon-tabpanel-2" role="tabpanel" aria-labelledby="icon-tab-2">Booking</div> */}
-             {/* </div>
-       
-        </div> */}
-
-        {/* modals */}
 
         <div className="modal fade" id="example" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
@@ -399,16 +325,16 @@ export const Ticketbatching = (props) => {
                 <div class="row">
                     <div className='col-2'>
                         <label htmlFor="">Select Sale</label>
-                        <input type="number" className='form-control' id="splitid" />
+                        <input type="number" className='form-control' id="splitid" placeholder="1"/>
                         
                     </div>
                     <div className='col-2'>
                         <label htmlFor="">First Lot</label>
-                        <input type="number" className='form-control' id="start_lot" />
+                        <input type="number" className='form-control' id="start_lot" placeholder="1" />
                     </div>
                     <div className='col-2'>
                         <label htmlFor="">End Lot</label>
-                        <input type="number" className='form-control' id="end_lot"/>
+                        <input type="number" className='form-control' id="end_lot" placeholder="1"/>
                     </div>
                     <div className='col-4'>
                         <label htmlFor=""></label>

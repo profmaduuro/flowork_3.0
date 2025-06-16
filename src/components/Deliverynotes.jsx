@@ -243,7 +243,7 @@ export const Deliverynotes = (props) => {
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Name</h5>
+                            <h5 class="modal-title" id="exampleModalLabel">Create Delivery Note</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body form-group row">
@@ -253,27 +253,32 @@ export const Deliverynotes = (props) => {
                                         <div className="row">
                                             <div className="col">
                                                 <label>Name</label>
-                                                <input type="text" id="name" name="name" className="form-control"/>
+                                                <input type="text" id="name" name="name" className="form-control" placeholder="name"/>
                                             </div>
                                             <div className="col">
                                                 <label>ID Number</label>
-                                                <input type="text" id="driverid" name="driverid" className="form-control"/>
+                                                <input type="text" id="driverid" name="driverid" className="form-control" placeholder="driverid"/>
                                             </div>
                                         </div>
                                         <div className="row">
                                             <div className="col">
                                                 <label>Truck Number</label>
-                                                <input type="text" id="name" name="name" className="form-control"/>
+                                                <input type="text" id="name" name="name" className="form-control"  placeholder="AED-12356"/>
                                             </div>
                                             <div className="col">
                                                 <label>Location</label>
-                                                <input type="text" id="location" name="location" className="form-control"/>
+                                                <select type="text" id="location" name="location" className="form-control">
+                                                    <option selected value="">Select Location</option>
+                                                    <option selected value="1">A</option>
+                                                    <option selected value="2">B</option>
+                                                    <option selected value="3">C</option>
+                                                </select>
                                             </div>
                                         </div>
                                         <div className="row">
                                             <div className="col">
                                                 <label>Phone</label>
-                                                <input type="phone" id="phone" name="contact" className="form-control"/>
+                                                <input type="phone" id="phone" name="contact" className="form-control" placeholder="0715686925"/>
                                             </div>
                                             <div className="col">
                                                 <label>Sale Date</label>
@@ -314,15 +319,21 @@ export const Deliverynotes = (props) => {
                               <div className="row">
                                   <div className="col">
                                       <label>Enter Grower</label>
-                                      <input className="form-control" type="text" id="" name="grower" />
+                                      <input className="form-control" type="text" id="" name="grower" placeholder="V123456" />
                                   </div>
                                   <div className="col">
                                       <label>Number of bales</label>
-                                      <input className="form-control" type="number" id="" name="num_of_bales"/>
+                                      <input className="form-control" type="number" id="" name="num_of_bales" placeholder="26" />
                                   </div>
                                   <div className="col">
                                       <label>.</label>
                                       <button className="btn btn-primary" type="submit" value="Submit" onClick={createTransporterGrowers}>Submit</button>
+                                  </div>
+                                  <br/>
+                                  <div className="col">
+                                      <label>.</label>
+                                      <button className="btn btn-success" type="submit" value="Submit">Close Delivery</button>
+
                                   </div>
 
                               </div>
@@ -406,10 +417,6 @@ export const Deliverynotes = (props) => {
                               </div>
 
                           </div>
-
-
-
-                        
 
                     </div>
                 </div>

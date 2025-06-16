@@ -298,7 +298,8 @@ export const Tickets = (props) => {
                     <th>Selling Point</th>
                     <th>Bales</th>
                     <th>Date</th>
-                    <th>Action</th>
+                    <th>Action 1</th>
+                    <th>Action 2</th>
                     </thead>
                     <br />
                     <tbody>
@@ -312,6 +313,7 @@ export const Tickets = (props) => {
                                    <td>{props.ticketsData[i].bales}</td>
                                    <td>{props.ticketsData[i].created_at}</td>
                                    <td><a href="" data-bs-toggle="modal" data-bs-target="#example" id={props.ticketsData[i].transporter_growersid} value={props.ticketsData[i].transporter_growersid} onClick={getBales}>Proceed</a></td>
+                                   <td><a href="" data-bs-toggle="modal" data-bs-target="#example4" id="">Edit</a></td>
                                </tr>
                            )
                         })
@@ -337,7 +339,7 @@ export const Tickets = (props) => {
                 <div class="row">
                     <div className='col-4'>
                         <label htmlFor="">Set Start Barcode</label>
-                        <input type="barcode" className='form-control'  id="start_barcode"/>
+                        <input type="barcode" className='form-control'  id="start_barcode" placeholder="6500123456p"/>
                         
                     </div>
                     <div className='col-4'>
@@ -363,6 +365,9 @@ export const Tickets = (props) => {
                             <th>Temp#</th>
                         </thead>
                         <tbody id="tbody">
+                            <tr>
+
+                            </tr>
 
                         </tbody>
                     </table>
@@ -376,7 +381,7 @@ export const Tickets = (props) => {
             </div>
       </div>
 
-      <div className="modal fade" id="example2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div className="modal fade" id="example4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                 <div class="modal-header">
@@ -386,8 +391,11 @@ export const Tickets = (props) => {
                 <div class="modal-body form-group row">
                     <form>
                     <div class="mb-3">
-                        <label for="recipient-name" class="col-form-label"></label>
-                        <input type="barcode" class="form-control" id="sale_date" />
+                        <label for="recipient-name" class="col-form-label">Sale Date</label>
+                        <select type="barcode" class="form-control" id="sale_date">
+                            <option value="">--- --</option>
+                            <option value="">--- --</option>
+                        </select>
                     </div>
                     </form>
                 </div>

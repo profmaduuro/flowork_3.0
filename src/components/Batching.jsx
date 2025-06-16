@@ -48,9 +48,10 @@ export const Batching = (props) => {
                         <th>ZIG Paid</th>
                         <th>Booking</th>
                         <th>Status</th>
+                        <th>Action</th>
                     </thead><br />
                     <tbody>
-                        <tr data-bs-toggle="modal" data-bs-target="#example2">
+                        <tr>
                             <td>V123</td>
                             <td>Bright Kaponda</td>
                             <td>1</td>
@@ -64,24 +65,10 @@ export const Batching = (props) => {
                             <td>12000</td>
                             <td>Yes</td>
                             <td>Captured</td>
+                            <td><a href="" data-bs-toggle="modal" data-bs-target="#example2" className="" ><i
+                                className="bi bi-pencil-square"></i></a></td>
                         </tr>
-                        <tr data-bs-toggle="modal" data-bs-target="#example2">
-                            <td>V123</td>
-                            <td>Bright Kaponda</td>
-                            <td>1</td>
-                            <td>VLT</td>
-                            <td>15-05-2024</td>
-                            <td>1123</td>
-                            <td>0001</td>
-                            <td>1500</td>
-                            <td>15000</td>
-                            <td>1200</td>
-                            <td>12000</td>
-                            <td>Yes</td>
-                            <td>Balanced</td>
-                            
-                        </tr>
-                        <tr data-bs-toggle="modal" data-bs-target="#example2">
+                        <tr>
                             <td>V123</td>
                             <td>Bright Kaponda</td>
                             <td>1</td>
@@ -95,202 +82,10 @@ export const Batching = (props) => {
                             <td>12000</td>
                             <td>Yes</td>
                             <td>Captured</td>
+                            <td><a href="" data-bs-toggle="modal" data-bs-target="#example2" className="" ><i
+                                className="bi bi-pencil-square"></i></a></td>
                         </tr>
-                        <tr data-bs-toggle="modal" data-bs-target="#example2">
-                            <td>V123</td>
-                            <td>Bright Kaponda</td>
-                            <td>1</td>
-                            <td>VLT</td>
-                            <td>15-05-2024</td>
-                            <td>1123</td>
-                            <td>0001</td>
-                            <td>1500</td>
-                            <td>15000</td>
-                            <td>1200</td>
-                            <td>12000</td>
-                            <td>Yes</td>
-                            <td>Balanced</td>
-                        </tr>
-                        <tr data-bs-toggle="modal" data-bs-target="#example2">
-                            <td>V123</td>
-                            <td>Bright Kaponda</td>
-                            <td>1</td>
-                            <td>VLT</td>
-                            <td>15-05-2024</td>
-                            <td>1123</td>
-                            <td>0001</td>
-                            <td>1500</td>
-                            <td>15000</td>
-                            <td>1200</td>
-                            <td>12000</td>
-                            <td>Yes</td>
-                            <td>Captured</td>
-                        </tr>
-                        <tr data-bs-toggle="modal" data-bs-target="#example2">
-                            <td>V123</td>
-                            <td>Bright Kaponda</td>
-                            <td>1</td>
-                            <td>VLT</td>
-                            <td>15-05-2024</td>
-                            <td>1123</td>
-                            <td>0001</td>
-                            <td>1500</td>
-                            <td>15000</td>
-                            <td>1200</td>
-                            <td>12000</td>
-                            <td>Yes</td>
-                            <td>Balanced</td>
-                        </tr>
-                        <tr data-bs-toggle="modal" data-bs-target="#example2">
-                            <td>V123</td>
-                            <td>Bright Kaponda</td>
-                            <td>1</td>
-                            <td>VLT</td>
-                            <td>15-05-2024</td>
-                            <td>1123</td>
-                            <td>0001</td>
-                            <td>1500</td>
-                            <td>15000</td>
-                            <td>1200</td>
-                            <td>12000</td>
-                            <td>Yes</td>
-                            <td>Captured</td>
-                        </tr>
-                        <tr data-bs-toggle="modal" data-bs-target="#example2">
-                            <td>V123</td>
-                            <td>Bright Kaponda</td>
-                            <td>1</td>
-                            <td>VLT</td>
-                            <td>15-05-2024</td>
-                            <td>1123</td>
-                            <td>0001</td>
-                            <td>1500</td>
-                            <td>15000</td>
-                            <td>1200</td>
-                            <td>12000</td>
-                            <td>Yes</td>
-                            <td>Balanced</td>
-                        </tr>
-                        <tr data-bs-toggle="modal" data-bs-target="#example2">
-                            <td>V123</td>
-                            <td>Bright Kaponda</td>
-                            <td>1</td>
-                            <td>VLT</td>
-                            <td>15-05-2024</td>
-                            <td>1123</td>
-                            <td>0001</td>
-                            <td>1500</td>
-                            <td>15000</td>
-                            <td>1200</td>
-                            <td>12000</td>
-                            <td>Yes</td>
-                            <td>Balanced</td>
-                        </tr>
-                        <tr data-bs-toggle="modal" data-bs-target="#example2">
-                            <td>V123</td>
-                            <td>Bright Kaponda</td>
-                            <td>1</td>
-                            <td>VLT</td>
-                            <td>15-05-2024</td>
-                            <td>1123</td>
-                            <td>0001</td>
-                            <td>1500</td>
-                            <td>15000</td>
-                            <td>1200</td>
-                            <td>12000</td>
-                            <td>Yes</td>
-                            <td>Balanced</td>
-                        </tr>
-                        <tr data-bs-toggle="modal" data-bs-target="#example2">
-                            <td>V123</td>
-                            <td>Bright Kaponda</td>
-                            <td>1</td>
-                            <td>VLT</td>
-                            <td>15-05-2024</td>
-                            <td>1123</td>
-                            <td>0001</td>
-                            <td>1500</td>
-                            <td>15000</td>
-                            <td>1200</td>
-                            <td>12000</td>
-                            <td>Yes</td>
-                            <td>Balanced</td>
-                        </tr>
-                        <tr data-bs-toggle="modal" data-bs-target="#example2">
-                            <td>V123</td>
-                            <td>Bright Kaponda</td>
-                            <td>1</td>
-                            <td>VLT</td>
-                            <td>15-05-2024</td>
-                            <td>1123</td>
-                            <td>0001</td>
-                            <td>1500</td>
-                            <td>15000</td>
-                            <td>1200</td>
-                            <td>12000</td>
-                            <td>Yes</td>
-                            <td>Balanced</td>
-                        </tr>
-                        <tr data-bs-toggle="modal" data-bs-target="#example2">
-                            <td>V123</td>
-                            <td>Bright Kaponda</td>
-                            <td>1</td>
-                            <td>VLT</td>
-                            <td>15-05-2024</td>
-                            <td>1123</td>
-                            <td>0001</td>
-                            <td>1500</td>
-                            <td>15000</td>
-                            <td>1200</td>
-                            <td>12000</td>
-                            <td>Yes</td>
-                            <td>Balanced</td>
-                        </tr>
-                        <tr data-bs-toggle="modal" data-bs-target="#example2">
-                            <td>V123</td>
-                            <td>Bright Kaponda</td>
-                            <td>1</td>
-                            <td>VLT</td>
-                            <td>15-05-2024</td>
-                            <td>1123</td>
-                            <td>0001</td>
-                            <td>1500</td>
-                            <td>15000</td>
-                            <td>1200</td>
-                            <td>12000</td>
-                            <td>Yes</td>
-                            <td>Balanced</td>
-                        </tr>
-                        <tr data-bs-toggle="modal" data-bs-target="#example2">
-                            <td>V123</td>
-                            <td>Bright Kaponda</td>
-                            <td>1</td>
-                            <td>VLT</td>
-                            <td>15-05-2024</td>
-                            <td>1123</td>
-                            <td>0001</td>
-                            <td>1500</td>
-                            <td>15000</td>
-                            <td>1200</td>
-                            <td>12000</td>
-                            <td>Yes</td>
-                            <td>Balanced</td>
-                        </tr>
-                        <tr data-bs-toggle="modal" data-bs-target="#example2">
-                            <td>V123</td>
-                            <td>Bright Kaponda</td>
-                            <td>1</td>
-                            <td>VLT</td>
-                            <td>15-05-2024</td>
-                            <td>1123</td>
-                            <td>0001</td>
-                            <td>1500</td>
-                            <td>15000</td>
-                            <td>1200</td>
-                            <td>12000</td>
-                            <td>Yes</td>
-                            <td>Balanced</td>
-                        </tr>
+
                     </tbody>
                 </table>
              
@@ -462,10 +257,7 @@ export const Batching = (props) => {
                                     </div>
 
                                 </div>
-
                            </div>
-
-                        
                         </div>
 
                         </div>

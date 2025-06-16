@@ -72,6 +72,15 @@ export const Invoices = (props) => {
                                     </select>
 
                                 </div>
+                                <div className='col'>
+                                    <label htmlFor="">Location</label>
+                                    <select type="date" id='' className='form-control'>
+                                        <option value="">Select All</option>
+                                        <option value="">A</option>
+                                        <option value="">B</option>
+                                        <option value="">C</option>
+                                    </select>
+                                </div>
                             </div>
                             <br />
                             <div className='row'>
@@ -128,6 +137,15 @@ export const Invoices = (props) => {
                                         <option value="">Vision Leaf Tobacco</option>
                                     </select>
 
+                                </div>
+                                <div className='col'>
+                                    <label htmlFor="">Location</label>
+                                    <select type="date" id='' className='form-control'>
+                                        <option value="">Select All</option>
+                                        <option value="">A</option>
+                                        <option value="">B</option>
+                                        <option value="">C</option>
+                                    </select>
                                 </div>
                             </div>
                             <br />
@@ -193,6 +211,15 @@ export const Invoices = (props) => {
 
                                 </div>
                                 <div className='col'>
+                                    <label htmlFor="">Location</label>
+                                    <select type="date" id='' className='form-control'>
+                                        <option value="">Select All</option>
+                                        <option value="">A</option>
+                                        <option value="">B</option>
+                                        <option value="">C</option>
+                                    </select>
+                                </div>
+                                <div className='col'>
                                     <label htmlFor="">Creditor</label>
                                     <input type="text" id='' className='form-control' />
                                 </div>
@@ -245,6 +272,15 @@ export const Invoices = (props) => {
                                         <option value="">Vision Leaf Tobacco</option>
                                     </select>
 
+                                </div>
+                                <div className='col'>
+                                    <label htmlFor="">Location</label>
+                                    <select type="date" id='' className='form-control'>
+                                        <option value="">Select All</option>
+                                        <option value="">A</option>
+                                        <option value="">B</option>
+                                        <option value="">C</option>
+                                    </select>
                                 </div>
                                 <div className='col'>
                                     <label htmlFor="">Creditor</label>
@@ -320,6 +356,15 @@ export const Invoices = (props) => {
                                 </div>
                                     
                             </div>
+                        <div className='col'>
+                            <label htmlFor="">Location</label>
+                            <select type="date" id='' className='form-control'>
+                                <option value="">Select All</option>
+                                <option value="">A</option>
+                                <option value="">B</option>
+                                <option value="">C</option>
+                            </select>
+                        </div>
                             <br />
 
                     </div>
@@ -375,6 +420,15 @@ export const Invoices = (props) => {
                                         <option value="">Select</option>
                                         <option value="">PA2</option>
                                         <option value="">PA3</option>
+                                    </select>
+                                </div>
+                                <div className='col'>
+                                    <label htmlFor="">Location</label>
+                                    <select type="date" id='' className='form-control'>
+                                        <option value="">Select All</option>
+                                        <option value="">A</option>
+                                        <option value="">B</option>
+                                        <option value="">C</option>
                                     </select>
                                 </div>
                                     

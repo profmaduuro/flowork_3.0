@@ -112,7 +112,7 @@ const SalesRun = (props) => {
                     </div>
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Exchange Rate:</label>
-                        <input type="rate" class="form-control" id="exchange_rate" />
+                        <input type="rate" class="form-control" id="exchange_rate" placeholder="26.8689" />
                     </div>
 
                     </form>

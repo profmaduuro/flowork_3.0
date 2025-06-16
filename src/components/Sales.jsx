@@ -153,145 +153,49 @@ export const Sales = (props) => {
                       <th>Ded Total(zig)</th>
                       <th>Booking</th>
                       <th>Status</th>
+                      <th>Action</th>
                       </thead>
                       <br/>
                       <tbody>
-                      <tr data-bs-toggle="modal" data-bs-target="#example5">
-                          <td>V123</td>
-                          <td>Bright Kaponda</td>
-                          <td>1</td>
-                          <td>VLT</td>
-                          <td>15-05-2024</td>
-                          <td>1123</td>
-                          <td>0001</td>
-                          <td>1500.00</td>
-                          <td>15000.00</td>
-                          <td>1200.00</td>
-                          <td>12000.00</td>
-                          <td>70.00</td>
-                          <td>100.00</td>
-                          <td>Yes</td>
-                          <td>Captured</td>
-                      </tr>
-                      <tr data-bs-toggle="modal" data-bs-target="#example5">
-                          <td>V123</td>
-                          <td>Bright Kaponda</td>
-                          <td>1</td>
-                          <td>VLT</td>
-                          <td>15-05-2024</td>
-                          <td>1123</td>
-                          <td>0001</td>
-                          <td>1500.00</td>
-                          <td>15000.00</td>
-                          <td>1200.00</td>
-                          <td>12000.00</td>
-                          <td>70.00</td>
-                          <td>100.00</td>
-                          <td>Yes</td>
-                          <td>Captured</td>
-                      </tr>
-                      <tr data-bs-toggle="modal" data-bs-target="#example5">
-                          <td>V123</td>
-                          <td>Bright Kaponda</td>
-                          <td>1</td>
-                          <td>VLT</td>
-                          <td>15-05-2024</td>
-                          <td>1123</td>
-                          <td>0001</td>
-                          <td>1500.00</td>
-                          <td>15000.00</td>
-                          <td>1200.00</td>
-                          <td>12000.00</td>
-                          <td>70.00</td>
-                          <td>100.00</td>
-                          <td>Yes</td>
-                          <td>Captured</td>
-                      </tr>
-                      <tr data-bs-toggle="modal" data-bs-target="#example5">
-                          <td>V123</td>
-                          <td>Bright Kaponda</td>
-                          <td>1</td>
-                          <td>VLT</td>
-                          <td>15-05-2024</td>
-                          <td>1123</td>
-                          <td>0001</td>
-                          <td>1500.00</td>
-                          <td>15000.00</td>
-                          <td>1200.00</td>
-                          <td>12000.00</td>
-                          <td>70.00</td>
-                          <td>100.00</td>
-                          <td>Yes</td>
-                          <td>Captured</td>
-                      </tr>
-                      <tr data-bs-toggle="modal" data-bs-target="#example5">
-                          <td>V123</td>
-                          <td>Bright Kaponda</td>
-                          <td>1</td>
-                          <td>VLT</td>
-                          <td>15-05-2024</td>
-                          <td>1123</td>
-                          <td>0001</td>
-                          <td>1500.00</td>
-                          <td>15000.00</td>
-                          <td>1200.00</td>
-                          <td>12000.00</td>
-                          <td>70.00</td>
-                          <td>100.00</td>
-                          <td>Yes</td>
-                          <td>Captured</td>
-                      </tr>
-                      <tr data-bs-toggle="modal" data-bs-target="#example5">
-                          <td>V123</td>
-                          <td>Bright Kaponda</td>
-                          <td>1</td>
-                          <td>VLT</td>
-                          <td>15-05-2024</td>
-                          <td>1123</td>
-                          <td>0001</td>
-                          <td>1500.00</td>
-                          <td>15000.00</td>
-                          <td>1200.00</td>
-                          <td>12000.00</td>
-                          <td>70.00</td>
-                          <td>100.00</td>
-                          <td>Yes</td>
-                          <td>Captured</td>
-                      </tr>
-                      <tr data-bs-toggle="modal" data-bs-target="#example5">
-                          <td>V123</td>
-                          <td>Bright Kaponda</td>
-                          <td>1</td>
-                          <td>VLT</td>
-                          <td>15-05-2024</td>
-                          <td>1123</td>
-                          <td>0001</td>
-                          <td>1500.00</td>
-                          <td>15000.00</td>
-                          <td>1200.00</td>
-                          <td>12000.00</td>
-                          <td>70.00</td>
-                          <td>100.00</td>
-                          <td>Yes</td>
-                          <td>Captured</td>
-                      </tr>
-                      <tr data-bs-toggle="modal" data-bs-target="#example5">
-                          <td>V123</td>
-                          <td>Bright Kaponda</td>
-                          <td>1</td>
-                          <td>VLT</td>
-                          <td>15-05-2024</td>
-                          <td>1123</td>
-                          <td>0001</td>
-                          <td>1500.00</td>
-                          <td>15000.00</td>
-                          <td>1200.00</td>
-                          <td>12000.00</td>
-                          <td>70.00</td>
-                          <td>100.00</td>
-                          <td>Yes</td>
-                          <td>Captured</td>
-                      </tr>
+                          <tr>
+                              <td>V123</td>
+                              <td>Bright Kaponda</td>
+                              <td>1</td>
+                              <td>VLT</td>
+                              <td>15-05-2024</td>
+                              <td>1123</td>
+                              <td>0001</td>
+                              <td>1500.00</td>
+                              <td>15000.00</td>
+                              <td>1200.00</td>
+                              <td>12000.00</td>
+                              <td>70.00</td>
+                              <td>100.00</td>
+                              <td>Yes</td>
+                              <td>Captured</td>
+                              <td><a href=""  data-bs-toggle="modal" data-bs-target="#example5" ><i
+                                  className="bi bi-pencil-square"></i></a></td>
+                          </tr>
+                          <tr>
+                              <td>V123</td>
+                              <td>Bright Kaponda</td>
+                              <td>1</td>
+                              <td>VLT</td>
+                              <td>15-05-2024</td>
+                              <td>1123</td>
+                              <td>0001</td>
+                              <td>1500.00</td>
+                              <td>15000.00</td>
+                              <td>1200.00</td>
+                              <td>12000.00</td>
+                              <td>70.00</td>
+                              <td>100.00</td>
+                              <td>Yes</td>
+                              <td>Captured</td>
+                              <td><a href=""  data-bs-toggle="modal" data-bs-target="#example5" ><i
+                                  className="bi bi-pencil-square"></i></a></td>
+                          </tr>
+
                       </tbody>
                   </table>
 
@@ -508,7 +412,7 @@ export const Sales = (props) => {
               <div className="modal-dialog modal-xl">
                   <div className="modal-content">
                       <div className="modal-header">
-                          <h5 className="modal-title" id="exampleModalLabel">Batching</h5>
+                          <h5 className="modal-title" id="exampleModalLabel">Sale Confirmation</h5>
                           <button type="button" className="btn-close" data-bs-dismiss="modal"
                                   aria-label="Close"></button>
                       </div>
@@ -528,7 +432,6 @@ export const Sales = (props) => {
                                           top: "0"
                                       }} className='card_10'>
                                       <tr>
-                                          <th></th>
                                           <th>Barcode</th>
                                           <th>Sale Code</th>
                                           <th>Group</th>
@@ -542,100 +445,92 @@ export const Sales = (props) => {
                                       </thead>
                                       <tbody>
                                       <tr>
-                                          <td><input type="checkbox" className='form-check-input'/></td>
                                           <td>650002546R</td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="RO"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="5" /></td>
+                                          <td><input className="form-control-plaintext" placeholder="5"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="L2O"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="LLOB"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="3.00"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="120"/></td>
                                           <td>1</td>
                                       </tr>
                                       <tr>
-                                          <td><input type="checkbox" className='form-check-input'/></td>
                                           <td>650002546R</td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="RO"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="5" /></td>
+                                          <td><input className="form-control-plaintext" placeholder="5"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="L2O"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="LLOB"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="3.00"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="120"/></td>
                                           <td>1</td>
                                       </tr>
 
                                       <tr>
-                                          <td><input type="checkbox" className='form-check-input'/></td>
                                           <td>650002546R</td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="RO"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="5" /></td>
+                                          <td><input className="form-control-plaintext" placeholder="5"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="L2O"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="LLOB"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="3.00"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="120"/></td>
                                           <td>1</td>
                                       </tr>
                                       <tr>
-                                          <td><input type="checkbox" className='form-check-input'/></td>
                                           <td>650002546R</td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="RO"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="5" /></td>
+                                          <td><input className="form-control-plaintext" placeholder="5"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="L2O"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="LLOB"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="3.00"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="120"/></td>
                                           <td>1</td>
                                       </tr>
                                       <tr>
-                                          <td><input type="checkbox" className='form-check-input'/></td>
                                           <td>650002546R</td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="RO"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="5" /></td>
+                                          <td><input className="form-control-plaintext" placeholder="5"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="L2O"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="LLOB"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="3.00"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="120"/></td>
                                           <td>1</td>
                                       </tr>
                                       <tr>
-                                          <td><input type="checkbox" className='form-check-input'/></td>
                                           <td>650002546R</td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="RO"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="5" /></td>
+                                          <td><input className="form-control-plaintext" placeholder="5"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="L2O"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="LLOB"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="3.00"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="120"/></td>
                                           <td>1</td>
                                       </tr>
                                       <tr>
-                                          <td><input type="checkbox" className='form-check-input'/></td>
                                           <td>650002546R</td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="RO"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="5" /></td>
+                                          <td><input className="form-control-plaintext" placeholder="5"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="L2O"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="LLOB"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="3.00"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="120"/></td>
                                           <td>1</td>
                                       </tr>
                                       <tr>
-                                          <td><input type="checkbox" className='form-check-input'/></td>
                                           <td>650002546R</td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
-                                          <td><input className="form-control-plaintext"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="RO"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="5" /></td>
+                                          <td><input className="form-control-plaintext" placeholder="5"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="L2O"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="LLOB"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="3.00"/></td>
+                                          <td><input className="form-control-plaintext" placeholder="120"/></td>
                                           <td>1</td>
                                       </tr>
 
@@ -651,7 +546,7 @@ export const Sales = (props) => {
 
                           <div className='row'>
                               <div className='col-3'>
-                                  <button className='btn btn-primary'>Submit</button>
+                                  <button className='btn btn-primary'>Confirm Sale</button>
                               </div>
                               <div className="col">
                                   <div className="col-6 col-sm-6 offset-sm-3">

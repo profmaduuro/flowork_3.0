@@ -75,13 +75,13 @@ export const Balereceiving = (props) => {
                 </div>
                 <div action="">
                     <label htmlFor="">Barcode</label>
-                    <input type="text" className='form-control' id="barcode"/>
+                    <input type="text" className='form-control' id="barcode" placeholder="6500589662g" />
                     <label htmlFor="">Grower</label>
-                    <input type="text" className='form-control' id="grower_num"/>
+                    <input type="text" className='form-control' id="grower_num" placeholder="V123456"/>
                     <label htmlFor="">Group</label>
-                    <input type="text" className='form-control' id="group"/>
+                    <input type="text" className='form-control' id="group" placeholder="1" />
                     <label htmlFor="">Lot</label>
-                    <input type="text" className='form-control' id="lot"/>
+                    <input type="text" className='form-control' id="lot" placeholder="1" />
                     <br />
                     <button type='button' className='btn btn-success' onClick={saveBaleData}>Receive <Badge id="junused" bg="secondary"></Badge></button>
                 </div>

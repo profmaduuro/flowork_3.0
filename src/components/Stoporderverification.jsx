@@ -378,7 +378,7 @@ export const Stoporderverification = (props) => {
                                   <label>Stoporder Number</label>
                                   <p className="card_10"><b>61181</b></p>
                                   <label>Edit Amount</label>
-                                  <input className="form-control" type="text" name="EditAmount" id="EditAmount" />
+                                  <input className="form-control" type="text" name="EditAmount" id="EditAmount" placeholder="1000.00" />
                               </div>
 
                           </div>

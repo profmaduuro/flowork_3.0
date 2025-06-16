@@ -65,7 +65,7 @@ export const Dispatch = (props) => {
                     <div className='row'>
                         <div className='col-5'>
                             <label htmlFor="">Scarn Barcode</label>
-                            <input type="barcode" className='form-control' />
+                            <input type="barcode" className='form-control' placeholder="6500859633s" />
                         </div>
                         <div className='col'>
                             {/* <input type="text" className='form-control' /> */}
@@ -103,9 +103,10 @@ export const Dispatch = (props) => {
                     <div className='table table-responsive' data-bs-spy="scroll" style={{ maxHeight: "500px", 
                     overflowY: "auto" }}>
                         <table className='table table-striped table-hover'>
-                            <thead style={{ position: "sticky", 
-                    top: "0" }} className='card_10'>
-                                <th></th>
+                            <thead style={{
+                                position: "sticky",
+                                top: "0"
+                            }} className='card_10'>
                                 <th>Truck ID</th>
                                 <th>Horse Reg</th>
                                 <th>Trailer Reg</th>
@@ -115,10 +116,12 @@ export const Dispatch = (props) => {
                                 <th>Season</th>
                                 <th>Created By</th>
                                 <th>Status</th>
+                                <th><i className="bi bi-activity"></i></th>
+                                <th><i className="bi bi-activity"></i></th>
+                                <th><i className="bi bi-activity"></i></th>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><input type="checkbox" className='form-check-input'/></td>
                                     <td>AED1152-PA2</td>
                                     <td>AED115</td>
                                     <td>AED116</td>
@@ -128,9 +131,14 @@ export const Dispatch = (props) => {
                                     <td>2024</td>
                                     <td>BKAPONDA</td>
                                     <td>Closed</td>
+                                    <td><a href="#example4" data-bs-toggle="modal" data-bs-target="" className=""><i
+                                        className="bi bi-pencil-square"></i></a></td>
+                                    <td><a href="#" download="shipment_file.csv"><i
+                                        className="bi bi-download"></i></a></td>
+                                    <td><a href="#example" data-bs-toggle="modal" data-bs-target="" className=""><i
+                                        className="bi bi-trash"></i></a></td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox" className='form-check-input'/></td>
                                     <td>AED1152-PA2</td>
                                     <td>AED115</td>
                                     <td>AED116</td>
@@ -140,9 +148,14 @@ export const Dispatch = (props) => {
                                     <td>2024</td>
                                     <td>BKAPONDA</td>
                                     <td>Closed</td>
+                                    <td><a href="#example4" data-bs-toggle="modal" data-bs-target="" className=""><i
+                                        className="bi bi-pencil-square"></i></a></td>
+                                    <td><a href="#" download="shipment_file.csv"><i
+                                        className="bi bi-download"></i></a></td>
+                                    <td><a href="#example" data-bs-toggle="modal" data-bs-target="" className=""><i
+                                        className="bi bi-trash"></i></a></td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox" className='form-check-input'/></td>
                                     <td>AED1152-PA2</td>
                                     <td>AED115</td>
                                     <td>AED116</td>
@@ -152,9 +165,14 @@ export const Dispatch = (props) => {
                                     <td>2024</td>
                                     <td>BKAPONDA</td>
                                     <td>Closed</td>
+                                    <td><a href="#example4" data-bs-toggle="modal" data-bs-target="" className=""><i
+                                        className="bi bi-pencil-square"></i></a></td>
+                                    <td><a href="#" download="shipment_file.csv"><i
+                                        className="bi bi-download"></i></a></td>
+                                    <td><a href="#example" data-bs-toggle="modal" data-bs-target="" className=""><i
+                                        className="bi bi-trash"></i></a></td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox" className='form-check-input'/></td>
                                     <td>AED1152-PA2</td>
                                     <td>AED115</td>
                                     <td>AED116</td>
@@ -164,56 +182,39 @@ export const Dispatch = (props) => {
                                     <td>2024</td>
                                     <td>BKAPONDA</td>
                                     <td>Closed</td>
+                                    <td><a href="#example4" data-bs-toggle="modal" data-bs-target="" className=""><i
+                                        className="bi bi-pencil-square"></i></a></td>
+                                    <td><a href="#" download="shipment_file.csv"><i
+                                        className="bi bi-download"></i></a></td>
+                                    <td><a href="#example" data-bs-toggle="modal" data-bs-target="" className=""><i
+                                        className="bi bi-trash"></i></a></td>
                                 </tr>
-                                <tr>
-                                    <td><input type="checkbox" className='form-check-input'/></td>
-                                    <td>AED1152-PA2</td>
-                                    <td>AED115</td>
-                                    <td>AED116</td>
-                                    <td>15-05-2024</td>
-                                    <td>PA2</td>
-                                    <td>180</td>
-                                    <td>2024</td>
-                                    <td>BKAPONDA</td>
-                                    <td>Closed</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox" className='form-check-input'/></td>
-                                    <td>AED1152-PA2</td>
-                                    <td>AED115</td>
-                                    <td>AED116</td>
-                                    <td>15-05-2024</td>
-                                    <td>PA2</td>
-                                    <td>180</td>
-                                    <td>2024</td>
-                                    <td>BKAPONDA</td>
-                                    <td>Closed</td>
 
-                                </tr>
                             </tbody>
                         </table>
 
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col">
-                        <button className='btn btn-secondary'> Download Shipment File</button>
-                    </div>
-                    <div className="col">
-                        <button className='btn btn-primary' data-bs-toggle="modal" data-bs-target="#example4"> Edit Shipment</button>
+                    <div className="row">
+                        {/*<div className="col">*/}
+                        {/*    <button className='btn btn-secondary'> Download Shipment File</button>*/}
+                        {/*</div>*/}
+                        <div className="col">
+                            {/*<button className='btn btn-primary' data-bs-toggle="modal" data-bs-target="#example4"> Edit*/}
+                            {/*    Shipment*/}
+                            {/*</button>*/}
+                        </div>
+
                     </div>
 
-                </div>
-                
                 </div>
                 {/* <div class="tab-pane" id="icon-tabpanel-2" role="tabpanel" aria-labelledby="icon-tab-2">Laying</div>
                 <div class="tab-pane" id="icon-tabpanel-2" role="tabpanel" aria-labelledby="icon-tab-2">Booking</div> */}
-              
+
             </div>
-       
+
         </div>
 
-       
 
         {/* modals */}
 
@@ -246,28 +247,28 @@ export const Dispatch = (props) => {
                         <div className='row'>
                             <div className='col'>
                                 <label htmlFor="">Driver's Name</label>
-                               <input type="name" className='form-control' id='' />
+                               <input type="name" className='form-control' id='' placeholder="Driver's Name" />
                             </div>
                             <div className='col'>
                                 <label htmlFor="">Driver's ID</label>
-                                <input type="text" className='form-control' id=''/>
+                                <input type="text" className='form-control' id='' placeholder="66-084355v04"/>
                             </div>
 
                         </div>
                         <div className='row'>
                             <div className='col'>
                                 <label htmlFor="">Horse Reg</label>
-                               <input type="text" className='form-control' id='' />
+                               <input type="text" className='form-control' id='' placeholder="Horse Reg" />
                             </div>
                             <div className='col'>
                                 <label htmlFor="">Trailer Reg</label>
-                                <input type="text" className='form-control' id=''/>
+                                <input type="text" className='form-control' id='' placeholder="Trailer Reg" />
                             </div>
 
                         </div>
                         
                         <label for="recipient-name" class="col-form-label">Destination</label>
-                        <input type="text" class="form-control" id="" />
+                        <input type="text" class="form-control" id="" placeholder="MTC" />
                     </div>
 
                     </div>
@@ -329,28 +330,28 @@ export const Dispatch = (props) => {
                         <div className='row'>
                             <div className='col'>
                                 <label htmlFor="">Driver's Name</label>
-                               <input type="name" className='form-control' id='' />
+                               <input type="name" className='form-control' id='' placeholder="Name" />
                             </div>
                             <div className='col'>
                                 <label htmlFor="">Driver's ID</label>
-                                <input type="text" className='form-control' id=''/>
+                                <input type="text" className='form-control' id='' placeholder="ASD-1234"/>
                             </div>
 
                         </div>
                         <div className='row'>
                             <div className='col'>
                                 <label htmlFor="">Horse Reg</label>
-                               <input type="text" className='form-control' id='' />
+                               <input type="text" className='form-control' id='' placeholder="AEB-1234" />
                             </div>
                             <div className='col'>
                                 <label htmlFor="">Trailer Reg</label>
-                                <input type="text" className='form-control' id=''/>
+                                <input type="text" className='form-control' id='' placeholder="ABB-1234" />
                             </div>
 
                         </div>
                         
                         <label for="recipient-name" class="col-form-label">Destination</label>
-                        <input type="text" class="form-control" id="" />
+                        <input type="text" class="form-control" id="" placeholder="MTC" />
                     </div>
 
                     </form>
@@ -365,6 +366,40 @@ export const Dispatch = (props) => {
                 </div>
             </div>
        </div>
+
+        <div className="modal fade" id="example" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1"
+             aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div className="modal-dialog">
+                <div className="modal-content">
+                    <div className="modal-header">
+                        <h5 className="modal-title" id="staticBackdropLabel">Are you sure ???</h5>
+                        <button type="button" className="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                    </div>
+                    <div className="modal-body">
+                        <div className="row">
+                            <div className="col">
+                                <button type="submit" className="btn btn-primary">Yes</button>
+                            </div>
+                            <div className="col">
+                                <button type="submit" className="btn btn-secondary">No</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div>
+                        <div className="col-6 col-sm-6 offset-sm-3">
+                            {/*    Success Response*/}
+                            <p className="card_2"><b>Successful !!!</b></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
   )
