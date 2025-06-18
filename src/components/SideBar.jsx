@@ -395,11 +395,11 @@ const SideBar=(props)=> {
                 <span>Manage Users</span>
                 </Link>
                 </li>
-                <li>
-                    <a href="#">
+                <li onClick={props.audittrailclick}>
+                    <Link to="/AuditTrail">
                         <i className='bi bi-circle'></i>
                 <span>Audit Trail</span>
-                </a>
+                </Link>
                 </li>
             </ul>
         </li>

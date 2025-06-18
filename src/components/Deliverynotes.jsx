@@ -144,6 +144,15 @@ export const Deliverynotes = (props) => {
             </ul>
             <div class="tab-content pt-5" id="tab-content">
                 <div class="tab-pane active" id="icon-tabpanel-0" role="tabpanel" aria-labelledby="icon-tab-0">
+                    <div className="row">
+                        <div className="col-4">
+                            <input className="form-control"/>
+                        </div>
+                        <div className="col-2">
+                            <button className="btn btn-primary" id="icon-tab-3" data-bs-dismiss="modal" aria-label="Close">Search</button>
+                        </div>
+                    </div>
+                    <br/>
                     <div className='table table-responsive' data-bs-spy="scroll" style={{ maxHeight: "500px", 
                     overflowY: "auto" }}>
                         <table className='table table-striped table-hover'>
@@ -190,6 +199,15 @@ export const Deliverynotes = (props) => {
                 </div>
                 <div class="tab-pane" id="icon-tabpanel-1" role="tabpanel" aria-labelledby="icon-tab-1">
                 <div class="tab-pane active" id="icon-tabpanel-0" role="tabpanel" aria-labelledby="icon-tab-0">
+                    <div className="row">
+                        <div className="col-4">
+                            <input className="form-control"/>
+                        </div>
+                        <div className="col-2">
+                            <button className="btn btn-primary" id="icon-tab-3" data-bs-dismiss="modal" aria-label="Close">Search</button>
+                        </div>
+                    </div>
+                    <br/>
                     <div className='table table-responsive' data-bs-spy="scroll" style={{ maxHeight: "500px", 
                     overflowY: "auto" }}>
                         <table className='table table-striped table-hover'>

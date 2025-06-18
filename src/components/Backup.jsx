@@ -17,17 +17,19 @@ const Backup = (props) => {
                     <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     Run Backup
                     </button>
-
-                <form action="">
                     <br />
                     <label htmlFor="">Restore Database</label>
                     <br />
                     <input type="file" className='form-control' />
                     <br />
                     <button type='button' className='btn btn-primary'>Submit</button>
-                </form>
-            
-
+                <br/>
+                <div>
+                    <div className="col-6 col-sm-6 offset-sm-3">
+                        {/*    Success Response*/}
+                        <p className="card_2"><b>Successful !!!</b></p>
+                    </div>
+                </div>
             </div>
 
             {/* Modals */}
@@ -45,12 +47,17 @@ const Backup = (props) => {
                             <input type="password" className='form-control' />
                         </form>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <a href="#" download="#">
+                    <div class="modal-footer center-align">
+
                         <button type="button" class="btn btn-primary">Backup</button>
-                            </a>
+
                     </div>
+                        <div>
+                            <div className="col-6 col-sm-6 offset-sm-3">
+                                {/*    Success Response*/}
+                                <p className="card_2"><b>Successful !!!</b></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -55,6 +55,7 @@ import { Otherreports } from './components/Otherreports';
 import { DailyStats } from './components/DailyStats'
 import { Gms } from './components/Gms';
 import { Bales } from './components/Bales';
+import AuditTrail from "./components/AuditTrail";
 
 
 class App extends Component {
@@ -538,787 +539,1192 @@ class App extends Component {
     console.log("pri")
     this.setState({"route":"Bales"})
   }
+  audittrailclick=()=>{
+    console.log("pri")
+    this.setState({"route":"AuditTrail"})
+  }
 
 
-  render(){
+  render() {
 
-    if(this.state.route===""){
+    if (this.state.route === "") {
 
 
-    return (
-      <>
-      <Header />
-      <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick} dailystatsclick={this.dailystatsclick}
-       salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} capinternalsclick={this.capinternalsclick}
-       bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} bankingclick={this.bankingclick} 
-      sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick}
-      gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick} 
-      deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} paymentclick={this.paymentclick}
-       ticketsclick={this.ticketsclick} batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
-       dispatchclick={this.dispatchclick} loginclick={this.loginclick} scaleclick={this.scaleclick} 
-       capturebalepriceclick={this.capturebalepriceclick} balancingclick = {this.balancingclick} 
-        salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick} purchasesclick={this.purchasesclick}
-         stoprderverifyclick={this.stoprderverifyclick} internalsclick={this.internalsclick} invoicesclick={this.invoicesclick}
-          revenuesclick={this.revenuesclick} creditorscheduleclick={this.creditorscheduleclick}
-           otherreportsclick={this.otherreportsclick} gmsclick={this.gmsclick} balesclick={this.balesclick} />
-      <Main >
-        <PageTitle id_address={this.state.ip_address}/>
-      </Main>
-      {/* <Files /> */}
-      </>
-   
-    
-);
-    }else if(this.state.route==="home"){
-
-      return (
-        <>
-        <Header />
-        <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick} dailystatsclick={this.dailystatsclick}
-       salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} capinternalsclick={this.capinternalsclick}
-       bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} bankingclick={this.bankingclick} 
-      sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick}
-      gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick}
-      deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} paymentclick={this.paymentclick}
-      ticketsclick={this.ticketsclick} batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} 
-      dispatchclick={this.dispatchclick} revenuesclick={this.revenuesclick}  loginclick={this.loginclick} scaleclick={this.scaleclick}
-       capturebalepriceclick={this.capturebalepriceclick} balancingclick = {this.balancingclick}
-        salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick} purchasesclick={this.purchasesclick}
-        internalsclick={this.internalsclick}  stoprderverifyclick={this.stoprderverifyclick} balesclick={this.balesclick}
-        creditorscheduleclick={this.creditorscheduleclick} otherreportsclick={this.otherreportsclick} invoicesclick={this.invoicesclick}
-                 gmsclick={this.gmsclick} />
-        <Main >
-          <PageTitle id_address={this.state.ip_address}/>
-        </Main>
-        {/* <Files /> */}
-        </>
-     
-      
-  );
-    }else if(this.state.route==="Files"){
-      return (
-        <>
-        <Header />
-        <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
-       salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} capinternalsclick={this.capinternalsclick}
-       bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} bankingclick={this.bankingclick} 
-      sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick}
-      gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick} 
-      deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} paymentclick={this.paymentclick}
-      ticketsclick={this.ticketsclick} revenuesclick={this.revenuesclick} batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} 
-      dispatchclick={this.dispatchclick} loginclick={this.loginclick} scaleclick={this.scaleclick} dailystatsclick={this.dailystatsclick}
-       capturebalepriceclick={this.capturebalepriceclick} balancingclick = {this.balancingclick} otherreportsclick={this.otherreportsclick}
-        salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick} purchasesclick={this.purchasesclick}
-        internalsclick={this.internalsclick} creditorscheduleclick={this.creditorscheduleclick} balesclick={this.balesclick}
-        invoicesclick={this.invoicesclick} stoprderverifyclick={this.stoprderverifyclick} gmsclick={this.gmsclick}/>
-        <Main >
-        <Files id_address={this.state.ip_address}/>
-        </Main>
-        
-        </>
-     
-      
-  );
-    }else if (this.state.route==="SalesRun") {
-    
-      return (
-        <>
-        <Header />
-        <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
-       salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} capinternalsclick={this.capinternalsclick}
-       bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} bankingclick={this.bankingclick} 
-      sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} otherreportsclick={this.otherreportsclick}
-      gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick} dailystatsclick={this.dailystatsclick}
-      deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} paymentclick={this.paymentclick}
-      ticketsclick={this.ticketsclick} batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} 
-      dispatchclick={this.dispatchclick} revenuesclick={this.revenuesclick} loginclick={this.loginclick} scaleclick={this.scaleclick} 
-       capturebalepriceclick={this.capturebalepriceclick} balancingclick = {this.balancingclick} invoicesclick={this.invoicesclick} 
-        salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick} purchasesclick={this.purchasesclick} balesclick={this.balesclick}
-        internalsclick={this.internalsclick}  stoprderverifyclick={this.stoprderverifyclick} creditorscheduleclick={this.creditorscheduleclick} gmsclick={this.gmsclick}/>
-        <Main >
-          <SalesRun startOfDayData={this.state.startOfDayData} id_address={this.state.ip_address}/>
-        </Main>
-        
-        </>
-     
-      
-  );
-  }else if(this.state.route==="GrowerReg"){
-
-    return (
-      <>
-      <Header />
-      <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
-       salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} capinternalsclick={this.capinternalsclick}
-       bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} bankingclick={this.bankingclick} 
-      sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick}
-      gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick} 
-      deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick}
-      batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} paymentclick={this.paymentclick}
-      dispatchclick={this.dispatchclick} loginclick={this.loginclick} scaleclick={this.scaleclick} dailystatsclick={this.dailystatsclick}
-      capturebalepriceclick={this.capturebalepriceclick} balancingclick = {this.balancingclick} otherreportsclick={this.otherreportsclick}
-       salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick} purchasesclick={this.purchasesclick}
-       internalsclick={this.internalsclick} revenuesclick={this.revenuesclick} invoicesclick={this.invoicesclick} balesclick={this.balesclick}
-       creditorscheduleclick={this.creditorscheduleclick}  stoprderverifyclick={this.stoprderverifyclick} gmsclick={this.gmsclick}/>
-      <Main >
-        <GrowerReg id_address={this.state.ip_address}/>
-      </Main>
-      
-      </>
-
-    );
-    }else if(this.state.route==="Booking") {
-
-      return (
-        <>
-        <Header />
-        <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
-       salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} capinternalsclick={this.capinternalsclick}
-       bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} bankingclick={this.bankingclick} 
-      sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick}
-      gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick} 
-      deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick}
-      batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} paymentclick={this.paymentclick}
-      dispatchclick={this.dispatchclick} loginclick={this.loginclick} scaleclick={this.scaleclick} dailystatsclick={this.dailystatsclick}
-       capturebalepriceclick={this.capturebalepriceclick} balancingclick = {this.balancingclick} otherreportsclick={this.otherreportsclick}
-        salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick} purchasesclick={this.purchasesclick} 
-        internalsclick={this.internalsclick} revenuesclick={this.revenuesclick} invoicesclick={this.invoicesclick} balesclick={this.balesclick}
-        creditorscheduleclick={this.creditorscheduleclick} stoprderverifyclick={this.stoprderverifyclick} gmsclick={this.gmsclick}/>
-        <Main >
-          <Booking id_address={this.state.ip_address}/>
-        </Main>
-        
-        </>
-  
-      );
-    }else if(this.state.route==="StopOrderProcess"){
-
-      return (
-        <>
-        <Header />
-        <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
-       salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} capinternalsclick={this.capinternalsclick}
-       bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} bankingclick={this.bankingclick} 
-      sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} 
-      gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick}
-       deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick} 
-       batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} paymentclick={this.paymentclick}
-       dispatchclick={this.dispatchclick} loginclick={this.loginclick} scaleclick={this.scaleclick} dailystatsclick={this.dailystatsclick}
-        capturebalepriceclick={this.capturebalepriceclick} balancingclick = {this.balancingclick} otherreportsclick={this.otherreportsclick}
-         salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick} purchasesclick={this.purchasesclick}
-         internalsclick={this.internalsclick} revenuesclick={this.revenuesclick} invoicesclick={this.invoicesclick} balesclick={this.balesclick}
-         creditorscheduleclick={this.creditorscheduleclick} stoprderverifyclick={this.stoprderverifyclick} gmsclick={this.gmsclick}/>
-        <Main >
-          <StopOrderProcess sellingPointsData={this.state.sellingPointsData} id_address={this.state.ip_address}/>
-        </Main>
-        
-        </>
-  
-      );
-    }else if(this.state.route==="SellingPoint"){
-      return (
-        <>
-        <Header />
-        <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
-       salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} capinternalsclick={this.capinternalsclick} 
-       bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} bankingclick={this.bankingclick} 
-      sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} 
-      gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick} 
-      deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick} 
-      batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} paymentclick={this.paymentclick}
-      dispatchclick={this.dispatchclick} loginclick={this.loginclick} scaleclick={this.scaleclick} dailystatsclick={this.dailystatsclick}
-       capturebalepriceclick={this.capturebalepriceclick} balancingclick = {this.balancingclick} otherreportsclick={this.otherreportsclick}
-        salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick} purchasesclick={this.purchasesclick}
-        internalsclick={this.internalsclick} revenuesclick={this.revenuesclick} invoicesclick={this.invoicesclick}
-        creditorscheduleclick={this.creditorscheduleclick} stoprderverifyclick={this.stoprderverifyclick} gmsclick={this.gmsclick}
-                 balesclick={this.balesclick}/>
-        <Main>
-          <SellingPoint id_address={this.state.ip_address}/>
-        </Main>
-        </>
-      );
-    }else if(this.state.route==="Buyer"){
-      return (
-        <>
-        <Header />
-        <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
-       salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} purchasesclick={this.purchasesclick} 
-       bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} capinternalsclick={this.capinternalsclick}
-      sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick}
-      gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick} 
-      deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick} 
-      batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} dispatchclick={this.dispatchclick}
-      loginclick={this.loginclick} scaleclick={this.scaleclick} capturebalepriceclick={this.capturebalepriceclick}
-      balancingclick = {this.balancingclick} salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick}
-      stoprderverifyclick={this.stoprderverifyclick} creditorscheduleclick={this.creditorscheduleclick} balesclick={this.balesclick}
-      invoicesclick={this.invoicesclick} otherreportsclick={this.otherreportsclick} dailystatsclick={this.dailystatsclick}
-       revenuesclick={this.revenuesclick} internalsclick={this.internalsclick} bankingclick={this.bankingclick} 
-      paymentclick={this.paymentclick} gmsclick={this.gmsclick} />
-         <Main>
-          <Buyer sellingPointsData={this.state.sellingPointsData} buyersData={this.state.buyersData} id_address={this.state.ip_address}/>
-        </Main>
-        </>
-      );
-    }else if(this.state.route==="ManageUsers"){
-      return (
-        <>
-        <Header />
-        <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
-         salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} capinternalsclick={this.capinternalsclick} 
-         bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} bankingclick={this.bankingclick} 
-        sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} 
-        gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick} 
-        deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick} 
-        batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} dispatchclick={this.dispatchclick} 
-        loginclick={this.loginclick} scaleclick={this.scaleclick} purchasesclick={this.purchasesclick} balesclick={this.balesclick}
-         capturebalepriceclick={this.capturebalepriceclick} balancingclick = {this.balancingclick} dailystatsclick={this.dailystatsclick}
-         creditorscheduleclick={this.creditorscheduleclick} invoicesclick={this.invoicesclick} otherreportsclick={this.otherreportsclick}
-          salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick} paymentclick={this.paymentclick}
-          internalsclick={this.internalsclick} revenuesclick={this.revenuesclick} stoprderverifyclick={this.stoprderverifyclick} gmsclick={this.gmsclick}/>
-         <Main>
-          <ManageUsers id_address={this.state.ip_address}/>
-         </Main>
-        
-        </>
-      );
-      
-    }else if(this.state.route==="Grades"){
-      return (
-        <>
-        <Header />
-        <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
-         salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} capinternalsclick={this.capinternalsclick}
-         bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} bankingclick={this.bankingclick} 
-        sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} 
-        gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick} balesclick={this.balesclick}
-        deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick} 
-        batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} capturebalepriceclick={this.capturebalepriceclick} loginclick={this.loginclick}
-         scaleclick={this.scaleclick} balancingclick = {this.balancingclick} purchasesclick={this.purchasesclick}
-         invoicesclick={this.invoicesclick} otherreportsclick={this.otherreportsclick} dailystatsclick={this.dailystatsclick}
-         salesclick = {this.salesclick} creditorscheduleclick={this.creditorscheduleclick} salesbatchingclick={this.salesbatchingclick} paymentclick={this.paymentclick} 
-         internalsclick={this.internalsclick} revenuesclick={this.revenuesclick} stoprderverifyclick={this.stoprderverifyclick} gmsclick={this.gmsclick} />
-         <Main>
-          <Grades buyersData={this.state.buyersData} id_address={this.state.ip_address}/>
-         </Main>
-        
-        </>
-      );
-    }else if(this.state.route==="Backup") {
-      return (
-        <>
-        <Header />
-        <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
-         salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} capinternalsclick={this.capinternalsclick}
-         bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} bankingclick={this.bankingclick} 
-        sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} 
-        gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick} 
-        deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick}
-        batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} dispatchclick={this.dispatchclick}
-        loginclick={this.loginclick} scaleclick={this.scaleclick} purchasesclick={this.purchasesclick} balesclick={this.balesclick}
-         capturebalepriceclick={this.capturebalepriceclick} balancingclick = {this.balancingclick} dailystatsclick={this.dailystatsclick}
-         salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick} paymentclick={this.paymentclick}
-         internalsclick={this.internalsclick} creditorscheduleclick={this.creditorscheduleclick} otherreportsclick={this.otherreportsclick}
-          revenuesclick={this.revenuesclick} stoprderverifyclick={this.stoprderverifyclick} invoicesclick={this.invoicesclick} gmsclick={this.gmsclick}/>
-         <Main>
-          <Backup id_address={this.state.ip_address}/>
-         </Main>
-
-        
-        </>
-
-      );
-    }else if(this.state.route==="Parameters") {
-      return (
-        <>
-        <Header />
-        <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
-         salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} capinternalsclick={this.capinternalsclick}
-         bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} bankingclick={this.bankingclick} 
-        sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} otherreportsclick={this.otherreportsclick}
-        gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick} dailystatsclick={this.dailystatsclick}
-        deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick} 
-        batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} dispatchclick={this.dispatchclick} 
-        loginclick={this.loginclick} scaleclick={this.scaleclick} capturebalepriceclick={this.capturebalepriceclick} 
-        balancingclick = {this.balancingclick} salesclick = {this.salesclick} purchasesclick={this.purchasesclick} balesclick={this.balesclick}
-        internalsclick={this.internalsclick} revenuesclick={this.revenuesclick} salesbatchingclick={this.salesbatchingclick} paymentclick={this.paymentclick}
-        stoprderverifyclick={this.stoprderverifyclick} creditorscheduleclick={this.creditorscheduleclick} gmsclick={this.gmsclick}
-        invoicesclick={this.invoicesclick}/>
-         <Main>
-          <Parameters id_address={this.state.ip_address} statutoryData={this.state.statutoryData} chargeTypeData={this.state.chargeTypeData} sellingPointsData={this.state.sellingPointsData} statutoryValueData={this.state.statutoryValueData}/>
-         </Main>
-
-        
-        </>
-      );
-    }else if(this.state.route==="Deliverynotes"){
-      return (
-        <>
-        <Header />
-        <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
-         salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} purchasesclick={this.purchasesclick}
-         bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} capinternalsclick={this.capinternalsclick}
-        sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} otherreportsclick={this.otherreportsclick}
-        gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick} dailystatsclick={this.dailystatsclick}
-        deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick} 
-        batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} dispatchclick={this.dispatchclick} 
-        loginclick={this.loginclick} scaleclick={this.scaleclick} capturebalepriceclick={this.capturebalepriceclick} balesclick={this.balesclick}
-        balancingclick = {this.balancingclick}  salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick}
-        stoprderverifyclick={this.stoprderverifyclick} internalsclick={this.internalsclick} creditorscheduleclick={this.creditorscheduleclick} 
-        bankingclick={this.bankingclick} revenuesclick={this.revenuesclick} paymentclick={this.paymentclick} invoicesclick={this.invoicesclick} gmsclick={this.gmsclick} />
-         <Main>
-          <Deliverynotes id_address={this.state.ip_address} deliveryNoteData={this.state.deliveryNoteData} growerDeliveryNoteData={this.state.growerDeliveryNoteData}/>
-         </Main>
-
-        
-        </>
-
-        );
-    }else if(this.state.route==="Balereceiving"){
-      return (
-        <>
-        <Header />
-        <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick} dailystatsclick={this.dailystatsclick}
-         salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} purchasesclick={this.purchasesclick}
-         bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} capinternalsclick={this.capinternalsclick}
-        sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} creditorscheduleclick={this.creditorscheduleclick}
-        gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick} invoicesclick={this.invoicesclick}
-        deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick} 
-        batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} dispatchclick={this.dispatchclick} 
-        loginclick={this.loginclick} scaleclick={this.scaleclick} capturebalepriceclick={this.capturebalepriceclick} otherreportsclick={this.otherreportsclick}
-        balancingclick = {this.balancingclick}  salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick} balesclick={this.balesclick}
-        stoprderverifyclick={this.stoprderverifyclick} revenuesclick={this.revenuesclick} internalsclick={this.internalsclick} paymentclick={this.paymentclick}
-        bankingclick={this.bankingclick} gmsclick={this.gmsclick} />
-         <Main>
-          <Balereceiving id_address={this.state.ip_address}/>
-         </Main>
-        </>
-      );
-    }else if(this.state.route==="Tickets"){
-      return (
-        <>
-        <Header />
-        <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick} dailystatsclick={this.dailystatsclick}
-         salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} purchasesclick={this.purchasesclick} 
-         bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} capinternalsclick={this.capinternalsclick} 
-        sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} creditorscheduleclick={this.creditorscheduleclick}
-        gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick} invoicesclick={this.invoicesclick}
-        deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick} 
-        batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} dispatchclick={this.dispatchclick} balesclick={this.balesclick}
-        loginclick={this.loginclick} scaleclick={this.scaleclick} capturebalepriceclick={this.capturebalepriceclick} otherreportsclick={this.otherreportsclick}
-        balancingclick = {this.balancingclick} revenuesclick={this.revenuesclick} salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick}
-        stoprderverifyclick={this.stoprderverifyclick} internalsclick={this.internalsclick} bankingclick={this.bankingclick}
-        paymentclick={this.paymentclick} gmsclick={this.gmsclick}/>
-         <Main>
-          <Tickets ticketsData={this.state.ticketsData} id_address={this.state.ip_address}/>
-         </Main>
-        </>
-      );
-    }else if(this.state.route==="Ticketsbatching") {
-      return (
-        <>
-        <Header />
-        <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick} dailystatsclick={this.dailystatsclick}
-         salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} purchasesclick={this.purchasesclick}
-         bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} capinternalsclick={this.capinternalsclick}
-        sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} creditorscheduleclick={this.creditorscheduleclick}
-        gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick} otherreportsclick={this.otherreportsclick}
-        deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick} 
-        batchingclick={this.batchingclick}  floorsummaryclick={this.floorsummaryclick} dispatchclick={this.dispatchclick}
-        loginclick={this.loginclick} scaleclick={this.scaleclick} capturebalepriceclick={this.capturebalepriceclick} balesclick={this.balesclick}
-         ticketsData={this.state.ticketsData} balancingclick = {this.balancingclick} salesclick = {this.salesclick} invoicesclick={this.invoicesclick}
-         salesbatchingclick={this.salesbatchingclick} bankingclick={this.bankingclick} paymentclick={this.paymentclick} 
-         internalsclick={this.internalsclick} revenuesclick={this.revenuesclick} stoprderverifyclick={this.stoprderverifyclick} gmsclick={this.gmsclick}/>
-         <Main>
-          <Ticketbatching ticketsBatchingData={this.state.ticketsBatchingData} id_address={this.state.ip_address} batchingclick = {this.batchingclick}/>
-         </Main>
-        </>
-      );
-    }else if(this.state.route==="Floorsummary") {
-      return (
-        <>
-        <Header />
-        <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick} dailystatsclick={this.dailystatsclick}
-         salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} purchasesclick={this.purchasesclick}
-         bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} capinternalsclick={this.capinternalsclick}
-        sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} otherreportsclick={this.otherreportsclick}
-        gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick} invoicesclick={this.invoicesclick}
-        deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick} 
-        batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} dispatchclick={this.dispatchclick} 
-        loginclick={this.loginclick} revenuesclick={this.revenuesclick} scaleclick={this.scaleclick} capturebalepriceclick={this.capturebalepriceclick} 
-         ticketsData={this.state.ticketsData} balancingclick = {this.balancingclick} bankingclick={this.bankingclick} 
-         salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick} paymentclick={this.paymentclick} balesclick={this.balesclick}
-         internalsclick={this.internalsclick} stoprderverifyclick={this.stoprderverifyclick} creditorscheduleclick={this.creditorscheduleclick} gmsclick={this.gmsclick}/>
-         <Main>
-          <Floorsummary id_address={this.state.ip_address}/>
-         </Main>
-        </>
-      );
-    }else if(this.state.route==="Dispatch") {
-      return (
-        <>
-         <Header />
-        <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick} dailystatsclick={this.dailystatsclick}
-         salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} purchasesclick={this.purchasesclick}
-         bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} capinternalsclick={this.capinternalsclick}
-        sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} otherreportsclick={this.otherreportsclick}
-        gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick} 
-        deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick} 
-        batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} dispatchclick={this.dispatchclick}
-        loginclick={this.loginclick} scaleclick={this.scaleclick} capturebalepriceclick={this.capturebalepriceclick} balesclick={this.balesclick}
-         ticketsData={this.state.ticketsData} revenuesclick={this.revenuesclick} balancingclick = {this.balancingclick} bankingclick={this.bankingclick} 
-         salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick} paymentclick={this.paymentclick} invoicesclick={this.invoicesclick}
-         internalsclick={this.internalsclick} stoprderverifyclick={this.stoprderverifyclick} creditorscheduleclick={this.creditorscheduleclick} gmsclick={this.gmsclick}/>
-         <Main>
-          <Dispatch id_address={this.state.ip_address}/>
-         </Main>
-        </>
-      );
-    }else if(this.state.route==="Login") {
-      return (
-        <>
-       
-        
-          <Login />
-        
-        </>
-      );
-    }else if(this.state.route==="Scale") {
-      return (
-        <>
-        <Header />
-        <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick} dailystatsclick={this.dailystatsclick}
-         salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} purchasesclick={this.purchasesclick}
-         bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} capinternalsclick={this.capinternalsclick}
-        sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} otherreportsclick={this.otherreportsclick}
-        gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick} balesclick={this.balesclick}
-        deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick} 
-        batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} dispatchclick={this.dispatchclick}
-        loginclick={this.loginclick} revenuesclick={this.revenuesclick} scaleclick={this.scaleclick} capturebalepriceclick={this.capturebalepriceclick} 
-         ticketsData={this.state.ticketsData} balancingclick = {this.balancingclick} bankingclick={this.bankingclick} 
-         salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick} internalsclick={this.internalsclick}
-         paymentclick={this.paymentclick} creditorscheduleclick={this.creditorscheduleclick} invoicesclick={this.invoicesclick} gmsclick={this.gmsclick} />
-         <Main>
-          <Scale id_address={this.state.ip_address}/>
-         </Main>
-        </>
-      );
-    }else if(this.state.route==="Capture") {
       return (
           <>
-            <Header />
-            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick} dailystatsclick={this.dailystatsclick}
-                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} purchasesclick={this.purchasesclick}
-                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} capinternalsclick={this.capinternalsclick}
-                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} otherreportsclick={this.otherreportsclick}
-                     gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick}
-                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick}
-                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} dispatchclick={this.dispatchclick}
-                     loginclick={this.loginclick} scaleclick={this.scaleclick} capturebalepriceclick={this.capturebalepriceclick} 
-                      ticketsData={this.state.ticketsData} revenuesclick={this.revenuesclick} balancingclick = {this.balancingclick} bankingclick={this.bankingclick} 
-                      salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick} paymentclick={this.paymentclick} 
-                      internalsclick={this.internalsclick} stoprderverifyclick={this.stoprderverifyclick} balesclick={this.balesclick}
-                      invoicesclick={this.invoicesclick} creditorscheduleclick={this.creditorscheduleclick} gmsclick={this.gmsclick}/>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     dailystatsclick={this.dailystatsclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     capinternalsclick={this.capinternalsclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     bankingclick={this.bankingclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     paymentclick={this.paymentclick}
+                     ticketsclick={this.ticketsclick} batchingclick={this.batchingclick}
+                     floorsummaryclick={this.floorsummaryclick}
+                     dispatchclick={this.dispatchclick} loginclick={this.loginclick} scaleclick={this.scaleclick}
+                     capturebalepriceclick={this.capturebalepriceclick} balancingclick={this.balancingclick}
+                     salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
+                     purchasesclick={this.purchasesclick}
+                     stoprderverifyclick={this.stoprderverifyclick} internalsclick={this.internalsclick}
+                     invoicesclick={this.invoicesclick}
+                     revenuesclick={this.revenuesclick} creditorscheduleclick={this.creditorscheduleclick}
+                     audittrailclick={this.audittrailclick}
+                     otherreportsclick={this.otherreportsclick} gmsclick={this.gmsclick} balesclick={this.balesclick}/>
+            <Main>
+              <PageTitle id_address={this.state.ip_address}/>
+            </Main>
+            {/* <Files /> */}
+          </>
+
+
+      );
+    } else if (this.state.route === "home") {
+
+      return (
+          <>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     dailystatsclick={this.dailystatsclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     capinternalsclick={this.capinternalsclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     bankingclick={this.bankingclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     paymentclick={this.paymentclick}
+                     ticketsclick={this.ticketsclick} batchingclick={this.batchingclick}
+                     floorsummaryclick={this.floorsummaryclick}
+                     dispatchclick={this.dispatchclick} revenuesclick={this.revenuesclick} loginclick={this.loginclick}
+                     scaleclick={this.scaleclick}
+                     capturebalepriceclick={this.capturebalepriceclick} balancingclick={this.balancingclick}
+                     audittrailclick={this.audittrailclick}
+                     salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
+                     purchasesclick={this.purchasesclick}
+                     internalsclick={this.internalsclick} stoprderverifyclick={this.stoprderverifyclick}
+                     balesclick={this.balesclick}
+                     creditorscheduleclick={this.creditorscheduleclick} otherreportsclick={this.otherreportsclick}
+                     invoicesclick={this.invoicesclick}
+                     gmsclick={this.gmsclick}/>
+            <Main>
+              <PageTitle id_address={this.state.ip_address}/>
+            </Main>
+            {/* <Files /> */}
+          </>
+
+
+      );
+    } else if (this.state.route === "Files") {
+      return (
+          <>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     capinternalsclick={this.capinternalsclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     bankingclick={this.bankingclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick} audittrailclick={this.audittrailclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     paymentclick={this.paymentclick}
+                     ticketsclick={this.ticketsclick} revenuesclick={this.revenuesclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     dispatchclick={this.dispatchclick} loginclick={this.loginclick} scaleclick={this.scaleclick}
+                     dailystatsclick={this.dailystatsclick}
+                     capturebalepriceclick={this.capturebalepriceclick} balancingclick={this.balancingclick}
+                     otherreportsclick={this.otherreportsclick}
+                     salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
+                     purchasesclick={this.purchasesclick}
+                     internalsclick={this.internalsclick} creditorscheduleclick={this.creditorscheduleclick}
+                     balesclick={this.balesclick}
+                     invoicesclick={this.invoicesclick} stoprderverifyclick={this.stoprderverifyclick}
+                     gmsclick={this.gmsclick}/>
+            <Main>
+              <Files id_address={this.state.ip_address}/>
+            </Main>
+
+          </>
+
+
+      );
+    } else if (this.state.route === "SalesRun") {
+
+      return (
+          <>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     audittrailclick={this.audittrailclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     capinternalsclick={this.capinternalsclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     bankingclick={this.bankingclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick} otherreportsclick={this.otherreportsclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick} dailystatsclick={this.dailystatsclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     paymentclick={this.paymentclick}
+                     ticketsclick={this.ticketsclick} batchingclick={this.batchingclick}
+                     floorsummaryclick={this.floorsummaryclick}
+                     dispatchclick={this.dispatchclick} revenuesclick={this.revenuesclick} loginclick={this.loginclick}
+                     scaleclick={this.scaleclick}
+                     capturebalepriceclick={this.capturebalepriceclick} balancingclick={this.balancingclick}
+                     invoicesclick={this.invoicesclick}
+                     salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
+                     purchasesclick={this.purchasesclick} balesclick={this.balesclick}
+                     internalsclick={this.internalsclick} stoprderverifyclick={this.stoprderverifyclick}
+                     creditorscheduleclick={this.creditorscheduleclick} gmsclick={this.gmsclick}/>
+            <Main>
+              <SalesRun startOfDayData={this.state.startOfDayData} id_address={this.state.ip_address}/>
+            </Main>
+
+          </>
+
+
+      );
+    } else if (this.state.route === "GrowerReg") {
+
+      return (
+          <>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     capinternalsclick={this.capinternalsclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     bankingclick={this.bankingclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick} audittrailclick={this.audittrailclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     paymentclick={this.paymentclick}
+                     dispatchclick={this.dispatchclick} loginclick={this.loginclick} scaleclick={this.scaleclick}
+                     dailystatsclick={this.dailystatsclick}
+                     capturebalepriceclick={this.capturebalepriceclick} balancingclick={this.balancingclick}
+                     otherreportsclick={this.otherreportsclick}
+                     salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
+                     purchasesclick={this.purchasesclick}
+                     internalsclick={this.internalsclick} revenuesclick={this.revenuesclick}
+                     invoicesclick={this.invoicesclick} balesclick={this.balesclick}
+                     creditorscheduleclick={this.creditorscheduleclick} stoprderverifyclick={this.stoprderverifyclick}
+                     gmsclick={this.gmsclick}/>
+            <Main>
+              <GrowerReg id_address={this.state.ip_address}/>
+            </Main>
+
+          </>
+
+      );
+    } else if (this.state.route === "Booking") {
+
+      return (
+          <>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     capinternalsclick={this.capinternalsclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     bankingclick={this.bankingclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick} audittrailclick={this.audittrailclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     paymentclick={this.paymentclick}
+                     dispatchclick={this.dispatchclick} loginclick={this.loginclick} scaleclick={this.scaleclick}
+                     dailystatsclick={this.dailystatsclick}
+                     capturebalepriceclick={this.capturebalepriceclick} balancingclick={this.balancingclick}
+                     otherreportsclick={this.otherreportsclick}
+                     salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
+                     purchasesclick={this.purchasesclick}
+                     internalsclick={this.internalsclick} revenuesclick={this.revenuesclick}
+                     invoicesclick={this.invoicesclick} balesclick={this.balesclick}
+                     creditorscheduleclick={this.creditorscheduleclick} stoprderverifyclick={this.stoprderverifyclick}
+                     gmsclick={this.gmsclick}/>
+            <Main>
+              <Booking id_address={this.state.ip_address}/>
+            </Main>
+
+          </>
+
+      );
+    } else if (this.state.route === "StopOrderProcess") {
+
+      return (
+          <>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     capinternalsclick={this.capinternalsclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     bankingclick={this.bankingclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick} audittrailclick={this.audittrailclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     paymentclick={this.paymentclick}
+                     dispatchclick={this.dispatchclick} loginclick={this.loginclick} scaleclick={this.scaleclick}
+                     dailystatsclick={this.dailystatsclick}
+                     capturebalepriceclick={this.capturebalepriceclick} balancingclick={this.balancingclick}
+                     otherreportsclick={this.otherreportsclick}
+                     salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
+                     purchasesclick={this.purchasesclick}
+                     internalsclick={this.internalsclick} revenuesclick={this.revenuesclick}
+                     invoicesclick={this.invoicesclick} balesclick={this.balesclick}
+                     creditorscheduleclick={this.creditorscheduleclick} stoprderverifyclick={this.stoprderverifyclick}
+                     gmsclick={this.gmsclick}/>
+            <Main>
+              <StopOrderProcess sellingPointsData={this.state.sellingPointsData} id_address={this.state.ip_address}/>
+            </Main>
+
+          </>
+
+      );
+    } else if (this.state.route === "SellingPoint") {
+      return (
+          <>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     capinternalsclick={this.capinternalsclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     bankingclick={this.bankingclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick} audittrailclick={this.audittrailclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     paymentclick={this.paymentclick}
+                     dispatchclick={this.dispatchclick} loginclick={this.loginclick} scaleclick={this.scaleclick}
+                     dailystatsclick={this.dailystatsclick}
+                     capturebalepriceclick={this.capturebalepriceclick} balancingclick={this.balancingclick}
+                     otherreportsclick={this.otherreportsclick}
+                     salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
+                     purchasesclick={this.purchasesclick}
+                     internalsclick={this.internalsclick} revenuesclick={this.revenuesclick}
+                     invoicesclick={this.invoicesclick}
+                     creditorscheduleclick={this.creditorscheduleclick} stoprderverifyclick={this.stoprderverifyclick}
+                     gmsclick={this.gmsclick}
+                     balesclick={this.balesclick}/>
+            <Main>
+              <SellingPoint id_address={this.state.ip_address}/>
+            </Main>
+          </>
+      );
+    } else if (this.state.route === "Buyer") {
+      return (
+          <>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     purchasesclick={this.purchasesclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     capinternalsclick={this.capinternalsclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     dispatchclick={this.dispatchclick}
+                     loginclick={this.loginclick} scaleclick={this.scaleclick}
+                     capturebalepriceclick={this.capturebalepriceclick}
+                     balancingclick={this.balancingclick} salesclick={this.salesclick}
+                     salesbatchingclick={this.salesbatchingclick}
+                     stoprderverifyclick={this.stoprderverifyclick} creditorscheduleclick={this.creditorscheduleclick}
+                     balesclick={this.balesclick}
+                     invoicesclick={this.invoicesclick} otherreportsclick={this.otherreportsclick}
+                     dailystatsclick={this.dailystatsclick}
+                     revenuesclick={this.revenuesclick} internalsclick={this.internalsclick}
+                     bankingclick={this.bankingclick}
+                     paymentclick={this.paymentclick} gmsclick={this.gmsclick} audittrailclick={this.audittrailclick}/>
+            <Main>
+              <Buyer sellingPointsData={this.state.sellingPointsData} buyersData={this.state.buyersData}
+                     id_address={this.state.ip_address}/>
+            </Main>
+          </>
+      );
+    } else if (this.state.route === "ManageUsers") {
+      return (
+          <>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     capinternalsclick={this.capinternalsclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     bankingclick={this.bankingclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     dispatchclick={this.dispatchclick}
+                     loginclick={this.loginclick} scaleclick={this.scaleclick} purchasesclick={this.purchasesclick}
+                     balesclick={this.balesclick}
+                     capturebalepriceclick={this.capturebalepriceclick} balancingclick={this.balancingclick}
+                     dailystatsclick={this.dailystatsclick}
+                     creditorscheduleclick={this.creditorscheduleclick} invoicesclick={this.invoicesclick}
+                     otherreportsclick={this.otherreportsclick}
+                     salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
+                     paymentclick={this.paymentclick} audittrailclick={this.audittrailclick}
+                     internalsclick={this.internalsclick} revenuesclick={this.revenuesclick}
+                     stoprderverifyclick={this.stoprderverifyclick} gmsclick={this.gmsclick}/>
+            <Main>
+              <ManageUsers id_address={this.state.ip_address}/>
+            </Main>
+
+          </>
+      );
+
+    } else if (this.state.route === "Grades") {
+      return (
+          <>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     capinternalsclick={this.capinternalsclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     bankingclick={this.bankingclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick} balesclick={this.balesclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     capturebalepriceclick={this.capturebalepriceclick} loginclick={this.loginclick}
+                     scaleclick={this.scaleclick} balancingclick={this.balancingclick}
+                     purchasesclick={this.purchasesclick} audittrailclick={this.audittrailclick}
+                     invoicesclick={this.invoicesclick} otherreportsclick={this.otherreportsclick}
+                     dailystatsclick={this.dailystatsclick}
+                     salesclick={this.salesclick} creditorscheduleclick={this.creditorscheduleclick}
+                     salesbatchingclick={this.salesbatchingclick} paymentclick={this.paymentclick}
+                     internalsclick={this.internalsclick} revenuesclick={this.revenuesclick}
+                     stoprderverifyclick={this.stoprderverifyclick} gmsclick={this.gmsclick}/>
+            <Main>
+              <Grades buyersData={this.state.buyersData} id_address={this.state.ip_address}/>
+            </Main>
+
+          </>
+      );
+    } else if (this.state.route === "Backup") {
+      return (
+          <>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     capinternalsclick={this.capinternalsclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     bankingclick={this.bankingclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     dispatchclick={this.dispatchclick}
+                     loginclick={this.loginclick} scaleclick={this.scaleclick} purchasesclick={this.purchasesclick}
+                     balesclick={this.balesclick}
+                     capturebalepriceclick={this.capturebalepriceclick} balancingclick={this.balancingclick}
+                     dailystatsclick={this.dailystatsclick}
+                     salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
+                     paymentclick={this.paymentclick} audittrailclick={this.audittrailclick}
+                     internalsclick={this.internalsclick} creditorscheduleclick={this.creditorscheduleclick}
+                     otherreportsclick={this.otherreportsclick}
+                     revenuesclick={this.revenuesclick} stoprderverifyclick={this.stoprderverifyclick}
+                     invoicesclick={this.invoicesclick} gmsclick={this.gmsclick}/>
+            <Main>
+              <Backup id_address={this.state.ip_address}/>
+            </Main>
+
+
+          </>
+
+      );
+    } else if (this.state.route === "Parameters") {
+      return (
+          <>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     capinternalsclick={this.capinternalsclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     bankingclick={this.bankingclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick} otherreportsclick={this.otherreportsclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick} dailystatsclick={this.dailystatsclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     dispatchclick={this.dispatchclick}
+                     loginclick={this.loginclick} scaleclick={this.scaleclick}
+                     capturebalepriceclick={this.capturebalepriceclick} audittrailclick={this.audittrailclick}
+                     balancingclick={this.balancingclick} salesclick={this.salesclick}
+                     purchasesclick={this.purchasesclick} balesclick={this.balesclick}
+                     internalsclick={this.internalsclick} revenuesclick={this.revenuesclick}
+                     salesbatchingclick={this.salesbatchingclick} paymentclick={this.paymentclick}
+                     stoprderverifyclick={this.stoprderverifyclick} creditorscheduleclick={this.creditorscheduleclick}
+                     gmsclick={this.gmsclick}
+                     invoicesclick={this.invoicesclick}/>
+            <Main>
+              <Parameters id_address={this.state.ip_address} statutoryData={this.state.statutoryData}
+                          chargeTypeData={this.state.chargeTypeData} sellingPointsData={this.state.sellingPointsData}
+                          statutoryValueData={this.state.statutoryValueData}/>
+            </Main>
+
+
+          </>
+      );
+    } else if (this.state.route === "Deliverynotes") {
+      return (
+          <>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     purchasesclick={this.purchasesclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     capinternalsclick={this.capinternalsclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick} otherreportsclick={this.otherreportsclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick} dailystatsclick={this.dailystatsclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     dispatchclick={this.dispatchclick}
+                     loginclick={this.loginclick} scaleclick={this.scaleclick}
+                     capturebalepriceclick={this.capturebalepriceclick} balesclick={this.balesclick}
+                     balancingclick={this.balancingclick} salesclick={this.salesclick}
+                     salesbatchingclick={this.salesbatchingclick} audittrailclick={this.audittrailclick}
+                     stoprderverifyclick={this.stoprderverifyclick} internalsclick={this.internalsclick}
+                     creditorscheduleclick={this.creditorscheduleclick}
+                     bankingclick={this.bankingclick} revenuesclick={this.revenuesclick}
+                     paymentclick={this.paymentclick} invoicesclick={this.invoicesclick} gmsclick={this.gmsclick}/>
+            <Main>
+              <Deliverynotes id_address={this.state.ip_address} deliveryNoteData={this.state.deliveryNoteData}
+                             growerDeliveryNoteData={this.state.growerDeliveryNoteData}/>
+            </Main>
+
+
+          </>
+
+      );
+    } else if (this.state.route === "Balereceiving") {
+      return (
+          <>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     dailystatsclick={this.dailystatsclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     purchasesclick={this.purchasesclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     capinternalsclick={this.capinternalsclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick} creditorscheduleclick={this.creditorscheduleclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick} invoicesclick={this.invoicesclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     dispatchclick={this.dispatchclick} audittrailclick={this.audittrailclick}
+                     loginclick={this.loginclick} scaleclick={this.scaleclick}
+                     capturebalepriceclick={this.capturebalepriceclick} otherreportsclick={this.otherreportsclick}
+                     balancingclick={this.balancingclick} salesclick={this.salesclick}
+                     salesbatchingclick={this.salesbatchingclick} balesclick={this.balesclick}
+                     stoprderverifyclick={this.stoprderverifyclick} revenuesclick={this.revenuesclick}
+                     internalsclick={this.internalsclick} paymentclick={this.paymentclick}
+                     bankingclick={this.bankingclick} gmsclick={this.gmsclick}/>
+            <Main>
+              <Balereceiving id_address={this.state.ip_address}/>
+            </Main>
+          </>
+      );
+    } else if (this.state.route === "Tickets") {
+      return (
+          <>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     dailystatsclick={this.dailystatsclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     purchasesclick={this.purchasesclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     capinternalsclick={this.capinternalsclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick} creditorscheduleclick={this.creditorscheduleclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick} invoicesclick={this.invoicesclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick} audittrailclick={this.audittrailclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     dispatchclick={this.dispatchclick} balesclick={this.balesclick}
+                     loginclick={this.loginclick} scaleclick={this.scaleclick}
+                     capturebalepriceclick={this.capturebalepriceclick} otherreportsclick={this.otherreportsclick}
+                     balancingclick={this.balancingclick} revenuesclick={this.revenuesclick}
+                     salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
+                     stoprderverifyclick={this.stoprderverifyclick} internalsclick={this.internalsclick}
+                     bankingclick={this.bankingclick}
+                     paymentclick={this.paymentclick} gmsclick={this.gmsclick}/>
+            <Main>
+              <Tickets ticketsData={this.state.ticketsData} id_address={this.state.ip_address}/>
+            </Main>
+          </>
+      );
+    } else if (this.state.route === "Ticketsbatching") {
+      return (
+          <>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     dailystatsclick={this.dailystatsclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     purchasesclick={this.purchasesclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     capinternalsclick={this.capinternalsclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick} creditorscheduleclick={this.creditorscheduleclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick} otherreportsclick={this.otherreportsclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     dispatchclick={this.dispatchclick}
+                     loginclick={this.loginclick} scaleclick={this.scaleclick}
+                     capturebalepriceclick={this.capturebalepriceclick} balesclick={this.balesclick}
+                     ticketsData={this.state.ticketsData} balancingclick={this.balancingclick}
+                     salesclick={this.salesclick} invoicesclick={this.invoicesclick}
+                     salesbatchingclick={this.salesbatchingclick} bankingclick={this.bankingclick}
+                     paymentclick={this.paymentclick} audittrailclick={this.audittrailclick}
+                     internalsclick={this.internalsclick} revenuesclick={this.revenuesclick}
+                     stoprderverifyclick={this.stoprderverifyclick} gmsclick={this.gmsclick}/>
+            <Main>
+              <Ticketbatching ticketsBatchingData={this.state.ticketsBatchingData} id_address={this.state.ip_address}
+                              batchingclick={this.batchingclick}/>
+            </Main>
+          </>
+      );
+    } else if (this.state.route === "Floorsummary") {
+      return (
+          <>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     dailystatsclick={this.dailystatsclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     purchasesclick={this.purchasesclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     capinternalsclick={this.capinternalsclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick} otherreportsclick={this.otherreportsclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick} invoicesclick={this.invoicesclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     dispatchclick={this.dispatchclick}
+                     loginclick={this.loginclick} revenuesclick={this.revenuesclick} scaleclick={this.scaleclick}
+                     capturebalepriceclick={this.capturebalepriceclick}
+                     ticketsData={this.state.ticketsData} balancingclick={this.balancingclick}
+                     bankingclick={this.bankingclick} audittrailclick={this.audittrailclick}
+                     salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
+                     paymentclick={this.paymentclick} balesclick={this.balesclick}
+                     internalsclick={this.internalsclick} stoprderverifyclick={this.stoprderverifyclick}
+                     creditorscheduleclick={this.creditorscheduleclick} gmsclick={this.gmsclick}/>
+            <Main>
+              <Floorsummary id_address={this.state.ip_address}/>
+            </Main>
+          </>
+      );
+    } else if (this.state.route === "Dispatch") {
+      return (
+          <>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     dailystatsclick={this.dailystatsclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     purchasesclick={this.purchasesclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     capinternalsclick={this.capinternalsclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick} otherreportsclick={this.otherreportsclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick} audittrailclick={this.audittrailclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     dispatchclick={this.dispatchclick}
+                     loginclick={this.loginclick} scaleclick={this.scaleclick}
+                     capturebalepriceclick={this.capturebalepriceclick} balesclick={this.balesclick}
+                     ticketsData={this.state.ticketsData} revenuesclick={this.revenuesclick}
+                     balancingclick={this.balancingclick} bankingclick={this.bankingclick}
+                     salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
+                     paymentclick={this.paymentclick} invoicesclick={this.invoicesclick}
+                     internalsclick={this.internalsclick} stoprderverifyclick={this.stoprderverifyclick}
+                     creditorscheduleclick={this.creditorscheduleclick} gmsclick={this.gmsclick}/>
+            <Main>
+              <Dispatch id_address={this.state.ip_address}/>
+            </Main>
+          </>
+      );
+    } else if (this.state.route === "Login") {
+      return (
+          <>
+
+
+            <Login/>
+
+          </>
+      );
+    } else if (this.state.route === "Scale") {
+      return (
+          <>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     dailystatsclick={this.dailystatsclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     purchasesclick={this.purchasesclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     capinternalsclick={this.capinternalsclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick} otherreportsclick={this.otherreportsclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick} balesclick={this.balesclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     dispatchclick={this.dispatchclick}
+                     loginclick={this.loginclick} revenuesclick={this.revenuesclick} scaleclick={this.scaleclick}
+                     capturebalepriceclick={this.capturebalepriceclick}
+                     ticketsData={this.state.ticketsData} balancingclick={this.balancingclick}
+                     bankingclick={this.bankingclick} audittrailclick={this.audittrailclick}
+                     salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
+                     internalsclick={this.internalsclick}
+                     paymentclick={this.paymentclick} creditorscheduleclick={this.creditorscheduleclick}
+                     invoicesclick={this.invoicesclick} gmsclick={this.gmsclick}/>
+            <Main>
+              <Scale id_address={this.state.ip_address}/>
+            </Main>
+          </>
+      );
+    } else if (this.state.route === "Capture") {
+      return (
+          <>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     dailystatsclick={this.dailystatsclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     purchasesclick={this.purchasesclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     capinternalsclick={this.capinternalsclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick} otherreportsclick={this.otherreportsclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick} audittrailclick={this.audittrailclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     dispatchclick={this.dispatchclick}
+                     loginclick={this.loginclick} scaleclick={this.scaleclick}
+                     capturebalepriceclick={this.capturebalepriceclick}
+                     ticketsData={this.state.ticketsData} revenuesclick={this.revenuesclick}
+                     balancingclick={this.balancingclick} bankingclick={this.bankingclick}
+                     salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
+                     paymentclick={this.paymentclick}
+                     internalsclick={this.internalsclick} stoprderverifyclick={this.stoprderverifyclick}
+                     balesclick={this.balesclick}
+                     invoicesclick={this.invoicesclick} creditorscheduleclick={this.creditorscheduleclick}
+                     gmsclick={this.gmsclick}/>
             <Main>
               <Capture id_address={this.state.ip_address}/>
             </Main>
           </>
       );
-    }else if(this.state.route==="Balancing") {
+    } else if (this.state.route === "Balancing") {
       return (
           <>
-            <Header />
-            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick} dailystatsclick={this.dailystatsclick}
-                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} purchasesclick={this.purchasesclick}
-                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} capinternalsclick={this.capinternalsclick}
-                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick}
-                     gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick} balesclick={this.balesclick}
-                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick}
-                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} dispatchclick={this.dispatchclick}
-                     loginclick={this.loginclick} scaleclick={this.scaleclick} capturebalepriceclick={this.capturebalepriceclick} 
-                      ticketsData={this.state.ticketsData} balancingclick = {this.balancingclick} bankingclick={this.bankingclick} 
-                      salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick} paymentclick={this.paymentclick}
-                      internalsclick={this.internalsclick} revenuesclick={this.revenuesclick} stoprderverifyclick={this.stoprderverifyclick}
-                      creditorscheduleclick={this.creditorscheduleclick} invoicesclick={this.invoicesclick} otherreportsclick={this.otherreportsclick} gmsclick={this.gmsclick}/>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     dailystatsclick={this.dailystatsclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     purchasesclick={this.purchasesclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     capinternalsclick={this.capinternalsclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick} audittrailclick={this.audittrailclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick} balesclick={this.balesclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     dispatchclick={this.dispatchclick}
+                     loginclick={this.loginclick} scaleclick={this.scaleclick}
+                     capturebalepriceclick={this.capturebalepriceclick}
+                     ticketsData={this.state.ticketsData} balancingclick={this.balancingclick}
+                     bankingclick={this.bankingclick}
+                     salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
+                     paymentclick={this.paymentclick}
+                     internalsclick={this.internalsclick} revenuesclick={this.revenuesclick}
+                     stoprderverifyclick={this.stoprderverifyclick}
+                     creditorscheduleclick={this.creditorscheduleclick} invoicesclick={this.invoicesclick}
+                     otherreportsclick={this.otherreportsclick} gmsclick={this.gmsclick}/>
             <Main>
               <Balancing balancingData={this.state.balancingData} id_address={this.state.ip_address}/>
             </Main>
           </>
       );
-    }else if(this.state.route==="Batching") {
+    } else if (this.state.route === "Batching") {
       return (
           <>
-            <Header />
-            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick} dailystatsclick={this.dailystatsclick}
-                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} purchasesclick={this.purchasesclick}
-                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} capinternalsclick={this.capinternalsclick}
-                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick}
-                     gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick}
-                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick}
-                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} dispatchclick={this.dispatchclick}
-                     loginclick={this.loginclick} scaleclick={this.scaleclick} capturebalepriceclick={this.capturebalepriceclick} 
-                      ticketsData={this.state.ticketsData} revenuesclick={this.revenuesclick} balancingclick = {this.balancingclick} bankingclick={this.bankingclick} 
-                      salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick} paymentclick={this.paymentclick} balesclick={this.balesclick}
-                      internalsclick={this.internalsclick} invoicesclick={this.invoicesclick} otherreportsclick={this.otherreportsclick}
-                      stoprderverifyclick={this.stoprderverifyclick} creditorscheduleclick={this.creditorscheduleclick} gmsclick={this.gmsclick}/>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     dailystatsclick={this.dailystatsclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     purchasesclick={this.purchasesclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     capinternalsclick={this.capinternalsclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick} audittrailclick={this.audittrailclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     dispatchclick={this.dispatchclick}
+                     loginclick={this.loginclick} scaleclick={this.scaleclick}
+                     capturebalepriceclick={this.capturebalepriceclick}
+                     ticketsData={this.state.ticketsData} revenuesclick={this.revenuesclick}
+                     balancingclick={this.balancingclick} bankingclick={this.bankingclick}
+                     salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
+                     paymentclick={this.paymentclick} balesclick={this.balesclick}
+                     internalsclick={this.internalsclick} invoicesclick={this.invoicesclick}
+                     otherreportsclick={this.otherreportsclick}
+                     stoprderverifyclick={this.stoprderverifyclick} creditorscheduleclick={this.creditorscheduleclick}
+                     gmsclick={this.gmsclick}/>
             <Main>
               <Batching id_address={this.state.ip_address}/>
             </Main>
           </>
       );
-      }else if(this.state.route==="Sales") {
-        return (
-            <>
-              <Header />
-              <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick} dailystatsclick={this.dailystatsclick}
-                       salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} purchasesclick={this.purchasesclick}
-                       bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} capinternalsclick={this.capinternalsclick}
-                       sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} otherreportsclick={this.otherreportsclick}
-                       gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick}
-                       deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick}
-                       batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} dispatchclick={this.dispatchclick}
-                       loginclick={this.loginclick} scaleclick={this.scaleclick} capturebalepriceclick={this.capturebalepriceclick} 
-                        ticketsData={this.state.ticketsData} balancingclick = {this.balancingclick} bankingclick={this.bankingclick}  
-                        salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick} paymentclick={this.paymentclick} balesclick={this.balesclick}
-                        internalsclick={this.internalsclick} revenuesclick={this.revenuesclick} stoprderverifyclick={this.stoprderverifyclick} 
-                        creditorscheduleclick={this.creditorscheduleclick} invoicesclick={this.invoicesclick} gmsclick={this.gmsclick}/>
-              <Main>
-                <Sales sellingPointsData={this.state.sellingPointsData}  id_address={this.state.ip_address}/>
-              </Main>
-            </>
-        );
-      }else if(this.state.route==="Stoporderverification") {
-        return (
-            <>
-              <Header />
-              <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick} dailystatsclick={this.dailystatsclick}
-                       salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} purchasesclick={this.purchasesclick}
-                       bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} capinternalsclick={this.capinternalsclick}
-                       sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} otherreportsclick={this.otherreportsclick}
-                       gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick} balesclick={this.balesclick}
-                       deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick}
-                       batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} dispatchclick={this.dispatchclick}
-                       loginclick={this.loginclick} scaleclick={this.scaleclick} capturebalepriceclick={this.capturebalepriceclick} 
-                        ticketsData={this.state.ticketsData} balancingclick = {this.balancingclick}  bankingclick={this.bankingclick} 
-                        salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick} paymentclick={this.paymentclick}
-                        internalsclick={this.internalsclick} revenuesclick={this.revenuesclick} invoicesclick={this.invoicesclick}
-                        creditorscheduleclick={this.creditorscheduleclick} stoprderverifyclick={this.stoprderverifyclick} gmsclick={this.gmsclick}/>
-              <Main>
-                <Stoporderverification id_address={this.state.ip_address}/>
-              </Main>
-            </>
-        );
-      }else if(this.state.route==="CreateInternals") {
-        return (
-            <>
-              <Header />
-              <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick} dailystatsclick={this.dailystatsclick}
-                       salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} purchasesclick={this.purchasesclick}
-                       bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} capinternalsclick={this.capinternalsclick}
-                       sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} otherreportsclick={this.otherreportsclick}
-                       gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick}
-                       deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick}
-                       batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} dispatchclick={this.dispatchclick}
-                       loginclick={this.loginclick} scaleclick={this.scaleclick} capturebalepriceclick={this.capturebalepriceclick} 
-                        ticketsData={this.state.ticketsData} balancingclick = {this.balancingclick} bankingclick={this.bankingclick}   
-                        salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick} paymentclick={this.paymentclick}
-                        internalsclick={this.internalsclick} revenuesclick={this.revenuesclick} invoicesclick={this.invoicesclick} balesclick={this.balesclick}
-                        creditorscheduleclick={this.creditorscheduleclick} stoprderverifyclick={this.stoprderverifyclick} gmsclick={this.gmsclick}/>
-              <Main>
-                <CreateInternals id_address={this.state.ip_address} chargeTypeData={this.state.chargeTypeData} sellingPointsData={this.state.sellingPointsData} internalStopOrdersData={this.state.internalStopOrdersData}/>
-              </Main>
-            </>
-        );
-    
-    }else if(this.state.route==="Purchasesummary") {
+    } else if (this.state.route === "Sales") {
       return (
           <>
-            <Header />
-            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick} dailystatsclick={this.dailystatsclick}
-                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} purchasesclick={this.purchasesclick}
-                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} capinternalsclick={this.capinternalsclick}
-                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} otherreportsclick={this.otherreportsclick}
-                     gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick}
-                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick}
-                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} dispatchclick={this.dispatchclick}
-                     loginclick={this.loginclick} scaleclick={this.scaleclick} capturebalepriceclick={this.capturebalepriceclick} 
-                      ticketsData={this.state.ticketsData} balancingclick = {this.balancingclick} bankingclick={this.bankingclick}  
-                      salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick} paymentclick={this.paymentclick}
-                      internalsclick={this.internalsclick} revenuesclick={this.revenuesclick} invoicesclick={this.invoicesclick} balesclick={this.balesclick}
-                      creditorscheduleclick={this.creditorscheduleclick} stoprderverifyclick={this.stoprderverifyclick} gmsclick={this.gmsclick}/>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     dailystatsclick={this.dailystatsclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     purchasesclick={this.purchasesclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     capinternalsclick={this.capinternalsclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick} otherreportsclick={this.otherreportsclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick} audittrailclick={this.audittrailclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     dispatchclick={this.dispatchclick}
+                     loginclick={this.loginclick} scaleclick={this.scaleclick}
+                     capturebalepriceclick={this.capturebalepriceclick}
+                     ticketsData={this.state.ticketsData} balancingclick={this.balancingclick}
+                     bankingclick={this.bankingclick}
+                     salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
+                     paymentclick={this.paymentclick} balesclick={this.balesclick}
+                     internalsclick={this.internalsclick} revenuesclick={this.revenuesclick}
+                     stoprderverifyclick={this.stoprderverifyclick}
+                     creditorscheduleclick={this.creditorscheduleclick} invoicesclick={this.invoicesclick}
+                     gmsclick={this.gmsclick}/>
             <Main>
-              <Purchasesummary id_address={this.state.ip_address} />
+              <Sales sellingPointsData={this.state.sellingPointsData} id_address={this.state.ip_address}/>
             </Main>
           </>
       );
-    }else if(this.state.route==="CaptureInternals") {
+    } else if (this.state.route === "Stoporderverification") {
       return (
           <>
-            <Header />
-            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick} dailystatsclick={this.dailystatsclick}
-                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} purchasesclick={this.purchasesclick}
-                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} capinternalsclick={this.capinternalsclick}
-                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} otherreportsclick={this.otherreportsclick}
-                     gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick}
-                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick}
-                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} dispatchclick={this.dispatchclick}
-                     loginclick={this.loginclick} scaleclick={this.scaleclick} capturebalepriceclick={this.capturebalepriceclick} 
-                      ticketsData={this.state.ticketsData} balancingclick = {this.balancingclick} bankingclick={this.bankingclick}  
-                      salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick} paymentclick={this.paymentclick}
-                      internalsclick={this.internalsclick} revenuesclick={this.revenuesclick} invoicesclick={this.invoicesclick} balesclick={this.balesclick}
-                      creditorscheduleclick={this.creditorscheduleclick} stoprderverifyclick={this.stoprderverifyclick} gmsclick={this.gmsclick}/>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     dailystatsclick={this.dailystatsclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     purchasesclick={this.purchasesclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     capinternalsclick={this.capinternalsclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick} otherreportsclick={this.otherreportsclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick} balesclick={this.balesclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     dispatchclick={this.dispatchclick}
+                     loginclick={this.loginclick} scaleclick={this.scaleclick}
+                     capturebalepriceclick={this.capturebalepriceclick}
+                     ticketsData={this.state.ticketsData} balancingclick={this.balancingclick}
+                     bankingclick={this.bankingclick}
+                     salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
+                     paymentclick={this.paymentclick}
+                     internalsclick={this.internalsclick} revenuesclick={this.revenuesclick}
+                     invoicesclick={this.invoicesclick} audittrailclick={this.audittrailclick}
+                     creditorscheduleclick={this.creditorscheduleclick} stoprderverifyclick={this.stoprderverifyclick}
+                     gmsclick={this.gmsclick}/>
             <Main>
-              <CaptureInternals id_address={this.state.ip_address} captureInternalsData={this.state.captureInternalsData} internalStopOrdersData={this.state.internalStopOrdersData}/>
+              <Stoporderverification id_address={this.state.ip_address}/>
             </Main>
           </>
       );
-    }else if(this.state.route==="Banking") {
+    } else if (this.state.route === "CreateInternals") {
       return (
           <>
-            <Header />
-            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick} dailystatsclick={this.dailystatsclick}
-                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} purchasesclick={this.purchasesclick}
-                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} capinternalsclick={this.capinternalsclick}
-                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} otherreportsclick={this.otherreportsclick}
-                     gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick}
-                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick}
-                     batchingclick={this.batchingclick} revenuesclick={this.revenuesclick} floorsummaryclick={this.floorsummaryclick} dispatchclick={this.dispatchclick}
-                     loginclick={this.loginclick} scaleclick={this.scaleclick} capturebalepriceclick={this.capturebalepriceclick} 
-                      ticketsData={this.state.ticketsData} balancingclick = {this.balancingclick}  bankingclick={this.bankingclick} 
-                      salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick} paymentclick={this.paymentclick}
-                      internalsclick={this.internalsclick} invoicesclick={this.invoicesclick} gmsclick={this.gmsclick} balesclick={this.balesclick}
-                       stoprderverifyclick={this.stoprderverifyclick} creditorscheduleclick={this.creditorscheduleclick}/>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     dailystatsclick={this.dailystatsclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     purchasesclick={this.purchasesclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     capinternalsclick={this.capinternalsclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick} otherreportsclick={this.otherreportsclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick} audittrailclick={this.audittrailclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     dispatchclick={this.dispatchclick}
+                     loginclick={this.loginclick} scaleclick={this.scaleclick}
+                     capturebalepriceclick={this.capturebalepriceclick}
+                     ticketsData={this.state.ticketsData} balancingclick={this.balancingclick}
+                     bankingclick={this.bankingclick}
+                     salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
+                     paymentclick={this.paymentclick}
+                     internalsclick={this.internalsclick} revenuesclick={this.revenuesclick}
+                     invoicesclick={this.invoicesclick} balesclick={this.balesclick}
+                     creditorscheduleclick={this.creditorscheduleclick} stoprderverifyclick={this.stoprderverifyclick}
+                     gmsclick={this.gmsclick}/>
+            <Main>
+              <CreateInternals id_address={this.state.ip_address} chargeTypeData={this.state.chargeTypeData}
+                               sellingPointsData={this.state.sellingPointsData}
+                               internalStopOrdersData={this.state.internalStopOrdersData}/>
+            </Main>
+          </>
+      );
+
+    } else if (this.state.route === "Purchasesummary") {
+      return (
+          <>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     dailystatsclick={this.dailystatsclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     purchasesclick={this.purchasesclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     capinternalsclick={this.capinternalsclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick} otherreportsclick={this.otherreportsclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick} audittrailclick={this.audittrailclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     dispatchclick={this.dispatchclick}
+                     loginclick={this.loginclick} scaleclick={this.scaleclick}
+                     capturebalepriceclick={this.capturebalepriceclick}
+                     ticketsData={this.state.ticketsData} balancingclick={this.balancingclick}
+                     bankingclick={this.bankingclick}
+                     salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
+                     paymentclick={this.paymentclick}
+                     internalsclick={this.internalsclick} revenuesclick={this.revenuesclick}
+                     invoicesclick={this.invoicesclick} balesclick={this.balesclick}
+                     creditorscheduleclick={this.creditorscheduleclick} stoprderverifyclick={this.stoprderverifyclick}
+                     gmsclick={this.gmsclick}/>
+            <Main>
+              <Purchasesummary id_address={this.state.ip_address}/>
+            </Main>
+          </>
+      );
+    } else if (this.state.route === "CaptureInternals") {
+      return (
+          <>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     dailystatsclick={this.dailystatsclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     purchasesclick={this.purchasesclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     capinternalsclick={this.capinternalsclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick} otherreportsclick={this.otherreportsclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick} audittrailclick={this.audittrailclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     dispatchclick={this.dispatchclick}
+                     loginclick={this.loginclick} scaleclick={this.scaleclick}
+                     capturebalepriceclick={this.capturebalepriceclick}
+                     ticketsData={this.state.ticketsData} balancingclick={this.balancingclick}
+                     bankingclick={this.bankingclick}
+                     salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
+                     paymentclick={this.paymentclick}
+                     internalsclick={this.internalsclick} revenuesclick={this.revenuesclick}
+                     invoicesclick={this.invoicesclick} balesclick={this.balesclick}
+                     creditorscheduleclick={this.creditorscheduleclick} stoprderverifyclick={this.stoprderverifyclick}
+                     gmsclick={this.gmsclick}/>
+            <Main>
+              <CaptureInternals id_address={this.state.ip_address}
+                                captureInternalsData={this.state.captureInternalsData}
+                                internalStopOrdersData={this.state.internalStopOrdersData}/>
+            </Main>
+          </>
+      );
+    } else if (this.state.route === "Banking") {
+      return (
+          <>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     dailystatsclick={this.dailystatsclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     purchasesclick={this.purchasesclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     capinternalsclick={this.capinternalsclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick} otherreportsclick={this.otherreportsclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick} audittrailclick={this.audittrailclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} revenuesclick={this.revenuesclick}
+                     floorsummaryclick={this.floorsummaryclick} dispatchclick={this.dispatchclick}
+                     loginclick={this.loginclick} scaleclick={this.scaleclick}
+                     capturebalepriceclick={this.capturebalepriceclick}
+                     ticketsData={this.state.ticketsData} balancingclick={this.balancingclick}
+                     bankingclick={this.bankingclick}
+                     salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
+                     paymentclick={this.paymentclick}
+                     internalsclick={this.internalsclick} invoicesclick={this.invoicesclick} gmsclick={this.gmsclick}
+                     balesclick={this.balesclick}
+                     stoprderverifyclick={this.stoprderverifyclick} creditorscheduleclick={this.creditorscheduleclick}/>
             <Main>
               <Banking id_address={this.state.ip_address}/>
             </Main>
           </>
       );
-    }else if(this.state.route==="Payments") {
+    } else if (this.state.route === "Payments") {
       return (
           <>
-            <Header />
-            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick} dailystatsclick={this.dailystatsclick}
-                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} purchasesclick={this.purchasesclick}
-                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} capinternalsclick={this.capinternalsclick}
-                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick}
-                     gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick}
-                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick}
-                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} dispatchclick={this.dispatchclick}
-                     loginclick={this.loginclick} revenuesclick={this.revenuesclick} scaleclick={this.scaleclick} capturebalepriceclick={this.capturebalepriceclick} 
-                      ticketsData={this.state.ticketsData} balancingclick = {this.balancingclick} bankingclick={this.bankingclick} gmsclick={this.gmsclick}
-                      salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick} paymentclick={this.paymentclick} balesclick={this.balesclick}
-                      internalsclick={this.internalsclick} stoprderverifyclick={this.stoprderverifyclick} otherreportsclick={this.otherreportsclick}
-                      creditorscheduleclick={this.creditorscheduleclick} invoicesclick={this.invoicesclick}/>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     dailystatsclick={this.dailystatsclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     purchasesclick={this.purchasesclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     capinternalsclick={this.capinternalsclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick} audittrailclick={this.audittrailclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     dispatchclick={this.dispatchclick}
+                     loginclick={this.loginclick} revenuesclick={this.revenuesclick} scaleclick={this.scaleclick}
+                     capturebalepriceclick={this.capturebalepriceclick}
+                     ticketsData={this.state.ticketsData} balancingclick={this.balancingclick}
+                     bankingclick={this.bankingclick} gmsclick={this.gmsclick}
+                     salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
+                     paymentclick={this.paymentclick} balesclick={this.balesclick}
+                     internalsclick={this.internalsclick} stoprderverifyclick={this.stoprderverifyclick}
+                     otherreportsclick={this.otherreportsclick}
+                     creditorscheduleclick={this.creditorscheduleclick} invoicesclick={this.invoicesclick}/>
             <Main>
               <Payments id_address={this.state.ip_address}/>
             </Main>
           </>
       );
-    }else if(this.state.route==="Revenues") {
+    } else if (this.state.route === "Revenues") {
       return (
           <>
-            <Header />
-            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick} dailystatsclick={this.dailystatsclick}
-                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} purchasesclick={this.purchasesclick}
-                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} capinternalsclick={this.capinternalsclick}
-                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick}
-                     gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick} balesclick={this.balesclick}
-                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick}
-                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} dispatchclick={this.dispatchclick}
-                     loginclick={this.loginclick} revenuesclick={this.revenuesclick} scaleclick={this.scaleclick} capturebalepriceclick={this.capturebalepriceclick} 
-                      ticketsData={this.state.ticketsData} balancingclick = {this.balancingclick} bankingclick={this.bankingclick} 
-                      salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick} paymentclick={this.paymentclick} gmsclick={this.gmsclick}
-                      internalsclick={this.internalsclick} invoicesclick={this.invoicesclick} otherreportsclick={this.otherreportsclick}
-                      stoprderverifyclick={this.stoprderverifyclick} creditorscheduleclick={this.creditorscheduleclick}/>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     dailystatsclick={this.dailystatsclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     purchasesclick={this.purchasesclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     capinternalsclick={this.capinternalsclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick} audittrailclick={this.audittrailclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick} balesclick={this.balesclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     dispatchclick={this.dispatchclick}
+                     loginclick={this.loginclick} revenuesclick={this.revenuesclick} scaleclick={this.scaleclick}
+                     capturebalepriceclick={this.capturebalepriceclick}
+                     ticketsData={this.state.ticketsData} balancingclick={this.balancingclick}
+                     bankingclick={this.bankingclick}
+                     salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
+                     paymentclick={this.paymentclick} gmsclick={this.gmsclick}
+                     internalsclick={this.internalsclick} invoicesclick={this.invoicesclick}
+                     otherreportsclick={this.otherreportsclick}
+                     stoprderverifyclick={this.stoprderverifyclick} creditorscheduleclick={this.creditorscheduleclick}/>
             <Main>
-              <Revenues />
+              <Revenues/>
             </Main>
           </>
       );
-    }else if(this.state.route==="Creditorschedules") {
+    } else if (this.state.route === "Creditorschedules") {
       return (
           <>
-            <Header />
-            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick} dailystatsclick={this.dailystatsclick}
-                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} purchasesclick={this.purchasesclick}
-                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} capinternalsclick={this.capinternalsclick}
-                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} balesclick={this.balesclick}
-                     gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick}
-                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick}
-                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} dispatchclick={this.dispatchclick}
-                     loginclick={this.loginclick} revenuesclick={this.revenuesclick} scaleclick={this.scaleclick} capturebalepriceclick={this.capturebalepriceclick} 
-                      ticketsData={this.state.ticketsData} balancingclick = {this.balancingclick} bankingclick={this.bankingclick} 
-                      salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick} paymentclick={this.paymentclick}
-                      internalsclick={this.internalsclick} invoicesclick={this.invoicesclick} otherreportsclick={this.otherreportsclick}
-                       stoprderverifyclick={this.stoprderverifyclick} creditorscheduleclick={this.creditorscheduleclick} gmsclick={this.gmsclick}/>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     dailystatsclick={this.dailystatsclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     purchasesclick={this.purchasesclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     capinternalsclick={this.capinternalsclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick} balesclick={this.balesclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick} audittrailclick={this.audittrailclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     dispatchclick={this.dispatchclick}
+                     loginclick={this.loginclick} revenuesclick={this.revenuesclick} scaleclick={this.scaleclick}
+                     capturebalepriceclick={this.capturebalepriceclick}
+                     ticketsData={this.state.ticketsData} balancingclick={this.balancingclick}
+                     bankingclick={this.bankingclick}
+                     salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
+                     paymentclick={this.paymentclick}
+                     internalsclick={this.internalsclick} invoicesclick={this.invoicesclick}
+                     otherreportsclick={this.otherreportsclick}
+                     stoprderverifyclick={this.stoprderverifyclick} creditorscheduleclick={this.creditorscheduleclick}
+                     gmsclick={this.gmsclick}/>
             <Main>
-              <Creditorschedules />
+              <Creditorschedules/>
             </Main>
           </>
       );
-    }else if(this.state.route==="Invoices") {
+    } else if (this.state.route === "Invoices") {
       return (
           <>
-            <Header />
-            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick} dailystatsclick={this.dailystatsclick}
-                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} purchasesclick={this.purchasesclick}
-                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} capinternalsclick={this.capinternalsclick}
-                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick}
-                     gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick}
-                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick}
-                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} dispatchclick={this.dispatchclick}
-                     loginclick={this.loginclick} revenuesclick={this.revenuesclick} scaleclick={this.scaleclick} capturebalepriceclick={this.capturebalepriceclick} 
-                      ticketsData={this.state.ticketsData} balancingclick = {this.balancingclick} bankingclick={this.bankingclick} 
-                      salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick} paymentclick={this.paymentclick} balesclick={this.balesclick}
-                      internalsclick={this.internalsclick} invoicesclick={this.invoicesclick} otherreportsclick={this.otherreportsclick}
-                       stoprderverifyclick={this.stoprderverifyclick} creditorscheduleclick={this.creditorscheduleclick} gmsclick={this.gmsclick}/>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     dailystatsclick={this.dailystatsclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     purchasesclick={this.purchasesclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     capinternalsclick={this.capinternalsclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick} audittrailclick={this.audittrailclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     dispatchclick={this.dispatchclick}
+                     loginclick={this.loginclick} revenuesclick={this.revenuesclick} scaleclick={this.scaleclick}
+                     capturebalepriceclick={this.capturebalepriceclick}
+                     ticketsData={this.state.ticketsData} balancingclick={this.balancingclick}
+                     bankingclick={this.bankingclick}
+                     salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
+                     paymentclick={this.paymentclick} balesclick={this.balesclick}
+                     internalsclick={this.internalsclick} invoicesclick={this.invoicesclick}
+                     otherreportsclick={this.otherreportsclick}
+                     stoprderverifyclick={this.stoprderverifyclick} creditorscheduleclick={this.creditorscheduleclick}
+                     gmsclick={this.gmsclick}/>
             <Main>
-              <Invoices />
+              <Invoices/>
             </Main>
           </>
       );
-    }else if(this.state.route==="Otherreports") {
+    } else if (this.state.route === "Otherreports") {
       return (
           <>
-            <Header />
-            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick} dailystatsclick={this.dailystatsclick}
-                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} purchasesclick={this.purchasesclick}
-                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} capinternalsclick={this.capinternalsclick}
-                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick}
-                     gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick}
-                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick}
-                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} dispatchclick={this.dispatchclick}
-                     loginclick={this.loginclick} revenuesclick={this.revenuesclick} scaleclick={this.scaleclick} capturebalepriceclick={this.capturebalepriceclick} 
-                      ticketsData={this.state.ticketsData} balancingclick = {this.balancingclick} bankingclick={this.bankingclick} 
-                      salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick} paymentclick={this.paymentclick} balesclick={this.balesclick}
-                      internalsclick={this.internalsclick} invoicesclick={this.invoicesclick} otherreportsclick={this.otherreportsclick}
-                       stoprderverifyclick={this.stoprderverifyclick} creditorscheduleclick={this.creditorscheduleclick} gmsclick={this.gmsclick}/>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     dailystatsclick={this.dailystatsclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     purchasesclick={this.purchasesclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     capinternalsclick={this.capinternalsclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick} audittrailclick={this.audittrailclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     dispatchclick={this.dispatchclick}
+                     loginclick={this.loginclick} revenuesclick={this.revenuesclick} scaleclick={this.scaleclick}
+                     capturebalepriceclick={this.capturebalepriceclick}
+                     ticketsData={this.state.ticketsData} balancingclick={this.balancingclick}
+                     bankingclick={this.bankingclick}
+                     salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
+                     paymentclick={this.paymentclick} balesclick={this.balesclick}
+                     internalsclick={this.internalsclick} invoicesclick={this.invoicesclick}
+                     otherreportsclick={this.otherreportsclick}
+                     stoprderverifyclick={this.stoprderverifyclick} creditorscheduleclick={this.creditorscheduleclick}
+                     gmsclick={this.gmsclick}/>
             <Main>
-              <Otherreports />
+              <Otherreports/>
             </Main>
           </>
       );
-    }else if(this.state.route==="DailyStats") {
+    } else if (this.state.route === "DailyStats") {
       return (
           <>
-            <Header />
-            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick} dailystatsclick={this.dailystatsclick}
-                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} purchasesclick={this.purchasesclick}
-                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} capinternalsclick={this.capinternalsclick}
-                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick}
-                     gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick} balesclick={this.balesclick}
-                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick} ticketsclick={this.ticketsclick}
-                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick} dispatchclick={this.dispatchclick}
-                     loginclick={this.loginclick} revenuesclick={this.revenuesclick} scaleclick={this.scaleclick} capturebalepriceclick={this.capturebalepriceclick} 
-                      ticketsData={this.state.ticketsData} balancingclick = {this.balancingclick} bankingclick={this.bankingclick} 
-                      salesclick = {this.salesclick} salesbatchingclick={this.salesbatchingclick} paymentclick={this.paymentclick}
-                      internalsclick={this.internalsclick} invoicesclick={this.invoicesclick} otherreportsclick={this.otherreportsclick}
-                       stoprderverifyclick={this.stoprderverifyclick} creditorscheduleclick={this.creditorscheduleclick} gmsclick={this.gmsclick}/>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     dailystatsclick={this.dailystatsclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     purchasesclick={this.purchasesclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     capinternalsclick={this.capinternalsclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick} audittrailclick={this.audittrailclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick} balesclick={this.balesclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     dispatchclick={this.dispatchclick}
+                     loginclick={this.loginclick} revenuesclick={this.revenuesclick} scaleclick={this.scaleclick}
+                     capturebalepriceclick={this.capturebalepriceclick}
+                     ticketsData={this.state.ticketsData} balancingclick={this.balancingclick}
+                     bankingclick={this.bankingclick}
+                     salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
+                     paymentclick={this.paymentclick}
+                     internalsclick={this.internalsclick} invoicesclick={this.invoicesclick}
+                     otherreportsclick={this.otherreportsclick}
+                     stoprderverifyclick={this.stoprderverifyclick} creditorscheduleclick={this.creditorscheduleclick}
+                     gmsclick={this.gmsclick}/>
             <Main>
-              <DailyStats />
+              <DailyStats/>
             </Main>
           </>
       );
-    }else if(this.state.route==="Gms") {
+    } else if (this.state.route === "Gms") {
       return (
           <>
             <Header/>
@@ -1344,13 +1750,14 @@ class App extends Component {
                      paymentclick={this.paymentclick} balesclick={this.balesclick}
                      internalsclick={this.internalsclick} invoicesclick={this.invoicesclick}
                      otherreportsclick={this.otherreportsclick} gmsclick={this.gmsclick}
+                     audittrailclick={this.audittrailclick}
                      stoprderverifyclick={this.stoprderverifyclick} creditorscheduleclick={this.creditorscheduleclick}/>
             <Main>
-              < Gms />
+              < Gms/>
             </Main>
           </>
       );
-    }else if(this.state.route==="Bales") {
+    } else if (this.state.route === "Bales") {
       return (
           <>
             <Header/>
@@ -1371,20 +1778,52 @@ class App extends Component {
                      loginclick={this.loginclick} revenuesclick={this.revenuesclick} scaleclick={this.scaleclick}
                      capturebalepriceclick={this.capturebalepriceclick}
                      ticketsData={this.state.ticketsData} balancingclick={this.balancingclick}
-                     bankingclick={this.bankingclick}
+                     bankingclick={this.bankingclick} audittrailclick={this.audittrailclick}
                      salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
                      paymentclick={this.paymentclick} balesclick={this.balesclick}
                      internalsclick={this.internalsclick} invoicesclick={this.invoicesclick}
                      otherreportsclick={this.otherreportsclick} gmsclick={this.gmsclick}
                      stoprderverifyclick={this.stoprderverifyclick} creditorscheduleclick={this.creditorscheduleclick}/>
             <Main>
-              <Bales />
+              <Bales/>
+            </Main>
+          </>
+      );
+    } else if (this.state.route === "AuditTrail") {
+      return (
+          <>
+            <Header/>
+            <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+                     dailystatsclick={this.dailystatsclick}
+                     salesrunclick={this.salesrunclick} growerregclick={this.growerregclick}
+                     purchasesclick={this.purchasesclick}
+                     bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick}
+                     capinternalsclick={this.capinternalsclick}
+                     sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick}
+                     usersclick={this.usersclick}
+                     gradesclick={this.gradesclick} backupclick={this.backupclick}
+                     parametersclick={this.parametersclick}
+                     deliveriesclick={this.deliveriesclick} balereceivingclick={this.balereceivingclick}
+                     ticketsclick={this.ticketsclick}
+                     batchingclick={this.batchingclick} floorsummaryclick={this.floorsummaryclick}
+                     dispatchclick={this.dispatchclick}
+                     loginclick={this.loginclick} revenuesclick={this.revenuesclick} scaleclick={this.scaleclick}
+                     capturebalepriceclick={this.capturebalepriceclick}
+                     ticketsData={this.state.ticketsData} balancingclick={this.balancingclick}
+                     bankingclick={this.bankingclick} audittrailclick={this.audittrailclick}
+                     salesclick={this.salesclick} salesbatchingclick={this.salesbatchingclick}
+                     paymentclick={this.paymentclick} balesclick={this.balesclick}
+                     internalsclick={this.internalsclick} invoicesclick={this.invoicesclick}
+                     otherreportsclick={this.otherreportsclick} gmsclick={this.gmsclick}
+                     stoprderverifyclick={this.stoprderverifyclick} creditorscheduleclick={this.creditorscheduleclick}/>
+            <Main>
+              <AuditTrail/>
             </Main>
           </>
       );
     }
-
   }
+
 }
   
    

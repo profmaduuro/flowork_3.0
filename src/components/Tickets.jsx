@@ -385,7 +385,7 @@ export const Tickets = (props) => {
             <div class="modal-dialog">
                 <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Start Barcode</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Edit Sale Date</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body form-group row">
@@ -393,8 +393,8 @@ export const Tickets = (props) => {
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Sale Date</label>
                         <select type="barcode" class="form-control" id="sale_date">
-                            <option value="">--- --</option>
-                            <option value="">--- --</option>
+                            <option value="">Select Sale Date</option>
+                            <option value="">15-05-2025</option>
                         </select>
                     </div>
                     </form>

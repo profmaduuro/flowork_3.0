@@ -110,15 +110,19 @@ const Grades = (props) => {
 
       <br />
 
-      <div className='card_1'>
-          <div className='row'>
-            <h6><b>Grades</b></h6>
-            
+      <div className='card_10'>
+          <div>
+              <div className="col-auto col-sm-6 offset-sm-3">
+                  {/*    Success Response*/}
+                  <p className="card_2"><b>Grades</b></p>
+              </div>
           </div>
-   
-          <table className='table table-striped table-hover display nowrap' id="">
-            <thead>
-              <th><input type="checkbox" className='form-check-input'/></th>
+
+          <div className='table-responsive' data-bs-spy="scroll" style={{ maxHeight: "500px",
+              overflowY: "auto" }} >
+              <table className='table table-striped'>
+                  <thead style={{ position: "sticky",
+                      top: "0" }} className='card_10'>
               <th>Grade</th>
               <th>Buyer</th>
               <th>Selling Point</th>
@@ -126,42 +130,36 @@ const Grades = (props) => {
             </thead>
             <tbody>
               <tr>
-                <td><input type="checkbox" className='form-check-input'/></td>
                 <td>L2M</td>
                 <td>PA2</td>
                 <td>Vision Leaf Tobacco</td>
                 <td>2024</td>
               </tr>
               <tr>
-                <td><input type="checkbox" className='form-check-input'/></td>
                 <td>L2M</td>
                 <td>PA2</td>
                 <td>Vision Leaf Tobacco</td>
                 <td>2024</td>
               </tr>
               <tr>
-                <td><input type="checkbox" className='form-check-input'/></td>
                 <td>L2M</td>
                 <td>PA2</td>
                 <td>Vision Leaf Tobacco</td>
                 <td>2024</td>
               </tr>
               <tr>
-                <td><input type="checkbox" className='form-check-input'/></td>
                 <td>L2M</td>
                 <td>PA2</td>
                 <td>Vision Leaf Tobacco</td>
                 <td>2024</td>
               </tr>
               <tr>
-                <td><input type="checkbox" className='form-check-input'/></td>
                 <td>L2M</td>
                 <td>PA2</td>
                 <td>Vision Leaf Tobacco</td>
                 <td>2024</td>
               </tr>
               <tr>
-                <td><input type="checkbox" className='form-check-input'/></td>
                 <td>L2M</td>
                 <td>PA2</td>
                 <td>Vision Leaf Tobacco</td>
@@ -170,6 +168,7 @@ const Grades = (props) => {
             </tbody>
 
           </table>
+      </div>
       </div>
 
       {/* Modals */}
@@ -182,14 +181,13 @@ const Grades = (props) => {
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Grade Name:</label>
-                        <input type="text" class="form-control" id="recipient-name" />
+                        <input type="text" class="form-control" id="recipient-name" placeholder="L2MD" />
                     </div>
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Buyer Code:</label>
-                        <input type="text" class="form-control" id="recipient-name" />
+                        <input type="text" class="form-control" id="recipient-name"  placeholder="Buyer Code" />
                     </div>
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Selling Point:</label>
@@ -199,12 +197,17 @@ const Grades = (props) => {
                             <option value="">Horizon</option>
                         </select>
                     </div>
-                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Submit</button>
                 </div>
+                    <div>
+                        <div className="col-auto col-sm-6 offset-sm-3">
+                            {/*    Success Response*/}
+                            <p className="card_2"><b>Successful!!!!</b></p>
+                        </div>
+                    </div>
                 </div>
             </div>
       </div>

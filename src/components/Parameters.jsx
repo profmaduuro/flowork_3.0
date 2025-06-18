@@ -46,29 +46,33 @@ const Parameters = (props) => {
       {/* <h3 className='bi bi-home'>Configure Parameters</h3> */}
 
       <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light card_10">
-          <div class="container-fluid">
-              {/* <a href="#" class="navbar-brand">Brand</a> */}
-              <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                  <div class="navbar-nav">
-                      <a href="" class="nav-item nav-link active" data-bs-toggle="modal" data-bs-target="#example">Add Company</a>
-                      <a href="" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#example2">Statutory Parameters</a>
-                      <a href="" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#example3">Deduction Priorities</a>
-                      <a href="" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#example4">Sale Parameters</a>
-                      <a href="" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#example5">Add Season</a>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light card_10">
+              <div class="container-fluid">
+                  {/* <a href="#" class="navbar-brand">Brand</a> */}
+                  <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                      <div class="navbar-nav">
+                          <a href="" class="nav-item nav-link active" data-bs-toggle="modal" data-bs-target="#example">Add Company</a>
+                          <a href="" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#example2">Statutory Parameters</a>
+                          <a href="" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#example3">Deduction Priorities</a>
+                          <a href="" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#example4">Sale Parameters</a>
+                          <a href="" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#example5">Add Season</a>
+                      </div>
                   </div>
               </div>
-          </div>
-      </nav>
+          </nav>
       </div>
       <br />
 
       <div className='card_10'>
-        <table className='table table-striped table-hover'>
-            <thead>
+
+          <div className='table-responsive' data-bs-spy="scroll" style={{ maxHeight: "500px",
+              overflowY: "auto" }} >
+              <table className='table table-striped'>
+                  <thead style={{ position: "sticky",
+                      top: "0" }} className='card_10'>
                 <tr>
                 <th>Statutory</th>
                 <th>Type</th>
@@ -99,54 +103,66 @@ const Parameters = (props) => {
         </table>
 
       </div>
+      </div>
 
       {/* Modals */}
 
       <div className="modal fade" id="example" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Add Company</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body form-group row">
-                    <form>
-                    <div class="mb-3">
-                        <label for="recipient-name" class="col-form-label ">Company Name:</label>
-                        <input type="text" class="form-control " id="recipient-name" />
+                    <div className="row">
+                        <div className="col">
+                            <label htmlFor="recipient-name" className="col-form-label ">Company Name:</label>
+                            <input type="text" className="form-control " id="" placeholder="Vision Leaf Tobacco"/>
+                        </div>
+                        <div className="col">
+                            <label htmlFor="recipient-name" className="col-form-label">Address:</label>
+                            <input type="address" className="form-control" id=""  placeholder="Address" />
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="recipient-name" class="col-form-label">Address:</label>
-                        <input type="text" class="form-control" id="recipient-name" />
+                    <div className="row">
+                        <div className="col">
+                            <label htmlFor="recipient-name" className="col-form-label">Phone:</label>
+                            <input type="phone" className="form-control" id="" placeholder="+263866965596" />
+                        </div>
+                        <div className="col">
+                            <label htmlFor="recipient-name" className="col-form-label">Mobile:</label>
+                            <input type="text" className="form-control" id=""  placeholder="+263772589632" />
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="recipient-name" class="col-form-label">Phone:</label>
-                        <input type="text" class="form-control" id="recipient-name" />
+                    <div className="row">
+                        <div className="col">
+                            <label htmlFor="recipient-name" className="col-form-label">Email:</label>
+                            <input type="email" className="form-control" id="" placeholder="info@vlt.co.zw" />
+                        </div>
+                        <div className="col">
+                            <label htmlFor="recipient-name" className="col-form-label">Website:</label>
+                            <input type="website" className="form-control" id="" placeholder="www.vlt.co.zw" />
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="recipient-name" class="col-form-label">Mobile:</label>
-                        <input type="text" class="form-control" id="recipient-name" />
-                    </div>
-                    <div class="mb-3">
-                        <label for="recipient-name" class="col-form-label">Email:</label>
-                        <input type="email" class="form-control" id="recipient-name" />
-                    </div>
-                    <div class="mb-3">
-                        <label for="recipient-name" class="col-form-label">Website:</label>
-                        <input type="website" class="form-control" id="recipient-name" />
-                    </div>
+
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Logo:</label>
-                        <input type="file" class="form-control" id="recipient-name" />
+                        <input type="file" class="form-control" id=""/>
                     </div>
-                    </form>
+
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Submit</button>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Submit</button>
                 </div>
+                    <div>
+                        <div className="col-6 col-sm-6 offset-sm-3">
+                            {/*    Success Response*/}
+                            <p className="card_2"><b>Successful !!!</b></p>
+                        </div>
+                    </div>
                 </div>
-            </div>
+      </div>
       </div>
 
       <div className="modal fade" id="example2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -157,7 +173,7 @@ const Parameters = (props) => {
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
+
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Select Company:</label>
                         <select type="text" class="form-control"  id="selling_pointid">
@@ -173,11 +189,11 @@ const Parameters = (props) => {
 
                         </select>
                     </div>
-                    </form>
+
                 </div>
                 <div>
                 <div className='card_10'>
-                    <form action="">
+
                     <div className='row'>
                         <div className='col'>
                         <label htmlFor="">Statutory</label>
@@ -211,20 +227,22 @@ const Parameters = (props) => {
                         </div>
                         <div className='col'>
                         <label htmlFor="">Creditor #</label>
-                        <input name="" id="creditor_number" className='form-control' type='number'/>
+                        <input name="" id="creditor_number" className='form-control' type='number' placeholder='61181'/>
                             
                         </div>
-
                     </div>
-                    </form>
-                    
                 </div>
                 <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         <button type="button" class="btn btn-primary" onClick={createGrowerCharges}>Submit</button>
                     </div>
 
                 </div>
+                    <div>
+                        <div className="col-6 col-sm-6 offset-sm-3">
+                            {/*    Success Response*/}
+                            <p className="card_2"><b>Successful !!!</b></p>
+                        </div>
+                    </div>
 
 
             </div>
@@ -241,7 +259,6 @@ const Parameters = (props) => {
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Select Company:</label>
                         <select type="text" class="form-control" id="recipient-name" >
@@ -256,11 +273,12 @@ const Parameters = (props) => {
                             }
                         </select>
                     </div>
-                    </form>
                 </div>
-                <div className='table-responsive'>
-                    <table className='table table-striped table-hover table-bordered'>
-                        <thead>
+                    <div className='table-responsive' data-bs-spy="scroll" style={{ maxHeight: "500px",
+                        overflowY: "auto" }} >
+                        <table className='table table-striped'>
+                            <thead style={{ position: "sticky",
+                                top: "0" }} className='card_10'>
                             <tr>
                                 <th>Statutory</th>
                                 <th>Priority</th>
@@ -316,12 +334,22 @@ const Parameters = (props) => {
                     </table>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Submit</button>
                 </div>
+                <div>
+                    <div>
+                        <div className="col-6 col-sm-6 offset-sm-3">
+                            {/*    Success Response*/}
+                            <p className="card_2"><b>Successful !!!</b></p>
+                        </div>
+                    </div>
                 </div>
+
             </div>
-      </div>
+    </div>
+    </div>
+
+
 
       <div className="modal fade" id="example4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
@@ -331,7 +359,7 @@ const Parameters = (props) => {
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
+
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Select Company:</label>
                         <select type="text" class="form-control" id="recipient-name" >
@@ -341,11 +369,14 @@ const Parameters = (props) => {
                             <option value="">Horizon</option>
                         </select>
                     </div>
-                    </form>
+
                 </div>
                 <div className='table-responsive'>
-                    <table className='table table-striped table-hover table-bordered'>
-                        <thead>
+                    <div className='table-responsive' data-bs-spy="scroll" style={{ maxHeight: "500px",
+                        overflowY: "auto" }} >
+                        <table className='table table-striped'>
+                            <thead style={{ position: "sticky",
+                                top: "0" }} className='card_10'>
                             <tr>
                                 <th>Description</th>
                                 <th>Rate</th>
@@ -393,10 +424,16 @@ const Parameters = (props) => {
 
                     </table>
                 </div>
+                </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Submit</button>
                 </div>
+                    <div>
+                        <div className="col-6 col-sm-6 offset-sm-3">
+                            {/*    Success Response*/}
+                            <p className="card_2"><b>Successful !!!</b></p>
+                        </div>
+                    </div>
                 </div>
             </div>
       </div>
